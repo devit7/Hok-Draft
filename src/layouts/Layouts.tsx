@@ -10,17 +10,17 @@ const Layouts: React.FC = () => {
 
     return (
         <>
-            {/* <div className="bg-[#050516] h-screen w-full text-white"> */}
-            <div className="h-screen w-full text-white ">
-                <Navigation />
-                <div className="mx-0 md:mx-16  border-x-2 border-dashed border-[#191937]">
-                    {showSubNav && <SubNavigation />}
-                    <main className="  overflow-auto ">
+            <div className="h-screen w-full text-white flex flex-col overflow-hidden">
+                <div className="flex-shrink-0">
+                    <Navigation />
+                </div>
+                <div className="flex-1 flex flex-col overflow-hidden mx-0 md:mx-16 border-x-2 border-dashed border-[#191937]">
+                    {showSubNav && <div className="flex-shrink-0"><SubNavigation /></div>}
+                    <main className="flex-1 overflow-auto">
                         <Outlet />
                     </main>
                 </div>
             </div>
-
         </>
     );
 };
