@@ -7,6 +7,7 @@ import Hok from "./pages/Hok";
 import RankedDraft from "./components/RankedDraft";
 import HeroList from "./pages/HeroList";
 import TierListMaker from "./pages/TierListMaker";
+import NotFound from "./pages/NotFound";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Route path="hok/hero-list" element={<HeroList />} />
             <Route path="hok/tier-maker" element={<TierListMaker />} />
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </QueryClientProvider>
     </>
