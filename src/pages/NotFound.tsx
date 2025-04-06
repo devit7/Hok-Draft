@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/NotFound.css"; // You'll need to create this CSS file
 
 const NotFound = () => {
