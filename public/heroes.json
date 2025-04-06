@@ -2,7 +2,7 @@
   {
     "Name": "Augran",
     "Role": "Fighter",
-    "Image URL": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/ue6KY05b.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/ue6KY05b.png?imageMogr2/thumbnail/240x",
     "Tier": "S",
     "Win Rate": "49.99%",
     "Pick Rate": "1.20%",
@@ -11,7 +11,7 @@
   {
     "Name": "Loong",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/OzH2TSZN.jpg?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/OzH2TSZN.jpg?imageMogr2/thumbnail/240x",
     "Tier": "S",
     "Win Rate": "47.08%",
     "Pick Rate": "1.32%",
@@ -20,7 +20,7 @@
   {
     "Name": "Lam",
     "Role": "Assassin/Fighter",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/02i6M2YK.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/02i6M2YK.png?imageMogr2/thumbnail/240x",
     "Tier": "S",
     "Win Rate": "49.72%",
     "Pick Rate": "1.75%",
@@ -29,7 +29,7 @@
   {
     "Name": "Daji",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/dYxuS6IA.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/dYxuS6IA.png?imageMogr2/thumbnail/240x",
     "Tier": "S",
     "Win Rate": "50.45%",
     "Pick Rate": "3.23%",
@@ -38,7 +38,7 @@
   {
     "Name": "Hou Yi",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/S5isJokI.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/S5isJokI.png?imageMogr2/thumbnail/240x",
     "Tier": "S",
     "Win Rate": "52.01%",
     "Pick Rate": "2.94%",
@@ -47,7 +47,7 @@
   {
     "Name": "Arke",
     "Role": "Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/IUMPYUy4.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/IUMPYUy4.png?imageMogr2/thumbnail/240x",
     "Tier": "S",
     "Win Rate": "52.40%",
     "Pick Rate": "1.18%",
@@ -56,7 +56,7 @@
   {
     "Name": "Angela",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/wjaExUFU.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/wjaExUFU.png?imageMogr2/thumbnail/240x",
     "Tier": "S",
     "Win Rate": "49.67%",
     "Pick Rate": "2.34%",
@@ -65,7 +65,7 @@
   {
     "Name": "Lady Sun",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/BmY46Zgb.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/BmY46Zgb.png?imageMogr2/thumbnail/240x",
     "Tier": "S",
     "Win Rate": "46.75%",
     "Pick Rate": "2.64%",
@@ -74,7 +74,7 @@
   {
     "Name": "Dian Wei",
     "Role": "Fighter",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/y6IMFSlI.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/y6IMFSlI.png?imageMogr2/thumbnail/240x",
     "Tier": "S",
     "Win Rate": "54.04%",
     "Pick Rate": "2.09%",
@@ -83,7 +83,7 @@
   {
     "Name": "Marco Polo",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/48d8GxkP.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/48d8GxkP.png?imageMogr2/thumbnail/240x",
     "Tier": "S",
     "Win Rate": "48.16%",
     "Pick Rate": "2.34%",
@@ -92,7 +92,7 @@
   {
     "Name": "Dun",
     "Role": "Tank/Fighter",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/23rrkYYy.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/23rrkYYy.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "53.10%",
     "Pick Rate": "2.28%",
@@ -101,7 +101,7 @@
   {
     "Name": "Dyadia",
     "Role": "Support/Mage",
-    "Image URL": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/Qdvu6qgO.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/Qdvu6qgO.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "49.16%",
     "Pick Rate": "1.32%",
@@ -110,7 +110,7 @@
   {
     "Name": "Yaria",
     "Role": "Support",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/uHnzeJbu.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/uHnzeJbu.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "50.22%",
     "Pick Rate": "1.68%",
@@ -119,7 +119,7 @@
   {
     "Name": "Milady",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/orlOit3f.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/orlOit3f.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "49.27%",
     "Pick Rate": "1.77%",
@@ -128,7 +128,7 @@
   {
     "Name": "Li Xin",
     "Role": "Fighter",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/mWSBbpVr.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/mWSBbpVr.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "52.55%",
     "Pick Rate": "1.88%",
@@ -137,7 +137,7 @@
   {
     "Name": "Consort Yu",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ku5RzFmQ.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ku5RzFmQ.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "51.56%",
     "Pick Rate": "1.83%",
@@ -146,7 +146,7 @@
   {
     "Name": "Da Qiao",
     "Role": "Support/Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/IEPtzR5z.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/IEPtzR5z.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "49.39%",
     "Pick Rate": "1.31%",
@@ -155,7 +155,7 @@
   {
     "Name": "Luara",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/znRnu3kt.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/znRnu3kt.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "53.47%",
     "Pick Rate": "1.65%",
@@ -164,7 +164,7 @@
   {
     "Name": "Sima Yi",
     "Role": "Assassin/Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/sU3BsR6P.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/sU3BsR6P.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "52.71%",
     "Pick Rate": "1.44%",
@@ -173,7 +173,7 @@
   {
     "Name": "Luban No.7",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/0VBMiUN5.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/0VBMiUN5.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "50.92%",
     "Pick Rate": "1.64%",
@@ -182,7 +182,7 @@
   {
     "Name": "Mozi",
     "Role": "Mage/Fighter",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Za4OlJ6t.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Za4OlJ6t.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "49.18%",
     "Pick Rate": "1.45%",
@@ -191,7 +191,7 @@
   {
     "Name": "Xiao Qiao",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/paTVVlNq.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/paTVVlNq.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "49.54%",
     "Pick Rate": "1.62%",
@@ -200,7 +200,7 @@
   {
     "Name": "Cai Yan",
     "Role": "Support",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/kQXkW7ab.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/kQXkW7ab.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "51.14%",
     "Pick Rate": "1.36%",
@@ -209,7 +209,7 @@
   {
     "Name": "Liang",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/cNugkXGO.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/cNugkXGO.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "50.36%",
     "Pick Rate": "1.22%",
@@ -218,7 +218,7 @@
   {
     "Name": "Prince of Lanling",
     "Role": "Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hwk1ad6d.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hwk1ad6d.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "48.01%",
     "Pick Rate": "0.68%",
@@ -227,7 +227,7 @@
   {
     "Name": "Dolia",
     "Role": "Support",
-    "Image URL": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/tfvb3IJf.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/tfvb3IJf.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "47.23%",
     "Pick Rate": "1.44%",
@@ -236,7 +236,7 @@
   {
     "Name": "Kongming",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XDnXeq3x.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XDnXeq3x.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "48.95%",
     "Pick Rate": "1.49%",
@@ -245,7 +245,7 @@
   {
     "Name": "Diaochan",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/qFBebEbk.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/qFBebEbk.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "53.15%",
     "Pick Rate": "1.34%",
@@ -254,7 +254,7 @@
   {
     "Name": "Nuwa",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/E39kxNsD.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/E39kxNsD.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "52.07%",
     "Pick Rate": "1.11%",
@@ -263,7 +263,7 @@
   {
     "Name": "Donghuang",
     "Role": "Support/Tank",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/PRcq49iS.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/PRcq49iS.png?imageMogr2/thumbnail/240x",
     "Tier": "A",
     "Win Rate": "48.60%",
     "Pick Rate": "1.03%",
@@ -272,7 +272,7 @@
   {
     "Name": "Sakeer",
     "Role": "Support/Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ionwVFtV.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ionwVFtV.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "53.30%",
     "Pick Rate": "1.22%",
@@ -281,7 +281,7 @@
   {
     "Name": "Erin",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/joVNQWhw.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/joVNQWhw.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "51.14%",
     "Pick Rate": "1.31%",
@@ -290,7 +290,7 @@
   {
     "Name": "Mai Shiranui",
     "Role": "Assassin/Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/4jaM0F19.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/4jaM0F19.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "48.18%",
     "Pick Rate": "1.19%",
@@ -299,7 +299,7 @@
   {
     "Name": "Alessio",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/nnafEHV0.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/nnafEHV0.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "53.26%",
     "Pick Rate": "1.25%",
@@ -308,7 +308,7 @@
   {
     "Name": "Arthur",
     "Role": "Fighter/Tank",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/YTBrsBIg.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/YTBrsBIg.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "48.97%",
     "Pick Rate": "1.27%",
@@ -317,7 +317,7 @@
   {
     "Name": "Wukong",
     "Role": "Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Go3mMeu4.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Go3mMeu4.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "47.29%",
     "Pick Rate": "1.21%",
@@ -326,7 +326,7 @@
   {
     "Name": "Garo",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/g0jHNDf6.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/g0jHNDf6.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "53.65%",
     "Pick Rate": "1.21%",
@@ -335,7 +335,7 @@
   {
     "Name": "Arli",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hF8AFVqh.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hF8AFVqh.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "49.57%",
     "Pick Rate": "1.07%",
@@ -344,7 +344,7 @@
   {
     "Name": "Mi Yue",
     "Role": "Mage/Fighter",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/eHvcCJb0.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/eHvcCJb0.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "51.51%",
     "Pick Rate": "1.05%",
@@ -353,7 +353,7 @@
   {
     "Name": "Ziya",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/km2HzQ71.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/km2HzQ71.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "50.48%",
     "Pick Rate": "1.15%",
@@ -362,7 +362,7 @@
   {
     "Name": "Sun Ce",
     "Role": "Fighter/Tank",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Te1nmDGP.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Te1nmDGP.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "48.16%",
     "Pick Rate": "1.16%",
@@ -371,7 +371,7 @@
   {
     "Name": "Lu Bu",
     "Role": "Fighter/Tank",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/dXLF2kE7.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/dXLF2kE7.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "48.50%",
     "Pick Rate": "1.10%",
@@ -380,7 +380,7 @@
   {
     "Name": "Lady Zhen",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/gqPEOybC.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/gqPEOybC.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "51.86%",
     "Pick Rate": "1.10%",
@@ -389,7 +389,7 @@
   {
     "Name": "Heino",
     "Role": "Mage/Fighter",
-    "Image URL": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/YO6iwLAg.jpg?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/YO6iwLAg.jpg?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "49.58%",
     "Pick Rate": "1.02%",
@@ -398,7 +398,7 @@
   {
     "Name": "Liu Shan",
     "Role": "Support/Tank",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/i8WMjP6d.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/i8WMjP6d.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "49.55%",
     "Pick Rate": "1.05%",
@@ -407,7 +407,7 @@
   {
     "Name": "Kui",
     "Role": "Support/Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/wRGzV266.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/wRGzV266.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "49.66%",
     "Pick Rate": "1.00%",
@@ -416,7 +416,7 @@
   {
     "Name": "Di Renjie",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XTSDAJkR.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XTSDAJkR.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "53.54%",
     "Pick Rate": "1.03%",
@@ -425,7 +425,7 @@
   {
     "Name": "Gan & Mo",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ui5UKQex.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ui5UKQex.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "51.44%",
     "Pick Rate": "0.96%",
@@ -434,7 +434,7 @@
   {
     "Name": "Yixing",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/RLA5jvBk.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/RLA5jvBk.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "52.63%",
     "Pick Rate": "0.96%",
@@ -443,7 +443,7 @@
   {
     "Name": "Musashi",
     "Role": "Fighter",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/jgvSlz3u.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/jgvSlz3u.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "46.68%",
     "Pick Rate": "0.98%",
@@ -452,7 +452,7 @@
   {
     "Name": "Kaizer",
     "Role": "Fighter/Tank",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/xUdtJiLO.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/xUdtJiLO.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "49.34%",
     "Pick Rate": "0.98%",
@@ -461,7 +461,7 @@
   {
     "Name": "Lian Po",
     "Role": "Tank",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/csLOp1dL.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/csLOp1dL.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "50.08%",
     "Pick Rate": "0.95%",
@@ -470,7 +470,7 @@
   {
     "Name": "Princess Frost",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/lhZtGJlg.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/lhZtGJlg.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "49.08%",
     "Pick Rate": "0.92%",
@@ -479,7 +479,7 @@
   {
     "Name": "Agudo",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/TYN9rh81.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/TYN9rh81.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "48.54%",
     "Pick Rate": "0.85%",
@@ -488,7 +488,7 @@
   {
     "Name": "Han Xin",
     "Role": "Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/QTcSGEgM.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/QTcSGEgM.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "51.07%",
     "Pick Rate": "0.80%",
@@ -497,7 +497,7 @@
   {
     "Name": "Zilong",
     "Role": "Fighter/Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/9xqbsAQC.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/9xqbsAQC.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "51.28%",
     "Pick Rate": "0.87%",
@@ -506,7 +506,7 @@
   {
     "Name": "Fang",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/6dGNjKTe.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/6dGNjKTe.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "46.72%",
     "Pick Rate": "0.85%",
@@ -515,7 +515,7 @@
   {
     "Name": "Xiang Yu",
     "Role": "Tank",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/FLyy9J46.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/FLyy9J46.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "52.31%",
     "Pick Rate": "0.85%",
@@ -524,7 +524,7 @@
   {
     "Name": "Luna",
     "Role": "Fighter/Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hz3BqNue.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hz3BqNue.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "49.20%",
     "Pick Rate": "0.79%",
@@ -533,7 +533,7 @@
   {
     "Name": "Ming",
     "Role": "Support",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ubeT1R84.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ubeT1R84.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "51.32%",
     "Pick Rate": "0.74%",
@@ -542,7 +542,7 @@
   {
     "Name": "Shouyue",
     "Role": "Marksman/Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/4bUKKH66.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/4bUKKH66.png?imageMogr2/thumbnail/240x",
     "Tier": "B",
     "Win Rate": "47.78%",
     "Pick Rate": "0.74%",
@@ -551,7 +551,7 @@
   {
     "Name": "Gao",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/QWFCuWNn.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/QWFCuWNn.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "53.09%",
     "Pick Rate": "0.70%",
@@ -560,7 +560,7 @@
   {
     "Name": "Zhuangzi",
     "Role": "Support/Tank",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/UZC54GWu.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/UZC54GWu.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "47.77%",
     "Pick Rate": "0.60%",
@@ -569,7 +569,7 @@
   {
     "Name": "Allain",
     "Role": "Fighter",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ek9OHopQ.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ek9OHopQ.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "49.72%",
     "Pick Rate": "0.69%",
@@ -578,7 +578,7 @@
   {
     "Name": "Zhang Fei",
     "Role": "Support/Tank",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/w0QS7N1L.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/w0QS7N1L.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "49.58%",
     "Pick Rate": "0.67%",
@@ -587,7 +587,7 @@
   {
     "Name": "Butterfly",
     "Role": "Fighter",
-    "Image URL": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/FPq2P4ew.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/FPq2P4ew.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "49.82%",
     "Pick Rate": "0.64%",
@@ -596,7 +596,7 @@
   {
     "Name": "Biron",
     "Role": "Fighter/Tank",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/F3A0JkoT.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/F3A0JkoT.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "48.17%",
     "Pick Rate": "0.66%",
@@ -605,7 +605,7 @@
   {
     "Name": "Charlotte",
     "Role": "Fighter",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/iIwO0Kwk.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/iIwO0Kwk.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "44.91%",
     "Pick Rate": "0.64%",
@@ -614,7 +614,7 @@
   {
     "Name": "Nakoruru",
     "Role": "Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/H9WAmWdN.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/H9WAmWdN.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "50.39%",
     "Pick Rate": "0.62%",
@@ -623,7 +623,7 @@
   {
     "Name": "Mayene",
     "Role": "Fighter",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/FsGXCnH1.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/FsGXCnH1.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "47.77%",
     "Pick Rate": "0.57%",
@@ -632,7 +632,7 @@
   {
     "Name": "Wuyan",
     "Role": "Fighter/Tank",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/D1f9UN1O.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/D1f9UN1O.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "52.72%",
     "Pick Rate": "0.56%",
@@ -641,7 +641,7 @@
   {
     "Name": "Yao",
     "Role": "Fighter/Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/xw0HrvxD.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/xw0HrvxD.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "47.56%",
     "Pick Rate": "0.57%",
@@ -650,7 +650,7 @@
   {
     "Name": "Li Bai",
     "Role": "Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/k3w1wjDA.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/k3w1wjDA.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "49.57%",
     "Pick Rate": "0.56%",
@@ -659,7 +659,7 @@
   {
     "Name": "Zhou Yu",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/kqkpA18w.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/kqkpA18w.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "52.37%",
     "Pick Rate": "0.55%",
@@ -668,7 +668,7 @@
   {
     "Name": "Feyd",
     "Role": "Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/m8aOqFQE.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/m8aOqFQE.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "45.03%",
     "Pick Rate": "0.54%",
@@ -677,7 +677,7 @@
   {
     "Name": "Dr Bian",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/YmpeG9H2.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/YmpeG9H2.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "49.56%",
     "Pick Rate": "0.49%",
@@ -686,7 +686,7 @@
   {
     "Name": "Huang Zhong",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/LNECT7PW.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/LNECT7PW.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "50.49%",
     "Pick Rate": "0.51%",
@@ -695,7 +695,7 @@
   {
     "Name": "Ying",
     "Role": "Fighter/Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/diRuUQDV.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/diRuUQDV.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "49.54%",
     "Pick Rate": "0.49%",
@@ -704,7 +704,7 @@
   {
     "Name": "Fuzi",
     "Role": "Fighter",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/UhQkVUBi.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/UhQkVUBi.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "48.85%",
     "Pick Rate": "0.49%",
@@ -713,7 +713,7 @@
   {
     "Name": "Shi",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/MjBadKpJ.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/MjBadKpJ.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "51.91%",
     "Pick Rate": "0.47%",
@@ -722,7 +722,7 @@
   {
     "Name": "Ata",
     "Role": "Tank",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/eafz1moy.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/eafz1moy.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "49.83%",
     "Pick Rate": "0.47%",
@@ -731,7 +731,7 @@
   {
     "Name": "Ukyo Tachibana",
     "Role": "Assassin/Fighter",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/8e9WRFgL.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/8e9WRFgL.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "49.35%",
     "Pick Rate": "0.47%",
@@ -740,7 +740,7 @@
   {
     "Name": "Shangguan",
     "Role": "Mage/Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/zyA68GFr.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/zyA68GFr.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "46.83%",
     "Pick Rate": "0.48%",
@@ -749,7 +749,7 @@
   {
     "Name": "Guiguzi",
     "Role": "Support",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/AXjJlMvi.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/AXjJlMvi.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "47.29%",
     "Pick Rate": "0.42%",
@@ -758,7 +758,7 @@
   {
     "Name": "Mulan",
     "Role": "Fighter/Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/p4dfuWXS.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/p4dfuWXS.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "48.86%",
     "Pick Rate": "0.43%",
@@ -767,7 +767,7 @@
   {
     "Name": "Dharma",
     "Role": "Fighter/Tank",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/9u997w0x.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/9u997w0x.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "51.90%",
     "Pick Rate": "0.41%",
@@ -776,7 +776,7 @@
   {
     "Name": "Liu Bei",
     "Role": "Fighter",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/argPlTxR.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/argPlTxR.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "51.48%",
     "Pick Rate": "0.39%",
@@ -785,7 +785,7 @@
   {
     "Name": "Liu Bang",
     "Role": "Tank/Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/bVHGeH45.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/bVHGeH45.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "49.34%",
     "Pick Rate": "0.39%",
@@ -794,7 +794,7 @@
   {
     "Name": "Meng Ya",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/vhBTA9jh.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/vhBTA9jh.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "50.76%",
     "Pick Rate": "0.38%",
@@ -803,7 +803,7 @@
   {
     "Name": "Yuhuan",
     "Role": "Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/r97AVgaV.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/r97AVgaV.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "46.52%",
     "Pick Rate": "0.38%",
@@ -812,7 +812,7 @@
   {
     "Name": "Nezha",
     "Role": "Fighter",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/WDh84DWg.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/WDh84DWg.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "48.42%",
     "Pick Rate": "0.37%",
@@ -821,7 +821,7 @@
   {
     "Name": "Cirrus",
     "Role": "Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/bwygx1aS.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/bwygx1aS.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "52.05%",
     "Pick Rate": "0.33%",
@@ -830,7 +830,7 @@
   {
     "Name": "Sun Bin",
     "Role": "Support/Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/1zkBQ1l1.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/1zkBQ1l1.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "47.17%",
     "Pick Rate": "0.34%",
@@ -839,7 +839,7 @@
   {
     "Name": "Yang Jian",
     "Role": "Fighter",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/LntokS4z.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/LntokS4z.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "49.69%",
     "Pick Rate": "0.32%",
@@ -848,7 +848,7 @@
   {
     "Name": "Menki",
     "Role": "Fighter/Mage",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ym7KcrIW.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ym7KcrIW.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "51.82%",
     "Pick Rate": "0.30%",
@@ -857,7 +857,7 @@
   {
     "Name": "Jing",
     "Role": "Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/HVRw4cpB.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/HVRw4cpB.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "44.46%",
     "Pick Rate": "0.28%",
@@ -866,7 +866,7 @@
   {
     "Name": "Pei",
     "Role": "Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XlRczGYM.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XlRczGYM.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "48.31%",
     "Pick Rate": "0.22%",
@@ -875,7 +875,7 @@
   {
     "Name": "Guan Yu",
     "Role": "Fighter",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/V5e2k18Z.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/V5e2k18Z.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "44.27%",
     "Pick Rate": "0.19%",
@@ -884,7 +884,7 @@
   {
     "Name": "Xuance",
     "Role": "Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/keW8Hfo0.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/keW8Hfo0.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "46.42%",
     "Pick Rate": "0.15%",
@@ -893,7 +893,7 @@
   {
     "Name": "Chano",
     "Role": "Marksman",
-    "Image URL": "https://camp.honorofkings.com/camp/admin/default/sJURXorM.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/camp/admin/default/sJURXorM.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "57.50%",
     "Pick Rate": "0.00%",
@@ -902,7 +902,7 @@
   {
     "Name": "Athena",
     "Role": "Fighter/Assassin",
-    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/BEh6QC3Q.png?imageMogr2/thumbnail/128x",
+    "Image URL": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/BEh6QC3Q.png?imageMogr2/thumbnail/240x",
     "Tier": "C",
     "Win Rate": "49.20%",
     "Pick Rate": "0.07%",

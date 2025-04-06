@@ -8,7 +8,7 @@ const Navigation = () => {
                 {/* Hok Link */}
                 <Link to="/" className="block px-4 py-2 text-sm w-fit hover:bg-[#191937]">
                     <div>
-                        L-Draft.gg
+                        Hok-Draft
                     </div>
                 </Link>
 

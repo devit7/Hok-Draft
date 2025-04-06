@@ -1,11 +1,16 @@
-
 import { Link } from "react-router";
 
 const Home = () => {
     return (
         <div className="min-h-screen bg-[#070720] text-white">
-            {/* Hero Banner */}
-            <section className="relative py-20 px-4 bg-gradient-to-r from-[#0D0D28] to-[#1E1E3F] overflow-hidden">
+            {/* Hero Banner with Background Image */}
+            <section className="relative py-24 px-4 overflow-hidden bg-cover bg-center"
+                style={{
+                    backgroundImage: "url('/146-bigskin-8.jpg')"
+                }}>
+                {/* Dark overlay for better text readability */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#070720]/90 to-[#1E1E3F]/70"></div>
+
                 <div className="max-w-6xl mx-auto relative z-10">
                     <h1 className="text-4xl md:text-6xl font-bold mb-4 text-blue-400">
                         Honor of Kings <span className="text-white">Draft Simulator</span>
@@ -23,12 +28,8 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* Background decoration */}
-                <div className="absolute top-0 right-0 w-1/3 h-full opacity-10">
-                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#4F46E5" d="M40.9,-68.5C52.3,-62.5,60.5,-50.1,67.1,-37.1C73.7,-24.1,78.7,-10.5,76.8,2.1C75,14.7,66.2,26.3,57.4,37.9C48.6,49.4,39.8,61,27.8,68.5C15.9,76,0,79.5,-15.9,77.7C-31.7,76,-47.5,69,-60.2,57.5C-72.9,46,-82.5,30,-85.9,12.5C-89.4,-5.1,-86.7,-24,-77.4,-38.2C-68,-52.3,-52,-61.7,-37,-67.7C-21.9,-73.7,-7.8,-76.3,6.8,-76.8C21.3,-77.3,29.4,-74.5,40.9,-68.5Z" transform="translate(100 100)" />
-                    </svg>
-                </div>
+                {/* Optional decorative elements */}
+                <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-[#070720] to-transparent"></div>
             </section>
 
             {/* Main Menu Navigation */}
@@ -168,7 +169,7 @@ const Home = () => {
                         <div className="bg-[#0D0D28] border border-[#191937] rounded-lg overflow-hidden hover:border-red-500 transition-colors">
                             <div className="h-3 bg-red-600"></div>
                             <div className="p-6">
-                                
+
                                 <h3 className="text-xl font-bold mb-3 flex items-center">
                                     AI Draft
                                     <span className="ml-2 px-2 py-1 text-xs bg-red-900 text-red-300 rounded">Under Development</span>
