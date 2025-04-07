@@ -36,26 +36,26 @@ const Navigation = () => {
 
     return (
         <>
-            <div className="w-full bg-[#0D0D28] text-white border-b border-[#191937] px-16 flex justify-between">
+            <div className="w-full bg-[#0D0D28] text-white border-b border-[#191937] px-4 md:px-16 flex justify-between">
                 <div className="flex items-center  w-full ">
                     {/* Hok Link */}
-                    <Link to="/" className="block px-4 py-2 text-sm w-fit hover:bg-[#191937]">
+                    <Link to="/" className="hidden md:block px-4 py-2 text-sm w-fit hover:bg-[#191937]">
                         <div>
                             Hok-Draft
                         </div>
                     </Link>
 
                     {/* Hok Link */}
-                    <Link to="/hok" className="block px-4 py-2 text-sm w-fit bg-[#191937]">
+                    <Link to="/hok"  className="block px-4 py-2 text-sm w-fit bg-[#191937]">
                         <div>
                             <img src="/Honor_of_Kings_logo.png" alt="" className="w-[18px] h-[18px] inline-block mr-2" />
                             Honor Of Kings
                         </div>
                     </Link>
                 </div>
-                <div className="hidden md:flex text-sm items-center gap-2 w-44 justify-end">
+                <div className="flex text-sm items-center gap-2 w-44 justify-end">
                     {/* Text with gradient animation */}
-                    <span style={gradientStyle}>Made By Mpiie 💖</span>
+                    <Link to="/" style={gradientStyle}>Made By Mpiie 💖</Link>
                 </div>
             </div>
         </>
