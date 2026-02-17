@@ -25,7 +25,7 @@ const features = [
     title: "Characters",
     description: "Explore all heroes, their roles, and stats.",
     icon: Users,
-    link: "/honor-of-kings/hero-list", // Assuming this path, user can correct
+    link: "/honor-of-kings", // Assuming this path, user can correct
     className: "md:col-span-1",
     accent: "#3b82f6",
     image: "/asset/feature/caharacters.png",
