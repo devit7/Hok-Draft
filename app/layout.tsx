@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: "Honor of Kings Draft Simulator",
     images: [
       {
-        url: "/146-bigskin-8.png",
+        url: "/146-bigskin-8.jpg",
         width: 1200,
         height: 630,
         alt: "Honor of Kings Draft Simulator",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: "Honor of Kings Draft Simulator | hok-draft.web.id",
     description:
       "Master your Honor of Kings drafting strategy with our comprehensive simulation tools. Create tier lists, analyze heroes, and practice different draft formats.",
-    images: ["/146-bigskin-8.png"],
+    images: ["/146-bigskin-8.jpg"],
     creator: "@hok_draft",
   },
   robots: {
