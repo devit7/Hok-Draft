@@ -63,12 +63,7 @@ export default function HeroListPage() {
 
       {/* Hero Grid */}
       <div>
-        <div
-          className="mt-8 grid grid-cols-2 md:grid-cols-none gap-6"
-          style={{
-            gridTemplateColumns: "repeat(auto-fill, minmax(170px, 1fr))",
-          }}
-        >
+        <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 gap-6">
           {filteredHeroes.map((hero) => (
             <ToolTipHeroCard key={hero.heroId} hero={hero}>
               <HeroCard

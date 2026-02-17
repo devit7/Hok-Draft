@@ -48,7 +48,7 @@ export default function DraftPickPage() {
 
       <DraftConfigPanel />
 
-      <div ref={exportRef} className="bg-d-background p-2 sm:p-4 rounded-xs">
+      <div ref={exportRef} className="bg-d-background sm:p-4 rounded-xs">
         <div className="space-y-12">
           {matches.map((match, index) => (
             <DraftMatchBoard key={match.id} matchIndex={index} />
