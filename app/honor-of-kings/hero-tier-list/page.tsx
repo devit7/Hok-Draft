@@ -31,19 +31,23 @@ export default function HeroTierListPage() {
       </div> */}
       <div className="mt-15 mb-5 text-sm flex gap-2">
         made by @admin
-        <span className="text-gray-400">
-          13 Feb 2026, 18:57 WIB
-        </span>
+        <span className="text-gray-400">13 Feb 2026, 18:57 WIB</span>
       </div>
+      
+      <div className="min-w-97.5 overflow-x-auto">
+        {/* Role column header */}
+        <TierRoleColumnHeader roleFilter={roleFilter} />
 
-      {/* Role column header */}
-      <TierRoleColumnHeader roleFilter={roleFilter} />
-
-      {/* Tiers */}
-      <div className="space-y-0">
-        {tiers.map((tier) => (
-          <StaticTierRow key={tier.label} tier={tier} roleFilter={roleFilter} />
-        ))}
+        {/* Tiers */}
+        <div className="space-y-0">
+          {tiers.map((tier) => (
+            <StaticTierRow
+              key={tier.label}
+              tier={tier}
+              roleFilter={roleFilter}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Watermark */}

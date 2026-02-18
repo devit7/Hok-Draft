@@ -27,7 +27,7 @@ const TierRoleColumnHeader = ({
 
   return (
     <div className="flex gap-0 items-stretch mb-5">
-      <div className="min-w-15 shrink-0" />
+      <div className="min-w-11 sm:min-w-14 shrink-0" />
       <div
         className="flex-1 grid gap-0.5"
         style={{

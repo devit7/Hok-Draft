@@ -349,7 +349,7 @@ function Page() {
       <div className="mx-auto p-0 md:p-8">
         <div className="mb-6">
           <div className="text-2xl font-medium">Custom Tier List</div>
-          <span className="text-sm">Create your own tier list.</span>
+          <span className="text-sm">Create your own tier list. ( ui not mobile friendly)</span>
         </div>
 
         {/* Filter + Actions */}

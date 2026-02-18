@@ -81,7 +81,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-14 left-0 w-full bg-d-primary border-b border-d-primary-surface z-50 flex flex-col shadow-xl">
+        <div className="md:hidden absolute top-11 left-0 w-full bg-d-primary border-b border-d-primary-surface z-50 flex flex-col shadow-xl">
           <Link
             href="/"
             className={`px-6 py-4 text-sm hover:bg-d-primary-surface border-b border-white/5 ${

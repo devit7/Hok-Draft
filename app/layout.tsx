@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navigation/navbar";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { TouchProvider } from "@/components/ui/hyprid-tooltip";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -128,10 +129,12 @@ export default function RootLayout({
       </head>
       <body className={`antialiased bg-d-primary text-white`}>
         <TooltipProvider>
+          <TouchProvider>
           <div>
             <Navbar />
             <div className="mx-2 lg:mx-20">{children}</div>
           </div>
+          </TouchProvider>
         </TooltipProvider>
       </body>
     </html>

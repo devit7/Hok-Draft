@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/tooltip";
 import { Hero } from "./types";
 import { HERO_EXPERIENCE } from "@/static-database/hero";
+import { HybridTooltip, HybridTooltipContent, HybridTooltipTrigger } from "../ui/hyprid-tooltip";
 
 interface ToolTipHeroCardProps {
   children: React.ReactNode;
@@ -34,13 +35,13 @@ export const ToolTipHeroCard = ({ children, hero }: ToolTipHeroCardProps) => {
   const experienceColor = experienceData?.color || "bg-blue-400";
 
   return (
-    <Tooltip
+    <HybridTooltip
       open={isOpen}
       onOpenChange={setIsOpen}
       delayDuration={0}
-      disableHoverableContent={!isMobile}
+      // disableHoverableContent={!isMobile}
     >
-      <TooltipTrigger
+      <HybridTooltipTrigger
         onClick={(e) => {
           if (isMobile) {
             e.preventDefault();
@@ -49,9 +50,9 @@ export const ToolTipHeroCard = ({ children, hero }: ToolTipHeroCardProps) => {
         }}
       >
         {children}
-      </TooltipTrigger>
-      <TooltipContent side="top">
-        <div className="w-sm">
+      </HybridTooltipTrigger>
+      <HybridTooltipContent side="top">
+        <div className="w-85 sm:w-sm">
           {/* BannerImage */}
           <div className="relative">
             <Image
@@ -129,7 +130,7 @@ export const ToolTipHeroCard = ({ children, hero }: ToolTipHeroCardProps) => {
             )}
           </div>
         </div>
-      </TooltipContent>
-    </Tooltip>
+      </HybridTooltipContent>
+    </HybridTooltip>
   );
 };
