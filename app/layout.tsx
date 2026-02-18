@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navigation/navbar";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { TouchProvider } from "@/components/ui/hyprid-tooltip";
-
+import { Analytics } from '@vercel/analytics/next';
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
 //   subsets: ["latin"],
@@ -133,6 +133,7 @@ export default function RootLayout({
           <div>
             <Navbar />
             <div className="mx-2 lg:mx-20">{children}</div>
+            <Analytics />
           </div>
           </TouchProvider>
         </TooltipProvider>
