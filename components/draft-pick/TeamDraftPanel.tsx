@@ -23,7 +23,7 @@ export default function TeamDraftPanel({
 
   return (
     <div
-      className={`flex flex-col gap-4 p-4 rounded-xs `}
+      className={`flex flex-col gap-4 rounded-xs `}
     >
       <div
         className={`flex justify-between items-center px-2 py-1 ${bgColor} ${isBlue ? "flex-row" : "flex-row-reverse"}`}
