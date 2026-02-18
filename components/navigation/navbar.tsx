@@ -56,6 +56,15 @@ const Navbar = () => {
           >
             <span>🆘 Support Admin</span>
           </Link>
+
+          <Link
+            href="/promote"
+            className={`px-4 p-2.5 text-sm hover:bg-d-primary-surface transition-colors ${
+              path.startsWith("/promote") ? "bg-d-primary-surface" : ""
+            }`}
+          >
+            <span>🎀 Promote</span>
+          </Link>
         </div>
 
         {/* Brand Name (Visible on Mobile Center/Right) or Footer Text */}
@@ -107,6 +116,16 @@ const Navbar = () => {
             onClick={() => setIsMenuOpen(false)}
           >
             <span>🆘 Support Admin</span>
+          </Link>
+
+          <Link
+            href="/promote"
+            className={`px-6 py-4 text-sm hover:bg-d-primary-surface ${
+              path.startsWith("/promote") ? "bg-d-primary-surface" : ""
+            }`}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <span>🎀 Promote</span>
           </Link>
         </div>
       )}
