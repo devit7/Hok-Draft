@@ -35,6 +35,10 @@ export default function CounterPickMakerPage() {
     "Btw You Can Customize This Title :]",
   );
 
+  // Export loading state
+  const [isExporting, setIsExporting] = useState(false);
+  const [exportProgress, setExportProgress] = useState(0);
+
   const exportRef = useRef<HTMLDivElement>(null);
 
   // Load from localStorage
@@ -115,18 +119,47 @@ export default function CounterPickMakerPage() {
 
   // Export to image
   const handleExport = async () => {
-    if (!exportRef.current) return;
+    if (!exportRef.current || isExporting) return;
+
+    setIsExporting(true);
+    setExportProgress(0);
+
     try {
+      // Track progress
+      let nodeCount = 0;
+      const totalNodes = exportRef.current.querySelectorAll("*").length;
+
       const dataUrl = await domToPng(exportRef.current, {
         backgroundColor: "#0a0a0a",
         scale: 2,
+        onCloneNode: (clonedNode) => {
+          nodeCount++;
+          const progress = Math.min(
+            Math.round((nodeCount / totalNodes) * 90),
+            90,
+          );
+          setExportProgress(progress);
+        },
       });
+
+      setExportProgress(95);
+
       const link = document.createElement("a");
       link.download = "counter-pick-list.png";
       link.href = dataUrl;
       link.click();
+
+      setExportProgress(100);
+
+      // Reset after delay
+      setTimeout(() => {
+        setIsExporting(false);
+        setExportProgress(0);
+      }, 1000);
     } catch (err) {
       console.error("Export failed:", err);
+      setIsExporting(false);
+      setExportProgress(0);
     }
   };
 
@@ -200,28 +233,46 @@ export default function CounterPickMakerPage() {
         />
 
         {/* Action Buttons */}
-        <div className="flex gap-2 flex-wrap w-full md:w-auto">
-          <div
-            className="flex-1 md:flex-none px-4 py-2 flex items-center justify-center gap-2 text-center bg-green-500/50 rounded-xs text-green-100 cursor-pointer hover:bg-green-500/70 transition-colors duration-200 text-sm font-medium"
-            onClick={handleExport}
-          >
-            <Download size={16} />
-            <span className="whitespace-nowrap">Export Image</span>
+        <div className="flex flex-col gap-2 w-full md:w-auto">
+          <div className="flex gap-2 flex-wrap w-full md:w-auto">
+            <div
+              className={`flex-1 md:flex-none px-4 py-2 flex items-center justify-center gap-2 text-center rounded-xs text-sm font-medium transition-colors duration-200 ${
+                isExporting
+                  ? "bg-green-500/30 text-green-300 cursor-wait"
+                  : "bg-green-500/50 text-green-100 cursor-pointer hover:bg-green-500/70"
+              }`}
+              onClick={handleExport}
+            >
+              <Download size={16} />
+              <span className="whitespace-nowrap">
+                {isExporting ? `Exporting ${exportProgress}%` : "Export Image"}
+              </span>
+            </div>
+            <div
+              className="flex-1 md:flex-none px-4 py-2 flex items-center justify-center gap-2 text-center bg-purple-500/50 rounded-xs text-purple-100 cursor-pointer hover:bg-purple-500/70 transition-colors duration-200 text-sm font-medium"
+              onClick={handleExportData}
+            >
+              <FileCode size={16} />
+              <span className="whitespace-nowrap">Export Data</span>
+            </div>
+            <div
+              className="flex-1 md:flex-none px-4 py-2 flex items-center justify-center gap-2 text-center bg-blue-500/50 rounded-xs text-blue-100 cursor-pointer hover:bg-blue-500/70 transition-colors duration-200 text-sm font-medium"
+              onClick={handleReset}
+            >
+              <RotateCcw size={16} />
+              Reset
+            </div>
           </div>
-          <div
-            className="flex-1 md:flex-none px-4 py-2 flex items-center justify-center gap-2 text-center bg-purple-500/50 rounded-xs text-purple-100 cursor-pointer hover:bg-purple-500/70 transition-colors duration-200 text-sm font-medium"
-            onClick={handleExportData}
-          >
-            <FileCode size={16} />
-            <span className="whitespace-nowrap">Export Data</span>
-          </div>
-          <div
-            className="flex-1 md:flex-none px-4 py-2 flex items-center justify-center gap-2 text-center bg-blue-500/50 rounded-xs text-blue-100 cursor-pointer hover:bg-blue-500/70 transition-colors duration-200 text-sm font-medium"
-            onClick={handleReset}
-          >
-            <RotateCcw size={16} />
-            Reset
-          </div>
+
+          {/* Progress Bar */}
+          {isExporting && (
+            <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden">
+              <div
+                className="h-full bg-gradient-to-r from-green-500 to-green-400 transition-all duration-300 ease-out"
+                style={{ width: `${exportProgress}%` }}
+              />
+            </div>
+          )}
         </div>
       </div>
 

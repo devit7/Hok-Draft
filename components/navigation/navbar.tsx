@@ -74,7 +74,7 @@ const Navbar = () => {
             href="/"
             className="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse font-bold hover:opacity-80 transition-opacity whitespace-nowrap text-xs md:text-sm"
           >
-            Made By Mpiie 💖
+            HOK-DRAFT
           </Link>
         </div>
       </div>

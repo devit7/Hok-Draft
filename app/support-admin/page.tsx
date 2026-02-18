@@ -2,7 +2,7 @@
 
 const Page = () => {
   return (
-    <div className="min-h-[60vh] flex flex-col items-center justify-center p-8 w-full max-w-2xl mx-auto">
+    <div className="min-h-[60vh] flex flex-col items-center justify-center sm:p-8 w-full max-w-2xl mx-auto">
       <div className="bg-d-primary-surface/50 border border-white/5 p-8  flex flex-col items-center text-center shadow-lg w-full">
         <h1 className="text-2xl font-semibold mb-2 ">Support Admin</h1>
         <p className="text-gray-400 mb-8 max-w-md text-sm leading-relaxed">
