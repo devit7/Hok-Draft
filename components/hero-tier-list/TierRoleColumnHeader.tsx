@@ -19,7 +19,7 @@ const TierRoleColumnHeader = ({
             width={16}
             height={16}
           />
-          <span>{selectedRole.role}</span>
+          <span>{selectedRole.role === "Class Lane" ? "Clash Lane" : selectedRole.role}</span>
         </div>
       </div>
     );
@@ -40,7 +40,7 @@ const TierRoleColumnHeader = ({
             className="flex items-center bg-d-primary-surface justify-center gap-1.5 py-2 text-xs text-gray-400 font-medium"
           >
             <Image src={role.icon} alt={role.role} width={16} height={16} />
-            <span className="hidden md:inline">{role.role}</span>
+            <span className="hidden md:inline">{role.role === "Class Lane" ? "Clash Lane" : role.role}</span>
           </div>
         ))}
       </div>
