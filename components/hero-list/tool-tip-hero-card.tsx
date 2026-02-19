@@ -9,7 +9,11 @@ import {
 } from "@/components/ui/tooltip";
 import { Hero } from "./types";
 import { HERO_EXPERIENCE } from "@/static-database/hero";
-import { HybridTooltip, HybridTooltipContent, HybridTooltipTrigger } from "../ui/hyprid-tooltip";
+import {
+  HybridTooltip,
+  HybridTooltipContent,
+  HybridTooltipTrigger,
+} from "../ui/hyprid-tooltip";
 
 interface ToolTipHeroCardProps {
   children: React.ReactNode;
@@ -27,7 +31,9 @@ export const ToolTipHeroCard = ({ children, hero }: ToolTipHeroCardProps) => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const roleNames = hero.role.map((r) => r.role).join(", ");
+  const roleNames = hero.role
+    .map((r) => (r.role === "Class Lane" ? "Clash Lane" : r.role))
+    .join(", ");
 
   const experienceData = HERO_EXPERIENCE.find(
     (exp) => exp.experience === hero.heroExperience,
