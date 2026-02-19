@@ -262,7 +262,10 @@ function Page() {
 
     // If dropped outside or back into pool, remove the item
     // (If it was from pool, we already cloned it at start, so we remove the dragged instance)
-    if (!over || over.id === POOL_ID) {
+    const overItem = items.find((item) => item.id === over?.id);
+    const isOverPoolItem = overItem && overItem.tierId === undefined;
+
+    if (!over || over.id === POOL_ID || isOverPoolItem) {
       setItems((prev) => prev.filter((item) => item.id !== activeId));
     }
   };
