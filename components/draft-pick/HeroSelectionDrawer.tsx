@@ -105,6 +105,7 @@ export default function HeroSelectionDrawer() {
         side="bottom"
         showCloseButton={false}
         className="h-[45vh] bg-d-primary border-t border-white/10 p-0 flex flex-col"
+        onOpenAutoFocus={(e) => e.preventDefault()}
       >
         <SheetHeader className="px-4 py-3 sm:px-6 sm:py-4 border-b border-white/5 bg-d-primary-surface/50">
           <SheetTitle className="text-white flex flex-col gap-2 sm:flex-row sm:justify-between sm:items-center">
