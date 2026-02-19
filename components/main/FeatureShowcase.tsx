@@ -19,7 +19,7 @@ const features = [
     link: "/honor-of-kings/draft-pick",
     className: "md:col-span-2",
     accent: "#8b5cf6",
-    image: "/asset/feature/draft-pick.png",
+    image: "/asset/feature/draft-pic.jpeg",
   },
   {
     title: "Characters",
@@ -28,7 +28,7 @@ const features = [
     link: "/honor-of-kings", // Assuming this path, user can correct
     className: "md:col-span-1",
     accent: "#3b82f6",
-    image: "/asset/feature/caharacters.png",
+    image: "/asset/feature/caharacter.jpeg",
   },
   {
     title: "Tier List Maker",
@@ -37,7 +37,7 @@ const features = [
     link: "/honor-of-kings/custom-tier-maker",
     className: "md:col-span-1",
     accent: "#f59e0b",
-    image: "/asset/feature/tierlist.png",
+    image: "/asset/feature/tierlis.jpeg",
   },
   {
     title: "Counter Pick Maker",
@@ -46,7 +46,7 @@ const features = [
     link: "/honor-of-kings/custom-counter-pick-maker",
     className: "md:col-span-2",
     accent: "#ef4444",
-    image: "/asset/feature/counter-pick.png",
+    image: "/asset/feature/counter-pic.jpeg",
   },
 ];
 
