@@ -29,7 +29,7 @@ const TierRoleHeader = ({ columns }: { columns: TierColumn[] }) => {
               />
             )}
             <span className="text-xs font-bold text-gray-300 uppercase tracking-wide">
-              {col.label}
+              {col.label === "Class Lane" ? "Clash Lane" : col.label.toUpperCase()}
             </span>
           </div>
         ))}
