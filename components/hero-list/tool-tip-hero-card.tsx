@@ -60,7 +60,7 @@ export const ToolTipHeroCard = ({ children, hero }: ToolTipHeroCardProps) => {
       <HybridTooltipContent side="top">
         <div className="w-85 sm:w-sm">
           {/* BannerImage */}
-          <div className="relative aspect-[4/3] min-h-[200px] overflow-hidden bg-gray-900">
+          <div className="relative max-h-22.25 overflow-hidden bg-gray-900">
             <Image
               src={hero.media.heroCover}
               alt={hero.heroName}
