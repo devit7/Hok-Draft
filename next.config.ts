@@ -14,8 +14,8 @@ const nextConfig: NextConfig = {
     ],
     // Use custom loader to bypass Vercel Image Optimization for external images
     // This prevents hitting the 5K transformations/month limit
-    // loader: "custom",
-    // loaderFile: "./lib/imageLoader.ts",
+    loader: "custom",
+    loaderFile: "./lib/imageLoader.ts",
   },
 };
 
