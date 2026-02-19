@@ -60,14 +60,14 @@ export const ToolTipHeroCard = ({ children, hero }: ToolTipHeroCardProps) => {
       <HybridTooltipContent side="top">
         <div className="w-85 sm:w-sm">
           {/* BannerImage */}
-          <div className="relative">
+          <div className="relative aspect-[4/3] min-h-[200px] overflow-hidden bg-gray-900">
             <Image
               src={hero.media.heroCover}
               alt={hero.heroName}
               width={300}
               height={300}
               loading="eager"
-              className="w-full h-auto object-cover opacity-90"
+              className="w-full h-full object-cover opacity-90"
             />
             {/* Gradient overlays from all sides */}
             <div className="absolute inset-0 pointer-events-none">
