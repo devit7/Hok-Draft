@@ -8,6 +8,9 @@ export default function PromotePage() {
       <h1 className="text-3xl font-bold text-center text-white">
         Promosi Jualan Admin {">///<"}
       </h1>
+      <p className="text-lg text-gray-300 text-center max-w-xl">
+        Lagi gk ada jualan, tapi saya open bikin web :]
+      </p>
       <div className="flex flex-col items-center space-y-4">
         <p className="text-lg text-gray-300">
           Hubungi Admin via:
@@ -34,7 +37,7 @@ export default function PromotePage() {
         </div>
       </div>
 
-      <div className="relative w-full max-w-2xl overflow-hidden rounded-sm shadow-xl">
+      {/* <div className="relative w-full max-w-2xl overflow-hidden rounded-sm shadow-xl">
         <Image
           src="/asset/promote/promote.png"
           alt="Promosi Jualan"
@@ -43,7 +46,7 @@ export default function PromotePage() {
           className="object-contain w-full h-auto"
           priority
         />
-      </div>
+      </div> */}
     </div>
   );
 }
