@@ -25,7 +25,7 @@ const TierItemContent = memo(
           outline: isDragging || isActive ? "2px solid #3b82f6" : "none",
         }}
       >
-        <div className="w-16 h-18 flex flex-col items-center relative overflow-hidden group">
+        <div className="w-16 h-20 flex flex-col items-center relative overflow-hidden group">
           <Image
             src={item.heroImage}
             alt={item.heroName || "Hero"}
@@ -33,7 +33,7 @@ const TierItemContent = memo(
             height={64}
             className={`w-full h-full object-cover transition-transform duration-300 opacity-75 hover:opacity-100 border-b-3 ${color}`}
           />
-          <span className="block text-gray-200 font-medium text-xs truncate w-16 text-center">
+          <span className="block text-gray-200 font-medium text-xs truncate w-16 h-5 text-center">
             {item.heroName}
           </span>
         </div>
