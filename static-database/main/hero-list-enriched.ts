@@ -40,7 +40,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/sfz2ijEz.jpg",
       heroIcon:
         "https://camp.honorofkings.com/camp/admin/hero/head_128-128/lkU98jAV.png",
-      heroBody: "002-Chicha.png",
+      heroBody: "002-Chicha.jpg",
     },
     heroExperience: "Intermediate",
     role: [
@@ -160,7 +160,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/IJ9g10Xb.jpg",
       heroIcon:
         "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/orlOit3f.png",
-      heroBody: "057-Milady.png",
+      heroBody: "057-Milady.jpg",
     },
     heroExperience: "Easy",
     role: [
@@ -491,7 +491,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/zcwILxiZ.jpg",
       heroIcon:
         "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/paTVVlNq.png",
-      heroBody: "055-Xiao Qiao.png",
+      heroBody: "055-Xiao Qiao.jpg",
     },
     heroExperience: "Easy",
     role: [
@@ -908,7 +908,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/MUNGLxW8.jpg",
       heroIcon:
         "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/xUdtJiLO.png",
-      heroBody: "058-Kaizer.png",
+      heroBody: "058-Kaizer.jpg",
     },
     heroExperience: "Easy",
     role: [
@@ -1106,7 +1106,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/vPYOOxP5.jpg",
       heroIcon:
         "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/jgvSlz3u.png",
-      heroBody: "033-Musashi.png",
+      heroBody: "033-Musashi.jpg",
     },
     heroExperience: "Intermediate",
     role: [
@@ -1187,7 +1187,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/SEhYI41B.jpg",
       heroIcon:
         "https://camp.honorofkings.com/camp/admin/hero/head_128-128/WuG07My1.jpeg",
-      heroBody: "008-Flowborn (Marksman).png",
+      heroBody: "008-Flowborn (Marksman).jpg",
     },
     heroExperience: "Easy",
     role: [
@@ -1852,7 +1852,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/1gYFx4kN.jpg",
       heroIcon:
         "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/4jaM0F19.png",
-      heroBody: "041-Mai Shiranui.JPG",
+      heroBody: "041-Mai Shiranui.jpg",
     },
     heroExperience: "Intermediate",
     role: [
@@ -1914,7 +1914,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/6oVEfw6S.jpg",
       heroIcon:
         "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/iIwO0Kwk.png",
-      heroBody: "042-Charlotte.JPG",
+      heroBody: "042-Charlotte.jpg",
     },
     heroExperience: "Intermediate",
     role: [
@@ -2038,7 +2038,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/IhExpUrR.jpg",
       heroIcon:
         "https://camp.honorofkings.com/camp/admin/hero/head_128-128/jbrX5mQc.jpeg",
-      heroBody: "010-Flowborn (Tank).png",
+      heroBody: "010-Flowborn (Tank).jpg",
     },
     heroExperience: "Easy",
     role: [
@@ -2101,7 +2101,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/XVz3ScF3.jpg",
       heroIcon:
         "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/H9WAmWdN.png",
-      heroBody: "040-Nakoruru.JPG",
+      heroBody: "040-Nakoruru.jpg",
     },
     heroExperience: "Easy",
     role: [
@@ -2151,7 +2151,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/cv4BFURQ.jpg",
       heroIcon:
         "https://camp.honorofkings.com/camp/admin/hero/head_128-128/66xErXNs.jpeg",
-      heroBody: "006-Flowborn (Mage).png",
+      heroBody: "006-Flowborn (Mage).jpg",
     },
     heroExperience: "Easy",
     role: [
@@ -2262,7 +2262,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/VLdAOWEU.jpg",
       heroIcon:
         "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/eafz1moy.png",
-      heroBody: "059-Ata.png",
+      heroBody: "059-Ata.jpg",
     },
     heroExperience: "Easy",
     role: [
@@ -2353,7 +2353,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/sLRXwXQN.jpg",
       heroIcon:
         "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/TYN9rh81.png",
-      heroBody: "053-Agudo.png",
+      heroBody: "053-Agudo.jpg",
     },
     heroExperience: "Easy",
     role: [
@@ -2561,7 +2561,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Uvn9VDp3.jpg",
       heroIcon:
         "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/argPlTxR.png",
-      heroBody: "046-Liu Bei.png",
+      heroBody: "046-Liu Bei.jpg",
     },
     heroExperience: "Easy",
     role: [
@@ -2667,7 +2667,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/2mct7rWz.jpg",
       heroIcon:
         "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/8e9WRFgL.png",
-      heroBody: "039-Ukyo Tachibana.JPG",
+      heroBody: "039-Ukyo Tachibana.jpg",
     },
     heroExperience: "Intermediate",
     role: [
@@ -2999,7 +2999,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/oCCtEU9x.jpg",
       heroIcon:
         "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/HVRw4cpB.png",
-      heroBody: "056-Jing.png",
+      heroBody: "056-Jing.jpg",
     },
     heroExperience: "Advanced",
     role: [
