@@ -26,7 +26,7 @@ const ColumnCell = ({
   return (
     <div
       ref={setNodeRef}
-      className="flex flex-wrap items-start content-start gap-2 p-1.5 min-h-16 transition-colors"
+      className="flex flex-wrap items-start content-start gap-2 p-1.5 min-h-24 transition-colors"
       style={{
         backgroundColor: isOver ? color + "44" : color + "11",
       }}

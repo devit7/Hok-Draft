@@ -265,9 +265,44 @@ function Page() {
     const overItem = items.find((item) => item.id === over?.id);
     const isOverPoolItem = overItem && overItem.tierId === undefined;
 
-    if (!over || over.id === POOL_ID || isOverPoolItem) {
-      setItems((prev) => prev.filter((item) => item.id !== activeId));
-    }
+    setItems((prev) => {
+      let nextItems = prev;
+
+      // If dropped outside or back into pool, remove the item
+      if (!over || over.id === POOL_ID || isOverPoolItem) {
+        nextItems = nextItems.filter((item) => item.id !== activeId);
+      }
+
+      // Deduplicate pool items: Ensure only one copy of each heroId exists in the pool
+      const seenHeroIds = new Set<unknown>();
+      return nextItems.filter((item) => {
+        // Always keep items in tiers
+        if (item.tierId !== undefined) return true;
+
+        // For pool items, only keep the first occurrence of each heroId
+        if (seenHeroIds.has(item.heroId)) {
+          return false;
+        }
+        seenHeroIds.add(item.heroId);
+        return true;
+      });
+    });
+  };
+
+  const handleDragCancel = () => {
+    setActiveItem(undefined);
+    setItems((prev) => {
+      // Deduplicate pool items to clean up any clones created during drag start
+      const seenHeroIds = new Set<unknown>();
+      return prev.filter((item) => {
+        if (item.tierId !== undefined) return true;
+        if (seenHeroIds.has(item.heroId)) {
+          return false;
+        }
+        seenHeroIds.add(item.heroId);
+        return true;
+      });
+    });
   };
 
   // --- Export ---
@@ -452,6 +487,7 @@ function Page() {
           onDragStart={handleDragStart}
           onDragOver={handleDragOver}
           onDragEnd={handleDragEnd}
+          onDragCancel={handleDragCancel}
         >
           {/* Export area */}
           <div ref={exportRef}>
