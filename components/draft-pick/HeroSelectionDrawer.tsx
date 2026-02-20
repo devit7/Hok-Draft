@@ -133,7 +133,7 @@ export default function HeroSelectionDrawer() {
                 placeholder="Search hero..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                autoFocus
+                autoFocus={false}
               />
             </div>
           </SheetTitle>
