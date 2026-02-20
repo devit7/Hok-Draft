@@ -115,7 +115,7 @@ export default function HeroSelectionDrawer() {
                 <span className="text-xs sm:text-sm font-normal text-gray-400">
                   for{" "}
                   <span
-                    className={`uppercase font-bold ${selectingSlot.team === "blue" ? "text-blue-400" : "text-red-400"}`}
+                    className={`uppercase font-bold ${selectingSlot.team === "A" ? "text-blue-400" : "text-red-400"}`}
                   >
                     {selectingSlot.team}
                   </span>{" "}
