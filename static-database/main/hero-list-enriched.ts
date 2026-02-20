@@ -1914,7 +1914,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/6oVEfw6S.jpg",
       heroIcon:
         "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/iIwO0Kwk.png",
-      heroBody: "042-Charlotte.jpg",
+      heroBody: "042-charlotte.jpg",
     },
     heroExperience: "Intermediate",
     role: [
