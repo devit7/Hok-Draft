@@ -44,6 +44,7 @@ export default function HeroSelectionDrawer() {
       return new Set<number>();
 
     const { matchIndex, team } = selectingSlot;
+    const teamKey = team === "A" ? "blue" : "red";
     const ids = new Set<number>();
 
     // Iterate through all matches BEFORE the current one
@@ -51,7 +52,7 @@ export default function HeroSelectionDrawer() {
       const match = matches[i];
       // GBP applies to PICKS only? Usually yes.
       // If a hero was PICKED by the SAME team previously, it cannot be picked again.
-      match[team].picks.forEach((slot) => {
+      match[teamKey].picks.forEach((slot) => {
         if (slot.hero) ids.add(slot.hero.heroId);
       });
     }
