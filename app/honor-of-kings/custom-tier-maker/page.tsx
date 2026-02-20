@@ -28,8 +28,10 @@ import type {
   TierZone as TierZoneType,
 } from "@/types/item.type";
 import { HERO_LIST_ENRICHED } from "@/static-database/main/hero-list-enriched";
+import { HERO_ROLE } from "@/static-database/hero";
 import { domToPng } from "modern-screenshot";
 import { RotateCcw, Download, Plus, Search, FileCode } from "lucide-react";
+import Image from "next/image";
 
 // Default tier zones
 const DEFAULT_TIER_ZONES: TierZoneType[] = [
@@ -88,8 +90,9 @@ function Page() {
     { id: "custom-2", label: "Column 3" },
   ]);
 
-  // Search state
+  // Search + role filter state for Hero Pool
   const [searchQuery, setSearchQuery] = useState("");
+  const [poolRoleFilter, setPoolRoleFilter] = useState<number | null>(null);
 
   // Export loading state
   const [isExporting, setIsExporting] = useState(false);
@@ -407,9 +410,15 @@ function Page() {
   };
 
   const poolItems = getItemsByTier(undefined)
-    .filter((item) =>
-      item.heroName.toLowerCase().includes(searchQuery.toLowerCase()),
-    )
+    .filter((item) => {
+      const matchesSearch = item.heroName
+        .toLowerCase()
+        .includes(searchQuery.toLowerCase());
+      const matchesRole =
+        poolRoleFilter === null ||
+        item.heroRoles?.some((r) => r.id === poolRoleFilter);
+      return matchesSearch && matchesRole;
+    })
     .sort((a, b) => {
       if (a.heroId < b.heroId) return -1;
       if (a.heroId > b.heroId) return 1;
@@ -541,6 +550,7 @@ function Page() {
 
           {/* Item Pool */}
           <div className="mt-4">
+            {/* Pool Header: title + search */}
             <div className="flex justify-between items-center mb-2">
               <h2 className="text-xl font-semibold">Hero Pool</h2>
               <div className="relative">
@@ -557,6 +567,45 @@ function Page() {
                 />
               </div>
             </div>
+
+            {/* Role Filter Pills */}
+            <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-none mb-3">
+              <button
+                onClick={() => setPoolRoleFilter(null)}
+                className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium whitespace-nowrap transition-colors cursor-pointer ${
+                  poolRoleFilter === null
+                    ? "bg-blue-600 text-white"
+                    : "bg-white/5 text-gray-400 hover:bg-blue-600/50"
+                }`}
+              >
+                All
+              </button>
+              {HERO_ROLE.map((role) => (
+                <button
+                  key={role.id}
+                  onClick={() =>
+                    setPoolRoleFilter(
+                      poolRoleFilter === role.id ? null : role.id,
+                    )
+                  }
+                  className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium whitespace-nowrap flex items-center gap-1 transition-colors cursor-pointer ${
+                    poolRoleFilter === role.id
+                      ? "bg-blue-600 text-white"
+                      : "bg-white/5 text-gray-400 hover:bg-blue-600/50"
+                  }`}
+                >
+                  <Image
+                    src={role.icon}
+                    alt={role.role}
+                    width={12}
+                    height={12}
+                    className="w-3 h-3"
+                  />
+                  {role.role}
+                </button>
+              ))}
+            </div>
+
             <TierZone
               zone={{ id: POOL_ID, label: "POOL", color: "#6366f1" }}
               items={poolItems}

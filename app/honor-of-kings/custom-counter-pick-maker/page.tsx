@@ -13,7 +13,7 @@ import {
 import { domToPng } from "modern-screenshot";
 
 const STORAGE_KEY = "hok-counter-pick-data";
-const MAX_COUNTERS = 10;
+const MAX_COUNTERS = 6;
 
 type CounterData = Record<number, number[]>;
 
@@ -288,35 +288,45 @@ export default function CounterPickMakerPage() {
           </div>
         </div>
 
-        {/* Column Headers - Hidden on mobile, visible on desktop */}
-        <div className="flex flex-row gap-1 md:gap-4 font-medium mt-2">
-          <div className="flex flex-col w-full max-w-21 md:max-w-38">
-            <div className="md:px-6 py-2 text-center bg-[#5053ef] text-sm md:text-base rounded-xs text-blue-100">
-              Hero Pool
+        {/* Hero Rows — 2-column grid on large screens */}
+        {(() => {
+          const leftHeroes = filteredHeroes.filter((_, i) => i % 2 === 0);
+          const rightHeroes = filteredHeroes.filter((_, i) => i % 2 !== 0);
+          return (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 mt-2">
+              {[leftHeroes, rightHeroes].map((group, gi) => (
+                <div key={gi}>
+                  {/* Sub-header — widths mirror HeroRow column proportions */}
+                  <div className="flex flex-row items-stretch gap-0 font-medium mb-0.5">
+                    <div className="shrink-0 w-[15%] min-w-[52px] max-w-[112px]">
+                      <div className="py-1.5 text-center bg-[#5053ef] text-[10px] sm:text-xs rounded-tl-xs rounded-tr-none text-blue-100">
+                        Hero Pool
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <div className="py-1.5 text-center bg-[#ef5350]/70 text-[10px] sm:text-xs text-red-100">
+                        Counter List
+                      </div>
+                    </div>
+                  </div>
+                  {/* Rows */}
+                  <div className="flex flex-col gap-2">
+                    {group.map((hero) => (
+                      <HeroRow
+                        key={hero.heroId}
+                        hero={hero}
+                        counters={counterData[hero.heroId] || []}
+                        maxCounters={MAX_COUNTERS}
+                        onAddClick={openDrawerFor}
+                        onRemoveCounter={removeCounter}
+                      />
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
-          </div>
-          <div className="w-full">
-            <div className="md:px-6 py-2 text-center bg-[#ef5350]/70 text-sm md:text-base rounded-xs text-red-100">
-              Counter List
-            </div>
-          </div>
-        </div>
-
-        {/* Hero Rows */}
-        <div>
-          <div className="flex flex-col gap-2 pt-4">
-            {filteredHeroes.map((hero) => (
-              <HeroRow
-                key={hero.heroId}
-                hero={hero}
-                counters={counterData[hero.heroId] || []}
-                maxCounters={MAX_COUNTERS}
-                onAddClick={openDrawerFor}
-                onRemoveCounter={removeCounter}
-              />
-            ))}
-          </div>
-        </div>
+          );
+        })()}
 
         {/* Watermark */}
         <div className="text-center text-xs text-gray-200 pt-4 pb-2">
