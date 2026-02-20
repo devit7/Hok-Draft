@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { TierItem } from "../types/item.type";
 
 export type DraftMode = "ranked" | "tournament";
-export type Team = "blue" | "red";
+export type Team = "A" | "B";
 export type SlotType = "ban" | "pick";
 
 export interface DraftSlot {
@@ -12,6 +12,7 @@ export interface DraftSlot {
 
 export interface MatchState {
   id: string; // unique match id
+  firstPickTeam: Team; // Which team has first pick
   blue: {
     bans: DraftSlot[];
     picks: DraftSlot[];
@@ -32,6 +33,8 @@ interface DraftStoreState {
   config: DraftConfig;
   matches: MatchState[];
   currentMatchIndex: number;
+  teamAName: string;
+  teamBName: string;
 
   // Selection State
   isHeroPoolOpen: boolean;
@@ -45,6 +48,8 @@ interface DraftStoreState {
   // Actions
   updateConfig: (config: Partial<DraftConfig>) => void;
   resetDraft: () => void;
+  updateTeamName: (team: Team, name: string) => void;
+  toggleFirstPick: (matchIndex: number) => void;
 
   openHeroSelection: (
     matchIndex: number,
@@ -64,6 +69,7 @@ const createEmptyMatch = (
   pickCount: number = 5,
 ): MatchState => ({
   id: crypto.randomUUID(),
+  firstPickTeam: "A",
   blue: {
     bans: Array(banCount)
       .fill(null)
@@ -90,6 +96,8 @@ const useDraftStore = create<DraftStoreState>((set, get) => ({
   },
   matches: [createEmptyMatch(3)],
   currentMatchIndex: 0,
+  teamAName: "Team A",
+  teamBName: "Team B",
 
   isHeroPoolOpen: false,
   selectingSlot: null,
@@ -124,6 +132,23 @@ const useDraftStore = create<DraftStoreState>((set, get) => ({
     });
   },
 
+  updateTeamName: (team, name) => {
+    if (team === "A") {
+      set({ teamAName: name });
+    } else {
+      set({ teamBName: name });
+    }
+  },
+
+  toggleFirstPick: (matchIndex) => {
+    const { matches } = get();
+    const newMatches = [...matches];
+    const match = { ...newMatches[matchIndex] };
+    match.firstPickTeam = match.firstPickTeam === "A" ? "B" : "A";
+    newMatches[matchIndex] = match;
+    set({ matches: newMatches });
+  },
+
   openHeroSelection: (matchIndex, team, type, index) => {
     set({
       isHeroPoolOpen: true,
@@ -144,14 +169,15 @@ const useDraftStore = create<DraftStoreState>((set, get) => ({
     // Create new matches array to ensure immutability
     const newMatches = [...matches];
     const match = { ...newMatches[matchIndex] };
-    const teamData = { ...match[team] };
+    const teamKey = team === "A" ? "blue" : "red";
+    const teamData = { ...match[teamKey] };
     const slots = [...teamData[type === "ban" ? "bans" : "picks"]];
 
     slots[index] = { ...slots[index], hero };
 
     // Assign back
     teamData[type === "ban" ? "bans" : "picks"] = slots;
-    match[team] = teamData;
+    match[teamKey] = teamData;
     newMatches[matchIndex] = match;
 
     set({

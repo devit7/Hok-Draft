@@ -23,7 +23,14 @@ const banCountOptions = [
 ];
 
 export default function DraftConfigPanel() {
-  const { config, updateConfig, resetDraft } = useDraftStore();
+  const {
+    config,
+    updateConfig,
+    resetDraft,
+    teamAName,
+    teamBName,
+    updateTeamName,
+  } = useDraftStore();
 
   return (
     <div className="mb-4 rounded-xs border border-white/10">
@@ -113,6 +120,34 @@ export default function DraftConfigPanel() {
               }),
               singleValue: (base) => ({ ...base, color: "white" }),
             }}
+          />
+        </div>
+      </div>
+
+      {/* Team Names Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 pb-4 bg-d-primary-surface/70 border-t border-white/5 pt-4">
+        <div className="flex flex-col gap-1">
+          <label className="text-xs text-gray-400 uppercase tracking-wider">
+            Team A Name
+          </label>
+          <input
+            type="text"
+            value={teamAName}
+            onChange={(e) => updateTeamName("A", e.target.value)}
+            className="px-3 py-2 bg-blue-900/10 border border-blue-500/20 rounded-xs text-blue-100 text-sm focus:outline-none focus:border-blue-500/40 transition-colors"
+            placeholder="Enter team A name"
+          />
+        </div>
+        <div className="flex flex-col gap-1">
+          <label className="text-xs text-gray-400 uppercase tracking-wider">
+            Team B Name
+          </label>
+          <input
+            type="text"
+            value={teamBName}
+            onChange={(e) => updateTeamName("B", e.target.value)}
+            className="px-3 py-2 bg-red-900/10 border border-red-500/20 rounded-xs text-red-100 text-sm focus:outline-none focus:border-red-500/40 transition-colors"
+            placeholder="Enter team B name"
           />
         </div>
       </div>

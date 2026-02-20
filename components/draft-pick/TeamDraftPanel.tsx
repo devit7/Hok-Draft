@@ -5,34 +5,36 @@ import HeroSlot from "./HeroSlot";
 
 interface TeamDraftPanelProps {
   team: Team;
+  teamName: string;
   matchIndex: number;
   bans: DraftSlot[];
   picks: DraftSlot[];
+  isFirstPick: boolean;
 }
 
 export default function TeamDraftPanel({
   team,
+  teamName,
   matchIndex,
   bans,
   picks,
+  isFirstPick,
 }: TeamDraftPanelProps) {
-  const isBlue = team === "blue";
+  const isBlue = team === "A";
   const bgColor = isBlue ? "bg-blue-900/20" : "bg-red-900/20";
   const borderColor = isBlue ? "border-blue-500/20" : "border-red-500/20";
   const textColor = isBlue ? "text-blue-100" : "text-red-100";
 
   return (
-    <div
-      className={`flex flex-col gap-4 rounded-xs `}
-    >
+    <div className={`flex flex-col gap-4 rounded-xs `}>
       <div
         className={`flex justify-between items-center px-2 py-1 ${bgColor} ${isBlue ? "flex-row" : "flex-row-reverse"}`}
       >
         <h3 className={`font-bold text-lg uppercase  ${textColor}`}>
-          {team} Team
+          {teamName}
         </h3>
         <div className="text-xs text-gray-400 uppercase tracking-widest">
-          {isBlue ? "First Pick" : "Second Pick"}
+          {isFirstPick ? "First Pick" : "Second Pick"}
         </div>
       </div>
 
