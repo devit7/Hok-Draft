@@ -48,15 +48,16 @@ export default function HeroSelectionDrawer() {
     const teamKey = team === "A" ? "blue" : "red";
     const ids = new Set<number>();
 
-    // Iterate through all matches BEFORE the current one
-    for (let i = 0; i < matchIndex; i++) {
-      const match = matches[i];
-      // GBP applies to PICKS only? Usually yes.
-      // If a hero was PICKED by the SAME team previously, it cannot be picked again.
+    // Iterate through all matches EXCEPT the current one
+    matches.forEach((match, i) => {
+      if (i === matchIndex) return;
+
+      // GBP applies to PICKS. If a hero was PICKED by the SAME team previously (or in any other match), it cannot be picked again.
       match[teamKey].picks.forEach((slot) => {
         if (slot.hero) ids.add(slot.hero.heroId);
       });
-    }
+    });
+
     return ids;
   }, [selectingSlot, matches, config.mode]);
 

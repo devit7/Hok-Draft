@@ -44,7 +44,10 @@ export default function DraftPickPage() {
       setExportProgress(95);
 
       const link = document.createElement("a");
-      link.download = "draft-pick.png";
+      const safeTitle = customTitle
+        ? customTitle.replace(/[^a-z0-9]/gi, "-").toLowerCase()
+        : "draft-pick";
+      link.download = `${safeTitle}.png`;
       link.href = dataUrl;
       link.click();
 

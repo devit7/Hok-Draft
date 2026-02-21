@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import { persist } from "zustand/middleware";
 import { TierItem } from "../types/item.type";
 
 export type DraftMode = "ranked" | "tournament";
@@ -90,122 +91,131 @@ const createEmptyMatch = (
   },
 });
 
-const useDraftStore = create<DraftStoreState>((set, get) => ({
-  config: {
-    mode: "tournament",
-    bestOf: 3,
-    banCount: 4,
-  },
-  matches: Array(3)
-    .fill(null)
-    .map(() => createEmptyMatch(4)),
-  currentMatchIndex: 0,
-  teamAName: "Team A",
-  teamBName: "Team B",
-
-  isHeroPoolOpen: false,
-  selectingSlot: null,
-
-  updateConfig: (newConfig) => {
-    set((state) => {
-      const config = { ...state.config, ...newConfig };
-      // Regenerate matches based on new config
-      const matches = Array(config.bestOf)
+const useDraftStore = create<DraftStoreState>()(
+  persist(
+    (set, get) => ({
+      config: {
+        mode: "tournament",
+        bestOf: 3,
+        banCount: 4,
+      },
+      matches: Array(3)
         .fill(null)
-        .map(() => createEmptyMatch(config.banCount));
-
-      return {
-        config,
-        matches,
-        currentMatchIndex: 0,
-        isHeroPoolOpen: false,
-        selectingSlot: null,
-      };
-    });
-  },
-
-  resetDraft: () => {
-    const { config } = get();
-    set({
-      matches: Array(config.bestOf)
-        .fill(null)
-        .map(() => createEmptyMatch(config.banCount)),
+        .map(() => createEmptyMatch(4)),
       currentMatchIndex: 0,
+      teamAName: "Team A",
+      teamBName: "Team B",
+
       isHeroPoolOpen: false,
       selectingSlot: null,
-    });
-  },
 
-  updateTeamName: (team, name) => {
-    if (team === "A") {
-      set({ teamAName: name });
-    } else {
-      set({ teamBName: name });
-    }
-  },
+      updateConfig: (newConfig) => {
+        set((state) => {
+          const config = { ...state.config, ...newConfig };
+          // Regenerate matches based on new config
+          const matches = Array(config.bestOf)
+            .fill(null)
+            .map(() => createEmptyMatch(config.banCount));
 
-  toggleFirstPick: (matchIndex) => {
-    const { matches } = get();
-    const newMatches = [...matches];
-    const match = { ...newMatches[matchIndex] };
-    match.firstPickTeam = match.firstPickTeam === "A" ? "B" : "A";
-    newMatches[matchIndex] = match;
-    set({ matches: newMatches });
-  },
+          return {
+            config,
+            matches,
+            currentMatchIndex: 0,
+            isHeroPoolOpen: false,
+            selectingSlot: null,
+          };
+        });
+      },
 
-  openHeroSelection: (matchIndex, team, type, index) => {
-    set({
-      isHeroPoolOpen: true,
-      selectingSlot: { matchIndex, team, type, index },
-    });
-  },
+      resetDraft: () => {
+        const { config } = get();
+        set({
+          matches: Array(config.bestOf)
+            .fill(null)
+            .map(() => createEmptyMatch(config.banCount)),
+          currentMatchIndex: 0,
+          isHeroPoolOpen: false,
+          selectingSlot: null,
+        });
+      },
 
-  closeHeroSelection: () => {
-    set({ isHeroPoolOpen: false, selectingSlot: null });
-  },
+      updateTeamName: (team, name) => {
+        if (team === "A") {
+          set({ teamAName: name });
+        } else {
+          set({ teamBName: name });
+        }
+      },
 
-  selectHero: (hero) => {
-    const { selectingSlot, matches } = get();
-    if (!selectingSlot) return;
+      toggleFirstPick: (matchIndex) => {
+        const { matches } = get();
+        const newMatches = [...matches];
+        const match = { ...newMatches[matchIndex] };
+        match.firstPickTeam = match.firstPickTeam === "A" ? "B" : "A";
+        newMatches[matchIndex] = match;
+        set({ matches: newMatches });
+      },
 
-    const { matchIndex, team, type, index } = selectingSlot;
+      openHeroSelection: (matchIndex, team, type, index) => {
+        set({
+          isHeroPoolOpen: true,
+          selectingSlot: { matchIndex, team, type, index },
+        });
+      },
 
-    // Create new matches array to ensure immutability
-    const newMatches = [...matches];
-    const match = { ...newMatches[matchIndex] };
-    const teamKey = team === "A" ? "blue" : "red";
-    const teamData = { ...match[teamKey] };
-    const slots = [...teamData[type === "ban" ? "bans" : "picks"]];
+      closeHeroSelection: () => {
+        set({ isHeroPoolOpen: false, selectingSlot: null });
+      },
 
-    slots[index] = { ...slots[index], hero };
+      selectHero: (hero) => {
+        const { selectingSlot, matches } = get();
+        if (!selectingSlot) return;
 
-    // Assign back
-    teamData[type === "ban" ? "bans" : "picks"] = slots;
-    match[teamKey] = teamData;
-    newMatches[matchIndex] = match;
+        const { matchIndex, team, type, index } = selectingSlot;
 
-    set({
-      matches: newMatches,
-      isHeroPoolOpen: false,
-      selectingSlot: null,
-    });
-  },
+        // Create new matches array to ensure immutability
+        const newMatches = [...matches];
+        const match = { ...newMatches[matchIndex] };
+        const teamKey = team === "A" ? "blue" : "red";
+        const teamData = { ...match[teamKey] };
+        const slots = [...teamData[type === "ban" ? "bans" : "picks"]];
 
-  setCurrentMatchIndex: (index) => set({ currentMatchIndex: index }),
+        slots[index] = { ...slots[index], hero };
 
-  resetMatch: (matchIndex) => {
-    const { matches, config } = get();
-    const newMatches = [...matches];
-    newMatches[matchIndex] = createEmptyMatch(config.banCount);
-    set({ matches: newMatches });
-  },
+        // Assign back
+        teamData[type === "ban" ? "bans" : "picks"] = slots;
+        match[teamKey] = teamData;
+        newMatches[matchIndex] = match;
 
-  updateMatchName: (matchIndex, name) => {
-    const { matches } = get();
-    const newMatches = [...matches];
-    newMatches[matchIndex] = { ...newMatches[matchIndex], name };
-    set({ matches: newMatches });
-  },
-}));
+        set({
+          matches: newMatches,
+          isHeroPoolOpen: false,
+          selectingSlot: null,
+        });
+      },
+
+      setCurrentMatchIndex: (index) => set({ currentMatchIndex: index }),
+
+      resetMatch: (matchIndex) => {
+        const { matches, config } = get();
+        const newMatches = [...matches];
+        newMatches[matchIndex] = createEmptyMatch(config.banCount);
+        set({ matches: newMatches });
+      },
+
+      updateMatchName: (matchIndex, name) => {
+        const { matches } = get();
+        const newMatches = [...matches];
+        newMatches[matchIndex] = { ...newMatches[matchIndex], name };
+        set({ matches: newMatches });
+      },
+    }),
+    {
+      name: "hok-draft-store",
+      // Optional: Only persist specific fields if needed
+      // partialize: (state) => ({ matches: state.matches, config: state.config, teamAName: state.teamAName, teamBName: state.teamBName }),
+    },
+  ),
+);
 
 export default useDraftStore;
