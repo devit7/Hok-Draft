@@ -2101,7 +2101,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/XVz3ScF3.jpg",
       heroIcon:
         "/asset/hero-icon/040-Nakoruru-Icon.png",
-      heroBody: "040-Nakoruru.jpg",
+      heroBody: "Nakoruru.jpg",
     },
     heroExperience: "Easy",
     role: [
