@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
 import { HERO_ROLE } from "@/static-database/hero";
@@ -33,6 +34,8 @@ export const PoolFilter = ({
   onChosenHeroToggle,
   onChosenHeroClear,
 }: PoolFilterProps) => {
+  const [poolRoleFilter, setPoolRoleFilter] = useState<number | null>(null);
+
   return (
     <div className="space-y-3">
       {/* Filter Tabs */}
@@ -124,8 +127,45 @@ export const PoolFilter = ({
               </div>
             </div>
           )}
+          <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none">
+            <button
+              onClick={() => setPoolRoleFilter(null)}
+              className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium whitespace-nowrap transition-colors cursor-pointer ${
+                poolRoleFilter === null
+                  ? "bg-blue-600 text-white"
+                  : "bg-white/5 text-gray-400 hover:bg-blue-600/50"
+              }`}
+            >
+              All
+            </button>
+            {HERO_ROLE.map((role) => (
+              <button
+                key={role.id}
+                onClick={() => setPoolRoleFilter(role.id)}
+                className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium whitespace-nowrap flex items-center gap-1 transition-colors cursor-pointer ${
+                  poolRoleFilter === role.id
+                    ? "bg-blue-600 text-white"
+                    : "bg-white/5 text-gray-400 hover:bg-blue-600/50"
+                }`}
+              >
+                <Image
+                  src={role.icon}
+                  alt={role.role}
+                  width={12}
+                  height={12}
+                  className="w-3 h-3"
+                />
+                {role.role === "Class Lane" ? "Clash Lane" : role.role}
+              </button>
+            ))}
+          </div>
+
           <div className="flex flex-wrap gap-1.5">
-            {HERO_LIST_ENRICHED.map((hero) => {
+            {HERO_LIST_ENRICHED.filter(
+              (hero) =>
+                poolRoleFilter === null ||
+                hero.role.some((r) => r.id === poolRoleFilter),
+            ).map((hero) => {
               const isSelected = chosenHeroIds.includes(hero.heroId);
               return (
                 <div

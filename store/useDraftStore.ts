@@ -92,11 +92,13 @@ const createEmptyMatch = (
 
 const useDraftStore = create<DraftStoreState>((set, get) => ({
   config: {
-    mode: "ranked",
-    bestOf: 1,
-    banCount: 3,
+    mode: "tournament",
+    bestOf: 3,
+    banCount: 4,
   },
-  matches: [createEmptyMatch(3)],
+  matches: Array(3)
+    .fill(null)
+    .map(() => createEmptyMatch(4)),
   currentMatchIndex: 0,
   teamAName: "Team A",
   teamBName: "Team B",

@@ -4,7 +4,7 @@ import useDraftStore from "@/store/useDraftStore";
 import Select from "react-select";
 
 const draftModeOptions = [
-  { value: "ranked", label: "Ranked" },
+  { value: "ranked", label: "Tournament (NGBP)" },
   { value: "tournament", label: "Tournament (GBP)" },
 ];
 
@@ -38,9 +38,9 @@ export default function DraftConfigPanel() {
         <h1>Config Panel</h1>
         <button
           onClick={resetDraft}
-          className="text-xs bg-red-500/20 hover:bg-red-500/40 text-red-200 px-3 py-1 rounded-sm transition-colors"
+          className="text-xs bg-red-500/20 hover:bg-red-500/40 text-red-200 px-3 py-1 rounded-xs transition-colors border border-red-500/20"
         >
-          Reset Draft
+          Reset All Draft
         </button>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 py-4 bg-d-primary-surface/70">

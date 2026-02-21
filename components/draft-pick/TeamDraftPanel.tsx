@@ -28,7 +28,7 @@ export default function TeamDraftPanel({
   return (
     <div className={`flex flex-col gap-4 rounded-xs `}>
       <div
-        className={`flex justify-between items-center px-2 py-1 ${bgColor} ${isBlue ? "flex-row" : "flex-row-reverse"}`}
+        className={`flex justify-between items-center px-2 py-1 ${bgColor} ${isFirstPick ? "flex-row" : "flex-row-reverse"}`}
       >
         <h3 className={`font-bold text-lg uppercase  ${textColor}`}>
           {teamName}
@@ -47,7 +47,7 @@ export default function TeamDraftPanel({
         </span> */}
         <div
           className={`flex flex-wrap gap-2 ${
-            isBlue ? "justify-start" : "flex-row-reverse"
+            isFirstPick ? "justify-start" : "flex-row-reverse"
           }`}
         >
           {bans.map((slot, idx) => (
@@ -72,7 +72,7 @@ export default function TeamDraftPanel({
         </span> */}
         <div
           className={`flex flex-wrap gap-2 ${
-            isBlue ? "justify-start" : "flex-row-reverse"
+            isFirstPick ? "justify-start" : "flex-row-reverse"
           }`}
         >
           {picks.map((slot, idx) => (

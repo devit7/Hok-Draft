@@ -166,7 +166,7 @@ export const HeroSelectDrawer = ({
                   height={12}
                   className="w-3 h-3"
                 />
-                {role.role}
+                {role.role === "Class Lane" ? "Clash Lane" : role.role}
               </button>
             ))}
           </div>

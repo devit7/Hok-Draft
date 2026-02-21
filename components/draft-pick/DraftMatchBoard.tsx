@@ -102,22 +102,45 @@ export default function DraftMatchBoard({ matchIndex }: DraftMatchBoardProps) {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
-        <TeamDraftPanel
-          team="A"
-          teamName={teamAName}
-          matchIndex={matchIndex}
-          bans={match.blue.bans}
-          picks={match.blue.picks}
-          isFirstPick={match.firstPickTeam === "A"}
-        />
-        <TeamDraftPanel
-          team="B"
-          teamName={teamBName}
-          matchIndex={matchIndex}
-          bans={match.red.bans}
-          picks={match.red.picks}
-          isFirstPick={match.firstPickTeam === "B"}
-        />
+        {match.firstPickTeam === "A" ? (
+          <>
+            <TeamDraftPanel
+              team="A"
+              teamName={teamAName}
+              matchIndex={matchIndex}
+              bans={match.blue.bans}
+              picks={match.blue.picks}
+              isFirstPick={true}
+            />
+            <TeamDraftPanel
+              team="B"
+              teamName={teamBName}
+              matchIndex={matchIndex}
+              bans={match.red.bans}
+              picks={match.red.picks}
+              isFirstPick={false}
+            />
+          </>
+        ) : (
+          <>
+            <TeamDraftPanel
+              team="B"
+              teamName={teamBName}
+              matchIndex={matchIndex}
+              bans={match.red.bans}
+              picks={match.red.picks}
+              isFirstPick={true}
+            />
+            <TeamDraftPanel
+              team="A"
+              teamName={teamAName}
+              matchIndex={matchIndex}
+              bans={match.blue.bans}
+              picks={match.blue.picks}
+              isFirstPick={false}
+            />
+          </>
+        )}
       </div>
     </div>
   );
