@@ -17,6 +17,8 @@ export default function DraftMatchBoard({ matchIndex }: DraftMatchBoardProps) {
     teamAName,
     teamBName,
     updateMatchName,
+    config,
+    updateMatchResult,
   } = useDraftStore();
   const match = matches[matchIndex];
 
@@ -39,8 +41,15 @@ export default function DraftMatchBoard({ matchIndex }: DraftMatchBoardProps) {
     setIsEditing(false);
   };
 
+  const handleWinLoseClick = () => {
+    if (match.result === "win") updateMatchResult(matchIndex, "lose");
+    else if (match.result === "lose") updateMatchResult(matchIndex, null);
+    else updateMatchResult(matchIndex, "win");
+  };
+
+  // Standard (Default) View
   return (
-    <div className="flex flex-col gap-4">
+    <div className={`flex flex-col gap-4 p-2`}>
       {/* Header */}
       <div className="flex items-center justify-between mb-2">
         {isEditing ? (
@@ -101,46 +110,70 @@ export default function DraftMatchBoard({ matchIndex }: DraftMatchBoardProps) {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
-        {match.firstPickTeam === "A" ? (
-          <>
-            <TeamDraftPanel
-              team="A"
-              teamName={teamAName}
-              matchIndex={matchIndex}
-              bans={match.blue.bans}
-              picks={match.blue.picks}
-              isFirstPick={true}
-            />
-            <TeamDraftPanel
-              team="B"
-              teamName={teamBName}
-              matchIndex={matchIndex}
-              bans={match.red.bans}
-              picks={match.red.picks}
-              isFirstPick={false}
-            />
-          </>
-        ) : (
-          <>
-            <TeamDraftPanel
-              team="B"
-              teamName={teamBName}
-              matchIndex={matchIndex}
-              bans={match.red.bans}
-              picks={match.red.picks}
-              isFirstPick={true}
-            />
-            <TeamDraftPanel
-              team="A"
-              teamName={teamAName}
-              matchIndex={matchIndex}
-              bans={match.blue.bans}
-              picks={match.blue.picks}
-              isFirstPick={false}
-            />
-          </>
+      <div className="flex gap-2">
+        {/* Win/Lose Sidebar */}
+        {config.showWinLose && (
+          <div
+            onClick={handleWinLoseClick}
+            className={`w-6 shrink-0 flex items-center justify-center rounded-xs cursor-pointer border hover:opacity-80 transition-opacity overflow-hidden ${
+              match.result === "win"
+                ? "bg-green-600/20 border-green-500/20 text-green-400"
+                : match.result === "lose"
+                  ? "bg-red-600/20 border-red-500/20 text-red-400"
+                  : "bg-slate-800/50 border-white/10 text-gray-500"
+            }`}
+          >
+            <span className="text-xs font-medium tracking-[0.2em] -rotate-90 whitespace-nowrap select-none">
+              {match.result === "win"
+                ? "WIN"
+                : match.result === "lose"
+                  ? "LOSE"
+                  : "SET RESULT"}
+            </span>
+          </div>
         )}
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 flex-1">
+          {match.firstPickTeam === "A" ? (
+            <>
+              <TeamDraftPanel
+                team="A"
+                teamName={teamAName}
+                matchIndex={matchIndex}
+                bans={match.blue.bans}
+                picks={match.blue.picks}
+                isFirstPick={true}
+              />
+              <TeamDraftPanel
+                team="B"
+                teamName={teamBName}
+                matchIndex={matchIndex}
+                bans={match.red.bans}
+                picks={match.red.picks}
+                isFirstPick={false}
+              />
+            </>
+          ) : (
+            <>
+              <TeamDraftPanel
+                team="B"
+                teamName={teamBName}
+                matchIndex={matchIndex}
+                bans={match.red.bans}
+                picks={match.red.picks}
+                isFirstPick={true}
+              />
+              <TeamDraftPanel
+                team="A"
+                teamName={teamAName}
+                matchIndex={matchIndex}
+                bans={match.blue.bans}
+                picks={match.blue.picks}
+                isFirstPick={false}
+              />
+            </>
+          )}
+        </div>
       </div>
     </div>
   );

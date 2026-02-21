@@ -1,6 +1,9 @@
 "use client";
 
-import type { DraftSlot, Team } from "@/store/useDraftStore";
+import useDraftStore, {
+  type DraftSlot,
+  type Team,
+} from "@/store/useDraftStore";
 import HeroSlot from "./HeroSlot";
 
 interface TeamDraftPanelProps {
@@ -22,18 +25,18 @@ export default function TeamDraftPanel({
 }: TeamDraftPanelProps) {
   const isBlue = team === "A";
   const bgColor = isFirstPick ? "bg-blue-900/20" : "bg-red-900/20";
-  const borderColor = isFirstPick ? "border-blue-500/20" : "border-red-500/20";
   const textColor = isFirstPick ? "text-blue-100" : "text-red-100";
+  const subtitleColor = "text-gray-400";
 
   return (
     <div className={`flex flex-col gap-4 rounded-xs `}>
       <div
         className={`flex justify-between items-center px-2 py-1 ${bgColor} ${isFirstPick ? "flex-row" : "flex-row-reverse"}`}
       >
-        <h3 className={`font-bold text-lg uppercase  ${textColor}`}>
+        <h3 className={`font-bold text-lg uppercase ${textColor}`}>
           {teamName}
         </h3>
-        <div className="text-xs text-gray-400 uppercase tracking-widest">
+        <div className={`text-xs uppercase tracking-widest ${subtitleColor}`}>
           {isFirstPick ? "First Pick" : "Second Pick"}
         </div>
       </div>

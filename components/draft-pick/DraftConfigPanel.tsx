@@ -22,6 +22,28 @@ const banCountOptions = [
   { value: 6, label: "6 Bans" },
 ];
 
+const showWinLoseOptions = [
+  { value: true, label: "Enabled" },
+  { value: false, label: "Disabled" },
+];
+
+const selectStyles = {
+  control: (base: any) => ({
+    ...base,
+    backgroundColor: "rgba(30, 41, 59, 0.5)",
+    borderColor: "rgba(255,255,255,0.1)",
+  }),
+  menu: (base: any) => ({ ...base, backgroundColor: "#1e293b" }),
+  option: (base: any, state: any) => ({
+    ...base,
+    backgroundColor: state.isFocused
+      ? "rgba(59, 130, 246, 0.2)"
+      : "transparent",
+    color: "white",
+  }),
+  singleValue: (base: any) => ({ ...base, color: "white" }),
+};
+
 export default function DraftConfigPanel() {
   const {
     config,
@@ -43,7 +65,9 @@ export default function DraftConfigPanel() {
           Reset All Draft
         </button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 py-4 bg-d-primary-surface/70">
+
+      {/* General Config */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 py-4 bg-d-primary-surface/70">
         <div className="flex flex-col gap-1">
           <label className="text-xs text-gray-400">Draft Mode</label>
           <Select
@@ -51,23 +75,8 @@ export default function DraftConfigPanel() {
             options={draftModeOptions}
             value={draftModeOptions.find((o) => o.value === config.mode)}
             onChange={(val) => updateConfig({ mode: val?.value as any })}
-            className="text-sm text-d-primary"
-            styles={{
-              control: (base) => ({
-                ...base,
-                backgroundColor: "rgba(30, 41, 59, 0.5)",
-                borderColor: "rgba(255,255,255,0.1)",
-              }),
-              menu: (base) => ({ ...base, backgroundColor: "#1e293b" }),
-              option: (base, state) => ({
-                ...base,
-                backgroundColor: state.isFocused
-                  ? "rgba(59, 130, 246, 0.2)"
-                  : "transparent",
-                color: "white",
-              }),
-              singleValue: (base) => ({ ...base, color: "white" }),
-            }}
+            className="text-sm"
+            styles={selectStyles}
           />
         </div>
         <div className="flex flex-col gap-1">
@@ -77,23 +86,8 @@ export default function DraftConfigPanel() {
             options={bestOfOptions}
             value={bestOfOptions.find((o) => o.value === config.bestOf)}
             onChange={(val) => updateConfig({ bestOf: val?.value as any })}
-            className="text-sm text-d-primary"
-            styles={{
-              control: (base) => ({
-                ...base,
-                backgroundColor: "rgba(30, 41, 59, 0.5)",
-                borderColor: "rgba(255,255,255,0.1)",
-              }),
-              menu: (base) => ({ ...base, backgroundColor: "#1e293b" }),
-              option: (base, state) => ({
-                ...base,
-                backgroundColor: state.isFocused
-                  ? "rgba(59, 130, 246, 0.2)"
-                  : "transparent",
-                color: "white",
-              }),
-              singleValue: (base) => ({ ...base, color: "white" }),
-            }}
+            className="text-sm"
+            styles={selectStyles}
           />
         </div>
         <div className="flex flex-col gap-1">
@@ -103,29 +97,27 @@ export default function DraftConfigPanel() {
             options={banCountOptions}
             value={banCountOptions.find((o) => o.value === config.banCount)}
             onChange={(val) => updateConfig({ banCount: val?.value as any })}
-            className="text-sm text-d-primary"
-            styles={{
-              control: (base) => ({
-                ...base,
-                backgroundColor: "rgba(30, 41, 59, 0.5)",
-                borderColor: "rgba(255,255,255,0.1)",
-              }),
-              menu: (base) => ({ ...base, backgroundColor: "#1e293b" }),
-              option: (base, state) => ({
-                ...base,
-                backgroundColor: state.isFocused
-                  ? "rgba(59, 130, 246, 0.2)"
-                  : "transparent",
-                color: "white",
-              }),
-              singleValue: (base) => ({ ...base, color: "white" }),
-            }}
+            className="text-sm"
+            styles={selectStyles}
+          />
+        </div>
+        <div className="flex flex-col gap-1">
+          <label className="text-xs text-gray-400">Show Win/Lose</label>
+          <Select
+            instanceId="showWinLose"
+            options={showWinLoseOptions}
+            value={showWinLoseOptions.find(
+              (o) => o.value === config.showWinLose,
+            )}
+            onChange={(val) => updateConfig({ showWinLose: val?.value as any })}
+            className="text-sm"
+            styles={selectStyles}
           />
         </div>
       </div>
 
-      {/* Team Names Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 pb-4 bg-d-primary-surface/70 border-t border-white/5 pt-4">
+      {/* Team Names */}
+      <div className="border-t border-white/5 grid grid-cols-1 md:grid-cols-2 gap-4 px-4 py-4 bg-d-primary-surface/70">
         <div className="flex flex-col gap-1">
           <label className="text-xs text-gray-400 tracking-wider">
             Custom Team A Name

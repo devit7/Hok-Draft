@@ -199,7 +199,9 @@ export default function HeroSelectionDrawer() {
         <div className="flex-1 overflow-y-auto p-6">
           <div className="flex flex-wrap gap-2 sm:gap-4 justify-center">
             {filteredHeroes.map((hero) => {
-              const isGlobalBanned = globalBannedHeroIds.has(hero.heroId);
+              const isGlobalBanned =
+                selectingSlot?.type === "pick" &&
+                globalBannedHeroIds.has(hero.heroId);
               const isUsedInMatch = currentMatchUsedHeroIds.has(hero.heroId);
               const disabled = isGlobalBanned || isUsedInMatch;
 

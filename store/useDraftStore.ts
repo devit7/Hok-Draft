@@ -15,6 +15,7 @@ export interface MatchState {
   id: string; // unique match id
   name?: string; // custom match name
   firstPickTeam: Team; // Which team has first pick
+  result?: "win" | "lose" | null;
   blue: {
     bans: DraftSlot[];
     picks: DraftSlot[];
@@ -29,6 +30,7 @@ export interface DraftConfig {
   mode: DraftMode;
   bestOf: number; // 1, 3, 5, 7
   banCount: number; // 3, 4, 5, 6
+  showWinLose: boolean;
 }
 
 interface DraftStoreState {
@@ -63,6 +65,10 @@ interface DraftStoreState {
   selectHero: (hero: TierItem | null) => void;
   resetMatch: (matchIndex: number) => void;
   updateMatchName: (matchIndex: number, name: string) => void;
+  updateMatchResult: (
+    matchIndex: number,
+    result: "win" | "lose" | null,
+  ) => void;
 
   setCurrentMatchIndex: (index: number) => void;
 }
@@ -98,6 +104,7 @@ const useDraftStore = create<DraftStoreState>()(
         mode: "tournament",
         bestOf: 3,
         banCount: 4,
+        showWinLose: false,
       },
       matches: Array(3)
         .fill(null)
@@ -112,7 +119,18 @@ const useDraftStore = create<DraftStoreState>()(
       updateConfig: (newConfig) => {
         set((state) => {
           const config = { ...state.config, ...newConfig };
-          // Regenerate matches based on new config
+          // Only regenerate matches if bestOf or banCount changed
+          const needsReset =
+            (newConfig.bestOf !== undefined &&
+              newConfig.bestOf !== state.config.bestOf) ||
+            (newConfig.banCount !== undefined &&
+              newConfig.banCount !== state.config.banCount);
+
+          if (!needsReset) {
+            return { config };
+          }
+
+          // Regenerate matches based on new count configs
           const matches = Array(config.bestOf)
             .fill(null)
             .map(() => createEmptyMatch(config.banCount));
@@ -209,9 +227,16 @@ const useDraftStore = create<DraftStoreState>()(
         newMatches[matchIndex] = { ...newMatches[matchIndex], name };
         set({ matches: newMatches });
       },
+
+      updateMatchResult: (matchIndex, result) => {
+        const { matches } = get();
+        const newMatches = [...matches];
+        newMatches[matchIndex] = { ...newMatches[matchIndex], result };
+        set({ matches: newMatches });
+      },
     }),
     {
-      name: "hok-draft-store",
+      name: "hok-draft-store-v2",
       // Optional: Only persist specific fields if needed
       // partialize: (state) => ({ matches: state.matches, config: state.config, teamAName: state.teamAName, teamBName: state.teamBName }),
     },

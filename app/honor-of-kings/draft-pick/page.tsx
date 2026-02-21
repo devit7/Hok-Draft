@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { Download, Pencil } from "lucide-react";
 import { domToPng } from "modern-screenshot";
 import DraftConfigPanel from "@/components/draft-pick/DraftConfigPanel";
@@ -12,7 +12,6 @@ export default function DraftPickPage() {
   const { matches } = useDraftStore();
   const exportRef = useRef<HTMLDivElement>(null);
 
-  // Export loading state
   const [isExporting, setIsExporting] = useState(false);
   const [exportProgress, setExportProgress] = useState(0);
   const [customTitle, setCustomTitle] = useState("Draft Pick Simulation");
@@ -24,20 +23,17 @@ export default function DraftPickPage() {
     setExportProgress(0);
 
     try {
-      // Track progress
       let nodeCount = 0;
       const totalNodes = exportRef.current.querySelectorAll("*").length;
 
       const dataUrl = await domToPng(exportRef.current, {
-        backgroundColor: "#0a0a0a",
+        backgroundColor: "#181b44",
         scale: 2,
-        onCloneNode: (clonedNode) => {
+        onCloneNode: () => {
           nodeCount++;
-          const progress = Math.min(
-            Math.round((nodeCount / totalNodes) * 90),
-            90,
+          setExportProgress(
+            Math.min(Math.round((nodeCount / totalNodes) * 90), 90),
           );
-          setExportProgress(progress);
         },
       });
 
@@ -52,8 +48,6 @@ export default function DraftPickPage() {
       link.click();
 
       setExportProgress(100);
-
-      // Reset after delay
       setTimeout(() => {
         setIsExporting(false);
         setExportProgress(0);
@@ -66,7 +60,7 @@ export default function DraftPickPage() {
   };
 
   return (
-    <main className="flex flex-col my-10 px-4 w-full">
+    <main className="flex flex-col my-10 w-full">
       <div className="mb-8 flex justify-between items-start gap-4">
         <div>
           <div className="text-2xl font-medium">Draft Pick Simulator</div>
@@ -74,11 +68,11 @@ export default function DraftPickPage() {
             Simulating the draft pick process with different strategies.
           </span>
         </div>
-        <div className="flex flex-col gap-2 min-w-[140px]">
+        <div className="flex flex-col gap-2 min-w-[140px] sm:min-w-[200px]">
           <button
             onClick={handleExport}
             disabled={isExporting}
-            className={`px-4 py-2 flex items-center gap-2 rounded-xs transition-colors text-sm font-medium ${
+            className={`px-4 py-2 flex items-center justify-center gap-2 rounded-xs transition-colors text-sm font-medium ${
               isExporting
                 ? "bg-blue-600/50 text-blue-200 cursor-wait"
                 : "bg-blue-600 hover:bg-blue-700 text-white"
@@ -88,11 +82,10 @@ export default function DraftPickPage() {
             {isExporting ? `${exportProgress}%` : "Export Image"}
           </button>
 
-          {/* Progress Bar */}
           {isExporting && (
             <div className="w-full bg-gray-800 rounded-full h-1.5 overflow-hidden">
               <div
-                className="h-full bg-gradient-to-r from-blue-500 to-blue-400 transition-all duration-300 ease-out"
+                className="h-full bg-linear-to-r from-blue-500 to-blue-400 transition-all duration-300 ease-out"
                 style={{ width: `${exportProgress}%` }}
               />
             </div>
@@ -102,7 +95,7 @@ export default function DraftPickPage() {
 
       <DraftConfigPanel />
 
-      <div ref={exportRef} className="bg-d-background sm:p-4 rounded-xs">
+      <div ref={exportRef} className="sm:p-4 rounded-xs">
         {/* Custom Title */}
         <div className="w-full mb-6 py-2 border-b border-white/10 flex justify-center group relative">
           <div className="relative inline-block w-full max-w-3xl">
@@ -132,7 +125,6 @@ export default function DraftPickPage() {
         </div>
       </div>
 
-      {/* Hero Selection Drawer (Global) */}
       <HeroSelectionDrawer />
     </main>
   );

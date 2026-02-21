@@ -67,17 +67,15 @@ export default function HeroSlot({
 
             {/* Gradient overlay for Picks (like HeroCardBase) */}
             {!isBan && (
-              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-linear-to-t from-blue-950/80 via-blue-950/70 to-transparent pointer-events-none" />
+              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black/90 via-d-from-black/50 to-transparent pointer-events-none flex items-end justify-center pb-1">
+                <span className="text-[9px] md:text-[12px] text-white font-medium truncate px-1 drop-shadow-md">
+                  {hero.heroName}
+                </span>
+              </div>
             )}
 
-            {/* {isBan && (
-              <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-                <X className="text-red-500 w-3/4 h-3/4" />
-              </div>
-            )} */}
-
             {/* Hover overlay to change */}
-            <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity z-10">
+            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity z-10">
               <span className="text-xs text-white">Change</span>
             </div>
           </>
@@ -86,12 +84,8 @@ export default function HeroSlot({
         )}
       </div>
       {!isBan && (
-        <span className="text-[10px] md:text-xs text-gray-400 max-w-[4rem] truncate text-center font-medium mt-0.5">
-          {hero
-            ? hero.heroName
-            : type === "pick"
-              ? `Pick ${index + 1}`
-              : `Ban ${index + 1}`}
+        <span className="text-[10px] md:text-[11px] text-gray-400 max-w-[4rem] truncate text-center font-medium mt-0.5">
+          {type === "pick" ? `Pick ${index + 1}` : `Ban ${index + 1}`}
         </span>
       )}
     </div>
