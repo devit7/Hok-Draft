@@ -21,9 +21,9 @@ export default function TeamDraftPanel({
   isFirstPick,
 }: TeamDraftPanelProps) {
   const isBlue = team === "A";
-  const bgColor = isBlue ? "bg-blue-900/20" : "bg-red-900/20";
-  const borderColor = isBlue ? "border-blue-500/20" : "border-red-500/20";
-  const textColor = isBlue ? "text-blue-100" : "text-red-100";
+  const bgColor = isFirstPick ? "bg-blue-900/20" : "bg-red-900/20";
+  const borderColor = isFirstPick ? "border-blue-500/20" : "border-red-500/20";
+  const textColor = isFirstPick ? "text-blue-100" : "text-red-100";
 
   return (
     <div className={`flex flex-col gap-4 rounded-xs `}>
@@ -46,7 +46,9 @@ export default function TeamDraftPanel({
           BANS
         </span> */}
         <div
-          className={`flex flex-wrap gap-2 ${isBlue ? "justify-start" : "justify-end"}`}
+          className={`flex flex-wrap gap-2 ${
+            isBlue ? "justify-start" : "flex-row-reverse"
+          }`}
         >
           {bans.map((slot, idx) => (
             <HeroSlot
@@ -69,7 +71,9 @@ export default function TeamDraftPanel({
           PICKS
         </span> */}
         <div
-          className={`flex flex-wrap gap-2 ${isBlue ? "justify-start" : "justify-end"}`}
+          className={`flex flex-wrap gap-2 ${
+            isBlue ? "justify-start" : "flex-row-reverse"
+          }`}
         >
           {picks.map((slot, idx) => (
             <HeroSlot

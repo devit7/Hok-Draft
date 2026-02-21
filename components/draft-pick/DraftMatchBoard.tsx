@@ -1,27 +1,88 @@
 "use client";
 
+import { useState } from "react";
 import useDraftStore from "@/store/useDraftStore";
 import TeamDraftPanel from "./TeamDraftPanel";
-import { RefreshCw } from "lucide-react";
+import { RefreshCw, Edit2, Check, X } from "lucide-react";
 
 interface DraftMatchBoardProps {
   matchIndex: number;
 }
 
 export default function DraftMatchBoard({ matchIndex }: DraftMatchBoardProps) {
-  const { matches, resetMatch, toggleFirstPick, teamAName, teamBName } =
-    useDraftStore();
+  const {
+    matches,
+    resetMatch,
+    toggleFirstPick,
+    teamAName,
+    teamBName,
+    updateMatchName,
+  } = useDraftStore();
   const match = matches[matchIndex];
 
+  const [isEditing, setIsEditing] = useState(false);
+  const [tempName, setTempName] = useState("");
+
   if (!match) return null;
+
+  const handleEdit = () => {
+    setTempName(match.name || `MATCH ${matchIndex + 1}`);
+    setIsEditing(true);
+  };
+
+  const handleSave = () => {
+    updateMatchName(matchIndex, tempName);
+    setIsEditing(false);
+  };
+
+  const handleCancel = () => {
+    setIsEditing(false);
+  };
 
   return (
     <div className="flex flex-col gap-4">
       {/* Header */}
       <div className="flex items-center justify-between mb-2">
-        <h2 className="font-medium text-xl border-l-4 border-blue-500 pl-3">
-          MATCH {matchIndex + 1}
-        </h2>
+        {isEditing ? (
+          <div className="flex items-center gap-2 border-l-4 border-blue-500 pl-3">
+            <input
+              type="text"
+              value={tempName}
+              onChange={(e) => setTempName(e.target.value)}
+              className="px-2 py-1 bg-slate-800/50 border border-blue-500/30 rounded-xs text-white text-sm focus:outline-none focus:border-blue-400"
+              autoFocus
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleSave();
+                if (e.key === "Escape") handleCancel();
+              }}
+            />
+            <button
+              onClick={handleSave}
+              className="text-green-400 hover:bg-green-500/20 p-1 rounded-sm"
+            >
+              <Check size={16} />
+            </button>
+            <button
+              onClick={handleCancel}
+              className="text-red-400 hover:bg-red-500/20 p-1 rounded-sm"
+            >
+              <X size={16} />
+            </button>
+          </div>
+        ) : (
+          <div className="flex items-center gap-2 border-l-4 border-blue-500 pl-3 group">
+            <h2 className="font-medium text-xl uppercase">
+              {match.name || `MATCH ${matchIndex + 1}`}
+            </h2>
+            <button
+              onClick={handleEdit}
+              className="text-gray-400 hover:text-white opacity-100 group-hover:opacity-100 transition-opacity"
+              title="Edit match name"
+            >
+              <Edit2 size={16} />
+            </button>
+          </div>
+        )}
         <div className="flex items-center gap-2">
           <button
             onClick={() => toggleFirstPick(matchIndex)}

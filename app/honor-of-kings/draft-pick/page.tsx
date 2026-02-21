@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef, useState } from "react";
-import { Download } from "lucide-react";
+import { useRef, useState, useEffect } from "react";
+import { Download, Pencil } from "lucide-react";
 import { domToPng } from "modern-screenshot";
 import DraftConfigPanel from "@/components/draft-pick/DraftConfigPanel";
 import DraftMatchBoard from "@/components/draft-pick/DraftMatchBoard";
@@ -15,6 +15,7 @@ export default function DraftPickPage() {
   // Export loading state
   const [isExporting, setIsExporting] = useState(false);
   const [exportProgress, setExportProgress] = useState(0);
+  const [customTitle, setCustomTitle] = useState("Draft Pick Simulation");
 
   const handleExport = async () => {
     if (!exportRef.current || isExporting) return;
@@ -99,6 +100,20 @@ export default function DraftPickPage() {
       <DraftConfigPanel />
 
       <div ref={exportRef} className="bg-d-background sm:p-4 rounded-xs">
+        {/* Custom Title */}
+        <div className="w-full mb-6 py-2 border-b border-white/10 flex justify-center group relative">
+          <div className="relative inline-block w-full max-w-3xl">
+            <input
+              type="text"
+              value={customTitle}
+              onChange={(e) => setCustomTitle(e.target.value)}
+              className="bg-transparent text-center border-none outline-none w-full text-xl lg:text-2xl font-medium focus:text-blue-400 transition-colors pr-8"
+              placeholder="Enter match title..."
+            />
+            <Pencil className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 opacity-100 group-hover:opacity-100 transition-opacity pointer-events-none" />
+          </div>
+        </div>
+
         <div className="space-y-12">
           {matches.map((match, index) => (
             <DraftMatchBoard key={match.id} matchIndex={index} />

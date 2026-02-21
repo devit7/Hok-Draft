@@ -1,7 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import { Plus, X } from "lucide-react";
+import { Plus } from "lucide-react";
 import type { TierItem } from "@/types/item.type";
 import useDraftStore, { SlotType, Team } from "@/store/useDraftStore";
 
@@ -55,15 +54,15 @@ export default function HeroSlot({
       >
         {hero ? (
           <>
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src={
                 !isBan && hero.heroBody
                   ? `/asset/hero/${hero.heroBody}`
                   : hero.heroImage
               }
               alt={hero.heroName}
-              fill
-              className={`object-cover ${isBan ? "grayscale" : "transition-transform duration-1000 group-hover:scale-110 opacity-80 group-hover:opacity-100"}`}
+              className={`absolute inset-0 w-full h-full object-cover ${isBan ? "grayscale" : "transition-transform duration-1000 group-hover:scale-110 opacity-80 group-hover:opacity-100"}`}
             />
 
             {/* Gradient overlay for Picks (like HeroCardBase) */}

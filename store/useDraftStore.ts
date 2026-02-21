@@ -12,6 +12,7 @@ export interface DraftSlot {
 
 export interface MatchState {
   id: string; // unique match id
+  name?: string; // custom match name
   firstPickTeam: Team; // Which team has first pick
   blue: {
     bans: DraftSlot[];
@@ -60,6 +61,7 @@ interface DraftStoreState {
   closeHeroSelection: () => void;
   selectHero: (hero: TierItem | null) => void;
   resetMatch: (matchIndex: number) => void;
+  updateMatchName: (matchIndex: number, name: string) => void;
 
   setCurrentMatchIndex: (index: number) => void;
 }
@@ -193,6 +195,13 @@ const useDraftStore = create<DraftStoreState>((set, get) => ({
     const { matches, config } = get();
     const newMatches = [...matches];
     newMatches[matchIndex] = createEmptyMatch(config.banCount);
+    set({ matches: newMatches });
+  },
+
+  updateMatchName: (matchIndex, name) => {
+    const { matches } = get();
+    const newMatches = [...matches];
+    newMatches[matchIndex] = { ...newMatches[matchIndex], name };
     set({ matches: newMatches });
   },
 }));

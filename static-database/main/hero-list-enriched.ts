@@ -14,7 +14,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/sGIzRFXF.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/iIdXNhQ5.png",
+        "/asset/hero-icon/001-Haya-Icon.png",
       heroBody: "001-Haya.jpg",
     },
     heroExperience: "Intermediate",
@@ -39,7 +39,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/sfz2ijEz.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/camp/admin/hero/head_128-128/lkU98jAV.png",
+        "/asset/hero-icon/002-Chicha-Icon.png",
       heroBody: "002-Chicha.jpg",
     },
     heroExperience: "Intermediate",
@@ -74,7 +74,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/YqcFJ41J.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/camp/admin/hero/head_128-128/ue6KY05b.png",
+        "/asset/hero-icon/029-Augran-Icon.png",
       heroBody: "029-Augran.jpg",
     },
     heroExperience: "Easy",
@@ -104,7 +104,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/UZ5YiCXf.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/camp/admin/hero/head_128-128/OzH2TSZN.jpg",
+        "/asset/hero-icon/030-Ao'yin-Icon.jpg",
       heroBody: "030-Ao'yin.jpg",
     },
     heroExperience: "Intermediate",
@@ -134,7 +134,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/aduptfKy.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/camp/admin/hero/head_128-128/Qdvu6qgO.png",
+        "/asset/hero-icon/026-Dyadia-Icon.png",
       heroBody: "026-Dyadia.jpg",
     },
     heroExperience: "Intermediate",
@@ -159,7 +159,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/IJ9g10Xb.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/orlOit3f.png",
+        "/asset/hero-icon/057-Milady-Icon.png",
       heroBody: "057-Milady.jpg",
     },
     heroExperience: "Easy",
@@ -189,7 +189,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/izLCVkoR.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/wjaExUFU.png",
+        "/asset/hero-icon/016-Angela-Icon.png",
       heroBody: "016-Angela.jpg",
     },
     heroExperience: "Easy",
@@ -214,36 +214,36 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/F6qt6L7k.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/S5isJokI.png",
+        "/asset/hero-icon/106-Hou-Yi-Icon.png",
       heroBody: "106-Hou-Yi.jpg",
     },
     heroExperience: "Easy",
     role: [
-      {
-        id: 1,
-        role: "Class Lane",
-        icon: "/asset/role/class-lane.png",
-      },
-      {
-        id: 2,
-        role: "Jungle",
-        icon: "/asset/role/jungle.png",
-      },
-      {
-        id: 3,
-        role: "Mid Lane",
-        icon: "/asset/role/mid-lane.png",
-      },
+      // {
+      //   id: 1,
+      //   role: "Class Lane",
+      //   icon: "/asset/role/class-lane.png",
+      // },
+      // {
+      //   id: 2,
+      //   role: "Jungle",
+      //   icon: "/asset/role/jungle.png",
+      // },
+      // {
+      //   id: 3,
+      //   role: "Mid Lane",
+      //   icon: "/asset/role/mid-lane.png",
+      // },
       {
         id: 4,
         role: "Farm Lane",
         icon: "/asset/role/farm-lane.png",
       },
-      {
-        id: 5,
-        role: "Roamer",
-        icon: "/asset/role/roamer.png",
-      },
+      // {
+      //   id: 5,
+      //   role: "Roamer",
+      //   icon: "/asset/role/roamer.png",
+      // },
     ],
     tags: ["All Role"],
     powerSpike: ["Late", "Early", "Mid"],
@@ -258,7 +258,7 @@ export const HERO_LIST_ENRICHED = [
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/default/9bajUtDY.jpg",
-      heroIcon: "https://camp.honorofkings.com/camp/admin/default/AuWJ7G0J.png",
+      heroIcon: "/asset/hero-icon/003-Lapulapu-Icon.png",
       heroBody: "003-Lapulapu.jpg",
     },
     heroExperience: "Easy",
@@ -283,7 +283,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/KSprHoFS.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/RLA5jvBk.png",
+        "/asset/hero-icon/022-Yixing-Icon.png",
       heroBody: "022-Yixing.jpg",
     },
     heroExperience: "Easy",
@@ -313,7 +313,7 @@ export const HERO_LIST_ENRICHED = [
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/default/j14kiNfY.jpg",
-      heroIcon: "https://camp.honorofkings.com/camp/admin/default/6IY77h7c.png",
+      heroIcon: "/asset/hero-icon/013-Fatih-Icon.png",
       heroBody: "013-Fatih.jpg",
     },
     heroExperience: "Easy",
@@ -350,7 +350,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/ZykGnmmQ.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/dYxuS6IA.png",
+        "/asset/hero-icon/114-Daji-Icon.png",
       heroBody: "114-Daji.jpg",
     },
     heroExperience: "Easy",
@@ -380,7 +380,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/fdFhQKXR.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/cNugkXGO.png",
+        "/asset/hero-icon/060-Liang-Icon.png",
       heroBody: "060-Liang.jpg",
     },
     heroExperience: "Easy",
@@ -410,7 +410,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/JTriceYO.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/mWSBbpVr.png",
+        "/asset/hero-icon/065-Li-Xin-Icon.png",
       heroBody: "065-Li-Xin.jpg",
     },
     heroExperience: "Easy",
@@ -435,7 +435,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/QiHtTgGt.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/48d8GxkP.png",
+        "/asset/hero-icon/095-Marco-Polo-Icon.png",
       heroBody: "095-Marco-Polo.jpg",
     },
     heroExperience: "Easy",
@@ -460,7 +460,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/QIVMI1Pj.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Go3mMeu4.png",
+        "/asset/hero-icon/086-Wukong-Icon.png",
       heroBody: "086-Wukong.jpg",
     },
     heroExperience: "Easy",
@@ -490,7 +490,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/zcwILxiZ.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/paTVVlNq.png",
+        "/asset/hero-icon/055-Xiao-Qiao-Icon.png",
       heroBody: "055-Xiao-Qiao.jpg",
     },
     heroExperience: "Easy",
@@ -515,7 +515,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/WLZjhplG.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/lhZtGJlg.png",
+        "/asset/hero-icon/090-Wang-Zhaojun-Icon.png",
       heroBody: "090-Wang-Zhaojun.jpg",
     },
     heroExperience: "Easy",
@@ -545,7 +545,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Spp0Zwej.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/BmY46Zgb.png",
+        "/asset/hero-icon/085-Lady-Sun-Icon.png",
       heroBody: "085-Lady-Sun.jpg",
     },
     heroExperience: "Easy",
@@ -570,7 +570,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/OBQuO6qy.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/kQXkW7ab.png",
+        "/asset/hero-icon/112-Cai-Yan-Icon.png",
       heroBody: "112-Cai-Yan.jpg",
     },
     heroExperience: "Easy",
@@ -595,7 +595,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Zd3zwNba.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Za4OlJ6t.png",
+        "/asset/hero-icon/093-Mozi-Icon.png",
       heroBody: "093-Mozi.jpg",
     },
     heroExperience: "Easy",
@@ -625,7 +625,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/lEyx6O3p.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/PRcq49iS.png",
+        "/asset/hero-icon/107-Donghuang-Icon.png",
       heroBody: "107-Donghuang.jpg",
     },
     heroExperience: "Easy",
@@ -655,7 +655,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/jCyFHGBK.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/uHnzeJbu.png",
+        "/asset/hero-icon/089-Yaria-Icon.png",
       heroBody: "089-Yaria.jpg",
     },
     heroExperience: "Easy",
@@ -680,7 +680,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/TqIPGNjr.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ku5RzFmQ.png",
+        "/asset/hero-icon/088-Consort-Yu-Icon.png",
       heroBody: "088-Consort-Yu.jpg",
     },
     heroExperience: "Easy",
@@ -705,7 +705,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/W4zZnmCS.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/0VBMiUN5.png",
+        "/asset/hero-icon/098-Luban-No.7-Icon.png",
       heroBody: "098-Luban-No.7.jpg",
     },
     heroExperience: "Easy",
@@ -735,7 +735,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/xt0c43KZ.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/joVNQWhw.png",
+        "/asset/hero-icon/052-Erin-Icon.png",
       heroBody: "052-Erin.jpg",
     },
     heroExperience: "Easy",
@@ -760,7 +760,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Lfx9VhTp.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/g0jHNDf6.png",
+        "/asset/hero-icon/044-Garo-Icon.png",
       heroBody: "044-Garo.jpg",
     },
     heroExperience: "Easy",
@@ -785,7 +785,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/8qorhn89.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/camp/admin/hero/head_128-128/tfvb3IJf.png",
+        "/asset/hero-icon/049-Dolia-Icon.png",
       heroBody: "049-Dolia.jpg",
     },
     heroExperience: "Easy",
@@ -810,7 +810,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/xLDNlCY8.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/02i6M2YK.png",
+        "/asset/hero-icon/101-Lam-Icon.png",
       heroBody: "101-Lam.jpg",
     },
     heroExperience: "Intermediate",
@@ -835,7 +835,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/FNYwEHVp.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/23rrkYYy.png",
+        "/asset/hero-icon/050-Dun-Icon.png",
       heroBody: "050-Dun.jpg",
     },
     heroExperience: "Easy",
@@ -871,7 +871,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/bMrvtoIE.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XDnXeq3x.png",
+        "/asset/hero-icon/075-Kongming-Icon.png",
       heroBody: "075-Kongming.jpg",
     },
     heroExperience: "Easy",
@@ -907,7 +907,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/MUNGLxW8.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/xUdtJiLO.png",
+        "/asset/hero-icon/058-Kaizer-Icon.png",
       heroBody: "058-Kaizer.jpg",
     },
     heroExperience: "Easy",
@@ -943,7 +943,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/M7R2duVl.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/gqPEOybC.png",
+        "/asset/hero-icon/063-Lady-Zhen-Icon.png",
       heroBody: "063-Lady-Zhen.jpg",
     },
     heroExperience: "Easy",
@@ -968,7 +968,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/I04GXrAz.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/camp/admin/hero/head_128-128/znRnu3kt.png",
+        "/asset/hero-icon/032-Luara-Icon.png",
       heroBody: "032-Luara.jpg",
     },
     heroExperience: "Easy",
@@ -993,7 +993,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/mTftREQF.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/camp/admin/hero/head_128-128/YO6iwLAg.jpg",
+        "/asset/hero-icon/043-Heino-Icon.jpg",
       heroBody: "043-Heino.jpg",
     },
     heroExperience: "Easy",
@@ -1018,7 +1018,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/SkVL7iz6.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/6dGNjKTe.png",
+        "/asset/hero-icon/100-Fang-Icon.png",
       heroBody: "100-Fang.jpg",
     },
     heroExperience: "Easy",
@@ -1043,7 +1043,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/WbDySARi.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/dXLF2kE7.png",
+        "/asset/hero-icon/066-Lu-Bu-Icon.png",
       heroBody: "066-Lu-Bu.jpg",
     },
     heroExperience: "Easy",
@@ -1074,7 +1074,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/amfNYinj.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/YTBrsBIg.png",
+        "/asset/hero-icon/079-Arthur-Icon.png",
       heroBody: "079-Arthur.jpg",
     },
     heroExperience: "Easy",
@@ -1105,7 +1105,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/vPYOOxP5.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/jgvSlz3u.png",
+        "/asset/hero-icon/033-Musashi-Icon.png",
       heroBody: "033-Musashi.jpg",
     },
     heroExperience: "Intermediate",
@@ -1136,7 +1136,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/pEygZQ9Z.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/eHvcCJb0.png",
+        "/asset/hero-icon/023-Mi-Yue-Icon.png",
       heroBody: "023-Mi-Yue.jpg",
     },
     heroExperience: "Easy",
@@ -1161,7 +1161,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/hERiaWpd.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/IUMPYUy4.png",
+        "/asset/hero-icon/019-Arke-Icon.png",
       heroBody: "019-Arke.jpg",
     },
     heroExperience: "Easy",
@@ -1186,7 +1186,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/SEhYI41B.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/camp/admin/hero/head_128-128/WuG07My1.jpeg",
+        "/asset/hero-icon/008-Flowborn-Marksman-Icon.jpeg",
       heroBody: "008-Flowborn-Marksman.jpg",
     },
     heroExperience: "Easy",
@@ -1211,7 +1211,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Vvtmn5Ne.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/wRGzV266.png",
+        "/asset/hero-icon/082-Kui-Icon.png",
       heroBody: "082-Kui.jpg",
     },
     heroExperience: "Intermediate",
@@ -1236,7 +1236,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/7TA19KxF.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/y6IMFSlI.png",
+        "/asset/hero-icon/111-Dian-Wei-Icon.png",
       heroBody: "111-Dian-Wei.jpg",
     },
     heroExperience: "Easy",
@@ -1261,7 +1261,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/0yjyCa1W.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/IEPtzR5z.png",
+        "/asset/hero-icon/070-Da-Qiao-Icon.png",
       heroBody: "070-Da-Qiao.jpg",
     },
     heroExperience: "Easy",
@@ -1291,7 +1291,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/ocoIb1PU.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hwk1ad6d.png",
+        "/asset/hero-icon/103-Gao-Changgong-Icon.png",
       heroBody: "103-Gao-Changgong.jpg",
     },
     heroExperience: "Intermediate",
@@ -1322,7 +1322,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/uVQvGtpv.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/UZC54GWu.png",
+        "/asset/hero-icon/073-Zhuangzi-Icon.png",
       heroBody: "073-Zhuangzi.jpg",
     },
     heroExperience: "Easy",
@@ -1358,7 +1358,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/m2oCcjm4.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/E39kxNsD.png",
+        "/asset/hero-icon/094-Nuwa-Icon.png",
       heroBody: "094-Nuwa.jpg",
     },
     heroExperience: "Advanced",
@@ -1391,7 +1391,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/6jvtUvQY.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/F3A0JkoT.png",
+        "/asset/hero-icon/069-Biron-Icon.png",
       heroBody: "069-Biron.jpg",
     },
     heroExperience: "Easy",
@@ -1423,7 +1423,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/oMH9g4NU.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/i8WMjP6d.png",
+        "/asset/hero-icon/096-Liu-Shan-Icon.png",
       heroBody: "096-Liu-Shan.jpg",
     },
     heroExperience: "Easy",
@@ -1448,7 +1448,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/ExRaPXMt.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hF8AFVqh.png",
+        "/asset/hero-icon/104-Arli-Icon.png",
       heroBody: "104-Arli.jpg",
     },
     heroExperience: "Advanced",
@@ -1480,7 +1480,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/sLENRyQJ.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/nnafEHV0.png",
+        "/asset/hero-icon/034-Alessio-Icon.png",
       heroBody: "034-Alessio.jpg",
     },
     heroExperience: "Easy",
@@ -1505,7 +1505,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Ex2aJZvB.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/csLOp1dL.png",
+        "/asset/hero-icon/097-Lian-Po-Icon.png",
       heroBody: "097-Lian-Po.jpg",
     },
     heroExperience: "Easy",
@@ -1537,7 +1537,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/BTzGuX2M.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ui5UKQex.png",
+        "/asset/hero-icon/113-Gan-and-Mo-Icon.png",
       heroBody: "113-Gan-and-Mo.jpg",
     },
     heroExperience: "Advanced",
@@ -1567,7 +1567,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/uUnbXnK9.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Te1nmDGP.png",
+        "/asset/hero-icon/091-Sun-Ce-Icon.png",
       heroBody: "091-Sun-Ce.jpg",
     },
     heroExperience: "Intermediate",
@@ -1598,7 +1598,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Zv8Vx9x6.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/km2HzQ71.png",
+        "/asset/hero-icon/028-Ziya-Icon.png",
       heroBody: "028-Ziya.jpg",
     },
     heroExperience: "Easy",
@@ -1634,7 +1634,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/peB9CpiC.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hz3BqNue.png",
+        "/asset/hero-icon/068-Luna-Icon.png",
       heroBody: "068-Luna.jpg",
     },
     heroExperience: "Intermediate",
@@ -1665,7 +1665,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/tiAH3o12.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/qFBebEbk.png",
+        "/asset/hero-icon/110-Diaochan-Icon.png",
       heroBody: "110-Diaochan.jpg",
     },
     heroExperience: "Easy",
@@ -1690,7 +1690,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Cyg0kdSd.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/4bUKKH66.png",
+        "/asset/hero-icon/072-Shouyue-Icon.png",
       heroBody: "072-Shouyue.jpg",
     },
     heroExperience: "Intermediate",
@@ -1715,7 +1715,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/xIM3ebjC.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XTSDAJkR.png",
+        "/asset/hero-icon/109-Di-Renjie-Icon.png",
       heroBody: "109-Di-Renjie.jpg",
     },
     heroExperience: "Easy",
@@ -1746,7 +1746,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/6b0IrGYV.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/diRuUQDV.png",
+        "/asset/hero-icon/084-Ying-Icon.png",
       heroBody: "084-Ying.jpg",
     },
     heroExperience: "Intermediate",
@@ -1770,7 +1770,7 @@ export const HERO_LIST_ENRICHED = [
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Ajn4d263.jpg",
-      heroIcon: "https://camp.honorofkings.com/camp/admin/default/sJURXorM.png",
+      heroIcon: "/asset/hero-icon/015-Chano-Icon.png",
       heroBody: "015-Chano.jpg",
     },
     heroExperience: "Easy",
@@ -1795,7 +1795,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/lu0CZbns.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/FLyy9J46.png",
+        "/asset/hero-icon/087-Xiang-Yu-Icon.png",
       heroBody: "087-Xiang-Yu.jpg",
     },
     heroExperience: "Easy",
@@ -1826,7 +1826,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Doxu6Oq3.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/MjBadKpJ.png",
+        "/asset/hero-icon/024-Shi-Icon.png",
       heroBody: "024-Shi.jpg",
     },
     heroExperience: "Advanced",
@@ -1851,7 +1851,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/1gYFx4kN.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/4jaM0F19.png",
+        "/asset/hero-icon/041-Mai-Shiranui-Icon.png",
       heroBody: "041-Mai-Shiranui.jpg",
     },
     heroExperience: "Intermediate",
@@ -1882,7 +1882,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/jeOWLTy0.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/w0QS7N1L.png",
+        "/asset/hero-icon/080-Zhang-Fei-Icon.png",
       heroBody: "080-Zhang-Fei.jpg",
     },
     heroExperience: "Easy",
@@ -1913,7 +1913,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/6oVEfw6S.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/iIwO0Kwk.png",
+        "/asset/hero-icon/Charlotte-Icon.png",
       heroBody: "Charlotte.jpg",
     },
     heroExperience: "Intermediate",
@@ -1943,7 +1943,7 @@ export const HERO_LIST_ENRICHED = [
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/default/2hPdkfbG.jpg",
-      heroIcon: "https://camp.honorofkings.com/camp/admin/default/h6UHy1TN.png",
+      heroIcon: "/asset/hero-icon/004-Garuda-Khageswara-Icon.png",
       heroBody: "004-Garuda-Khageswara.jpg",
     },
     heroExperience: "Easy",
@@ -1968,7 +1968,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/WZl2T51I.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/camp/admin/hero/head_128-128/ioDVAbAf.jpg",
+        "/asset/hero-icon/005-Umbrosa-Icon.jpg",
       heroBody: "005-Umbrosa.jpg",
     },
     heroExperience: "Easy",
@@ -2005,7 +2005,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/4jij0DvI.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/UhQkVUBi.png",
+        "/asset/hero-icon/099-Fuzi-Icon.png",
       heroBody: "099-Fuzi.jpg",
     },
     heroExperience: "Easy",
@@ -2037,7 +2037,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/IhExpUrR.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/camp/admin/hero/head_128-128/jbrX5mQc.jpeg",
+        "/asset/hero-icon/010-Flowborn-Tank-Icon.jpeg",
       heroBody: "010-Flowborn-Tank.jpg",
     },
     heroExperience: "Easy",
@@ -2069,7 +2069,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/gi5uliqF.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/k3w1wjDA.png",
+        "/asset/hero-icon/102-Li-Bai-Icon.png",
       heroBody: "102-Li-Bai.jpg",
     },
     heroExperience: "Intermediate",
@@ -2100,7 +2100,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/XVz3ScF3.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/H9WAmWdN.png",
+        "/asset/hero-icon/040-Nakoruru-Icon.png",
       heroBody: "040-Nakoruru.jpg",
     },
     heroExperience: "Easy",
@@ -2125,7 +2125,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/LisGz9JI.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/QTcSGEgM.png",
+        "/asset/hero-icon/108-Han-Xin-Icon.png",
       heroBody: "108-Han-Xin.jpg",
     },
     heroExperience: "Intermediate",
@@ -2150,7 +2150,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/cv4BFURQ.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/camp/admin/hero/head_128-128/66xErXNs.jpeg",
+        "/asset/hero-icon/006-Flowborn-Mage-Icon.jpeg",
       heroBody: "006-Flowborn-Mage.jpg",
     },
     heroExperience: "Easy",
@@ -2175,7 +2175,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/9FEMfGL6.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/xw0HrvxD.png",
+        "/asset/hero-icon/031-Yao-Icon.png",
       heroBody: "031-Yao.jpg",
     },
     heroExperience: "Intermediate",
@@ -2205,7 +2205,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/ByB0avrN.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/D1f9UN1O.png",
+        "/asset/hero-icon/077-Wuyan-Icon.png",
       heroBody: "077-Wuyan.jpg",
     },
     heroExperience: "Easy",
@@ -2236,7 +2236,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/IzGNO4gH.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/YmpeG9H2.png",
+        "/asset/hero-icon/115-Dr-Bian-Icon.png",
       heroBody: "115-Dr-Bian.jpg",
     },
     heroExperience: "Easy",
@@ -2261,7 +2261,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/VLdAOWEU.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/eafz1moy.png",
+        "/asset/hero-icon/059-Ata-Icon.png",
       heroBody: "059-Ata.jpg",
     },
     heroExperience: "Easy",
@@ -2291,7 +2291,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/X6bMcS9I.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ionwVFtV.png",
+        "/asset/hero-icon/018-Sakeer-Icon.png",
       heroBody: "018-Sakeer.jpg",
     },
     heroExperience: "Easy",
@@ -2316,7 +2316,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/LF6Nz3Dc.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/r97AVgaV.png",
+        "/asset/hero-icon/037-Yuhuan-Icon.png",
       heroBody: "037-Yuhuan.jpg",
     },
     heroExperience: "Easy",
@@ -2352,7 +2352,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/sLRXwXQN.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/TYN9rh81.png",
+        "/asset/hero-icon/053-Agudo-Icon.png",
       heroBody: "053-Agudo.jpg",
     },
     heroExperience: "Easy",
@@ -2388,7 +2388,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/6qGtxWOJ.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/kqkpA18w.png",
+        "/asset/hero-icon/076-Zhou-Yu-Icon.png",
       heroBody: "076-Zhou-Yu.jpg",
     },
     heroExperience: "Easy",
@@ -2419,7 +2419,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/8kII7n12.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ubeT1R84.png",
+        "/asset/hero-icon/062-Ming-Icon.png",
       heroBody: "062-Ming.jpg",
     },
     heroExperience: "Easy",
@@ -2444,7 +2444,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/xUSaF8jZ.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/9xqbsAQC.png",
+        "/asset/hero-icon/078-Zilong-Icon.png",
       heroBody: "078-Zilong.jpg",
     },
     heroExperience: "Easy",
@@ -2474,7 +2474,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/CBT9NFLe.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/m8aOqFQE.png",
+        "/asset/hero-icon/017-Feyd-Icon.png",
       heroBody: "017-Feyd.jpg",
     },
     heroExperience: "Intermediate",
@@ -2505,7 +2505,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/yiAUErJL.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/camp/admin/hero/head_128-128/FPq2P4ew.png",
+        "/asset/hero-icon/048-Butterfly-Icon.png",
       heroBody: "048-Butterfly.jpg",
     },
     heroExperience: "Easy",
@@ -2530,7 +2530,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/HPC78m98.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/QWFCuWNn.png",
+        "/asset/hero-icon/103-Gao-Changgong-Icon.png",
       heroBody: "103-Gao-Changgong.jpg",
     },
     heroExperience: "Easy",
@@ -2560,7 +2560,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Uvn9VDp3.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/argPlTxR.png",
+        "/asset/hero-icon/046-Liu-Bei-Icon.png",
       heroBody: "046-Liu-Bei.jpg",
     },
     heroExperience: "Easy",
@@ -2585,7 +2585,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/3q1zTt6E.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XlRczGYM.png",
+        "/asset/hero-icon/092-Pei-Icon.png",
       heroBody: "092-Pei.jpg",
     },
     heroExperience: "Intermediate",
@@ -2616,7 +2616,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/8pdEvIFf.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/vhBTA9jh.png",
+        "/asset/hero-icon/025-Meng-Ya-Icon.png",
       heroBody: "025-Meng-Ya.jpg",
     },
     heroExperience: "Easy",
@@ -2641,7 +2641,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/P3i4l8r8.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/LNECT7PW.png",
+        "/asset/hero-icon/047-Huang-Zhong-Icon.png",
       heroBody: "047-Huang-Zhong.jpg",
     },
     heroExperience: "Easy",
@@ -2666,7 +2666,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/2mct7rWz.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/8e9WRFgL.png",
+        "/asset/hero-icon/039-Ukyo-Tachibana-Icon.png",
       heroBody: "039-Ukyo-Tachibana.jpg",
     },
     heroExperience: "Intermediate",
@@ -2696,7 +2696,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/aknBlGMI.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/uY7c38Tt.png",
+        "/asset/hero-icon/014-Bai-Qi-Icon.png",
       heroBody: "014-Bai-Qi.jpg",
     },
     heroExperience: "Easy",
@@ -2733,7 +2733,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/mKedCKPI.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/p4dfuWXS.png",
+        "/asset/hero-icon/105-Mulan-Icon.png",
       heroBody: "105-Mulan.jpg",
     },
     heroExperience: "Advanced",
@@ -2763,7 +2763,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/bh6aZMH5.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/FsGXCnH1.png",
+        "/asset/hero-icon/074-Mayene-Icon.png",
       heroBody: "074-Mayene.jpg",
     },
     heroExperience: "Intermediate",
@@ -2793,7 +2793,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/LiaY1Ak1.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/LntokS4z.png",
+        "/asset/hero-icon/083-Yang-Jian-Icon.png",
       heroBody: "083-Yang-Jian.jpg",
     },
     heroExperience: "Easy",
@@ -2830,7 +2830,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/tSx2ERbX.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/V5e2k18Z.png",
+        "/asset/hero-icon/071-Guan-Yu-Icon.png",
       heroBody: "071-Guan-Yu.jpg",
     },
     heroExperience: "Advanced",
@@ -2867,7 +2867,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/RML4OrEQ.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ek9OHopQ.png",
+        "/asset/hero-icon/038-Allain-Icon.png",
       heroBody: "038-Allain.jpg",
     },
     heroExperience: "Easy",
@@ -2898,7 +2898,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/vguCwOnf.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/1zkBQ1l1.png",
+        "/asset/hero-icon/064-Sun-Bin-Icon.png",
       heroBody: "064-Sun-Bin.jpg",
     },
     heroExperience: "Advanced",
@@ -2923,7 +2923,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/vW5q3aT6.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/zyA68GFr.png",
+        "/asset/hero-icon/035-Shangguan-Icon.png",
       heroBody: "035-Shangguan.jpg",
     },
     heroExperience: "Advanced",
@@ -2948,7 +2948,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/6EEUjz9u.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/bwygx1aS.png",
+        "/asset/hero-icon/021-Cirrus-Icon.png",
       heroBody: "021-Cirrus.jpg",
     },
     heroExperience: "Easy",
@@ -2973,7 +2973,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/aQiegaok.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/AXjJlMvi.png",
+        "/asset/hero-icon/045-Guiguzi-Icon.png",
       heroBody: "045-Guiguzi.jpg",
     },
     heroExperience: "Easy",
@@ -2998,7 +2998,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/oCCtEU9x.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/HVRw4cpB.png",
+        "/asset/hero-icon/056-Jing-Icon.png",
       heroBody: "056-Jing.jpg",
     },
     heroExperience: "Advanced",
@@ -3030,7 +3030,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/UCNANDbr.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/9u997w0x.png",
+        "/asset/hero-icon/067-Dharma-Icon.png",
       heroBody: "067-Dharma.jpg",
     },
     heroExperience: "Intermediate",
@@ -3062,7 +3062,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/NP5clJQ1.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/WDh84DWg.png",
+        "/asset/hero-icon/036-Nezha-Icon.png",
       heroBody: "036-Nezha.jpg",
     },
     heroExperience: "Easy",
@@ -3092,7 +3092,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/PsRv1GG0.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/bVHGeH45.png",
+        "/asset/hero-icon/027-Liu-Bang-Icon.png",
       heroBody: "027-Liu-Bang.jpg",
     },
     heroExperience: "Easy",
@@ -3129,7 +3129,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/jmBX2Gi8.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/sU3BsR6P.png",
+        "/asset/hero-icon/051-Sima-Yi-Icon.png",
       heroBody: "051-Sima-Yi.jpg",
     },
     heroExperience: "Easy",
@@ -3154,7 +3154,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/w1wO6DKd.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ym7KcrIW.png",
+        "/asset/hero-icon/061-Menki-Icon.png",
       heroBody: "061-Menki.jpg",
     },
     heroExperience: "Easy",
@@ -3190,7 +3190,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/mD5CDPk0.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/keW8Hfo0.png",
+        "/asset/hero-icon/020-Xuance-Icon.png",
       heroBody: "020-Xuance.jpg",
     },
     heroExperience: "Intermediate",
@@ -3215,7 +3215,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/BTfAVTQF.jpg",
       heroIcon:
-        "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/BEh6QC3Q.png",
+        "/asset/hero-icon/081-Athena-Icon.png",
       heroBody: "081-Athena.jpg",
     },
     heroExperience: "Easy",

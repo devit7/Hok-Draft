@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { HERO_EXPERIENCE } from "@/static-database/hero";
 import type { TierItem } from "../../types/item.type";
 import { memo } from "react";
@@ -26,11 +25,10 @@ const TierItemContent = memo(
         }}
       >
         <div className="w-16 h-20 flex flex-col items-center relative overflow-hidden group">
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src={item.heroImage}
             alt={item.heroName || "Hero"}
-            width={64}
-            height={64}
             className={`w-full h-full object-cover transition-transform duration-300 opacity-75 hover:opacity-100 border-b-3 ${color}`}
           />
           <span className="block text-gray-200 font-medium text-xs truncate w-16 h-5 text-center">

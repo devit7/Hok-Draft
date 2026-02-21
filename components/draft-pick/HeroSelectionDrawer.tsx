@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/sheet";
 import useDraftStore from "@/store/useDraftStore";
 import { HERO_LIST_ENRICHED } from "@/static-database/main/hero-list-enriched";
-import { Search } from "lucide-react";
+import { Search, ArrowDownAZ, ArrowDownZA } from "lucide-react";
 import Image from "next/image";
 import { HERO_ROLE } from "@/static-database/hero/hero-role";
 import type { TierItem } from "@/types/item.type";
@@ -37,6 +37,7 @@ export default function HeroSelectionDrawer() {
 
   const [search, setSearch] = useState("");
   const [roleFilter, setRoleFilter] = useState<number | null>(null);
+  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
 
   // GBP Logic: Get list of heroes already picked by this team in PREVIOUS matches
   const globalBannedHeroIds = useMemo(() => {
@@ -82,7 +83,7 @@ export default function HeroSelectionDrawer() {
   }, [selectingSlot, matches]);
 
   const filteredHeroes = useMemo(() => {
-    return ALL_HEROES.filter((hero) => {
+    const filtered = ALL_HEROES.filter((hero) => {
       const matchesSearch = hero.heroName
         .toLowerCase()
         .includes(search.toLowerCase());
@@ -90,7 +91,12 @@ export default function HeroSelectionDrawer() {
         roleFilter === null || hero.heroRoles?.some((r) => r.id === roleFilter);
       return matchesSearch && matchesRole;
     });
-  }, [search, roleFilter]);
+
+    return filtered.sort((a, b) => {
+      const cmp = a.heroName.localeCompare(b.heroName);
+      return sortOrder === "asc" ? cmp : -cmp;
+    });
+  }, [search, roleFilter, sortOrder]);
 
   const handleSelect = (hero: TierItem) => {
     selectHero(hero);
@@ -124,18 +130,33 @@ export default function HeroSelectionDrawer() {
                 </span>
               )}
             </div>
-            <div className="relative w-full sm:w-64">
-              <Search
-                className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-400"
-                size={14}
-              />
-              <input
-                className="w-full bg-black/20 border border-white/10 rounded-sm py-1.5 pl-8 pr-4 text-xs sm:text-sm text-white focus:outline-none focus:border-blue-500/50"
-                placeholder="Search hero..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                autoFocus={false}
-              />
+            <div className="flex items-center gap-2 w-full sm:w-auto">
+              <div className="relative w-full sm:w-64">
+                <Search
+                  className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-400"
+                  size={14}
+                />
+                <input
+                  className="w-full bg-black/20 border border-white/10 rounded-sm py-1.5 pl-8 pr-4 text-xs sm:text-sm text-white focus:outline-none focus:border-blue-500/50"
+                  placeholder="Search hero..."
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  autoFocus={false}
+                />
+              </div>
+              <button
+                onClick={() =>
+                  setSortOrder((prev) => (prev === "asc" ? "desc" : "asc"))
+                }
+                className="p-1.5 bg-black/20 border border-white/10 rounded-sm text-gray-400 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+                title={sortOrder === "asc" ? "Sort Z-A" : "Sort A-Z"}
+              >
+                {sortOrder === "asc" ? (
+                  <ArrowDownAZ size={16} />
+                ) : (
+                  <ArrowDownZA size={16} />
+                )}
+              </button>
             </div>
           </SheetTitle>
 

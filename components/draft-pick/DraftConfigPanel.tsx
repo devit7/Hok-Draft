@@ -127,26 +127,26 @@ export default function DraftConfigPanel() {
       {/* Team Names Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 pb-4 bg-d-primary-surface/70 border-t border-white/5 pt-4">
         <div className="flex flex-col gap-1">
-          <label className="text-xs text-gray-400 uppercase tracking-wider">
-            Team A Name
+          <label className="text-xs text-gray-400 tracking-wider">
+            Custom Team A Name
           </label>
           <input
             type="text"
             value={teamAName}
             onChange={(e) => updateTeamName("A", e.target.value)}
-            className="px-3 py-2 bg-blue-900/10 border border-blue-500/20 rounded-xs text-blue-100 text-sm focus:outline-none focus:border-blue-500/40 transition-colors"
+            className="px-3 py-2 bg-slate-800/50 border border-white/10 rounded-sm text-white text-sm focus:outline-none focus:border-white/20 transition-colors"
             placeholder="Enter team A name"
           />
         </div>
         <div className="flex flex-col gap-1">
-          <label className="text-xs text-gray-400 uppercase tracking-wider">
-            Team B Name
+          <label className="text-xs text-gray-400 tracking-wider">
+            Custom Team B Name
           </label>
           <input
             type="text"
             value={teamBName}
             onChange={(e) => updateTeamName("B", e.target.value)}
-            className="px-3 py-2 bg-red-900/10 border border-red-500/20 rounded-xs text-red-100 text-sm focus:outline-none focus:border-red-500/40 transition-colors"
+            className="px-3 py-2 bg-slate-800/50 border border-white/10 rounded-sm text-white text-sm focus:outline-none focus:border-white/20 transition-colors"
             placeholder="Enter team B name"
           />
         </div>
