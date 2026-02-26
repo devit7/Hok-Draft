@@ -27,6 +27,11 @@ const showWinLoseOptions = [
   { value: false, label: "Disabled" },
 ];
 
+const draftStyleOptions = [
+  { value: "normal", label: "Normal" },
+  { value: "compact", label: "Compact" },
+];
+
 const selectStyles = {
   control: (base: any) => ({
     ...base,
@@ -67,7 +72,7 @@ export default function DraftConfigPanel() {
       </div>
 
       {/* General Config */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 py-4 bg-d-primary-surface/70">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 px-4 py-4 bg-d-primary-surface/70">
         <div className="flex flex-col gap-1">
           <label className="text-xs text-gray-400">Draft Mode</label>
           <Select
@@ -110,6 +115,19 @@ export default function DraftConfigPanel() {
               (o) => o.value === config.showWinLose,
             )}
             onChange={(val) => updateConfig({ showWinLose: val?.value as any })}
+            className="text-sm"
+            styles={selectStyles}
+          />
+        </div>
+        <div className="flex flex-col gap-1">
+          <label className="text-xs text-gray-400">Draft Style</label>
+          <Select
+            instanceId="draftStyle"
+            options={draftStyleOptions}
+            value={draftStyleOptions.find(
+              (o) => o.value === (config.draftStyle || "normal"),
+            )}
+            onChange={(val) => updateConfig({ draftStyle: val?.value as any })}
             className="text-sm"
             styles={selectStyles}
           />

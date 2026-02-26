@@ -27,16 +27,21 @@ export default function TeamDraftPanel({
   const bgColor = isFirstPick ? "bg-blue-900/20" : "bg-red-900/20";
   const textColor = isFirstPick ? "text-blue-100" : "text-red-100";
   const subtitleColor = "text-gray-400";
+  const draftStyle = useDraftStore((state) => state.config.draftStyle);
 
   return (
-    <div className={`flex flex-col gap-4 rounded-xs `}>
+    <div
+      className={`flex flex-col ${draftStyle === "compact" ? "gap-2" : "gap-4"} rounded-xs `}
+    >
       <div
         className={`flex justify-between items-center px-2 py-1 ${bgColor} ${isFirstPick ? "flex-row" : "flex-row-reverse"}`}
       >
-        <h3 className={`font-bold text-lg uppercase ${textColor}`}>
+        <h3
+          className={`font-bold uppercase ${draftStyle === "compact" ? "text-base" : "text-lg"} ${textColor}`}
+        >
           {teamName}
         </h3>
-        <div className={`text-xs uppercase tracking-widest ${subtitleColor}`}>
+        <div className={`text-xs uppercase tracking-widest w-[100px] text-right ${subtitleColor}`}>
           {isFirstPick ? "First Pick" : "Second Pick"}
         </div>
       </div>

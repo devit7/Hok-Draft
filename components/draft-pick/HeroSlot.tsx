@@ -19,7 +19,8 @@ export default function HeroSlot({
   type,
   index,
 }: HeroSlotProps) {
-  const { openHeroSelection, selectHero } = useDraftStore();
+  const { openHeroSelection, selectHero, config } = useDraftStore();
+  const draftStyle = config?.draftStyle || "normal";
 
   const handleClick = () => {
     openHeroSelection(matchIndex, team, type, index);
@@ -42,7 +43,9 @@ export default function HeroSlot({
   // Pick: Larger portrait card (HeroCardBase style)
   const containerClass = isBan
     ? "w-10 h-10 md:w-14 md:h-14 rounded-xs" // Ban
-    : "w-13 sm:w-20 md:w-28 aspect-4/5 rounded-none"; // Pick (Portrait)
+    : draftStyle === "compact"
+      ? "w-12 h-12 md:w-16 md:h-16 rounded-xs" // Compact Pick
+      : "w-13 sm:w-20 md:w-28 aspect-4/5 rounded-none"; // Pick (Portrait)
 
   return (
     <div className="flex flex-col items-center gap-1">
@@ -57,7 +60,7 @@ export default function HeroSlot({
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={
-                !isBan && hero.heroBody
+                !isBan && hero.heroBody && draftStyle !== "compact"
                   ? `/asset/hero/${hero.heroBody}`
                   : hero.heroImage
               }
@@ -66,7 +69,7 @@ export default function HeroSlot({
             />
 
             {/* Gradient overlay for Picks (like HeroCardBase) */}
-            {!isBan && (
+            {!isBan && draftStyle !== "compact" && (
               <div className="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black/90 via-d-from-black/50 to-transparent pointer-events-none flex items-end justify-center pb-1">
                 <span className="text-[9px] md:text-[12px] text-white font-medium truncate px-1 drop-shadow-md">
                   {hero.heroName}

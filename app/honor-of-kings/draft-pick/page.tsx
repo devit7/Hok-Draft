@@ -9,12 +9,14 @@ import HeroSelectionDrawer from "@/components/draft-pick/HeroSelectionDrawer";
 import useDraftStore from "@/store/useDraftStore";
 
 export default function DraftPickPage() {
-  const { matches } = useDraftStore();
+  const { matches, config } = useDraftStore();
   const exportRef = useRef<HTMLDivElement>(null);
 
   const [isExporting, setIsExporting] = useState(false);
   const [exportProgress, setExportProgress] = useState(0);
   const [customTitle, setCustomTitle] = useState("Draft Pick Simulation");
+
+  const draftStyle = config?.draftStyle || "normal";
 
   const handleExport = async () => {
     if (!exportRef.current || isExporting) return;
@@ -95,7 +97,12 @@ export default function DraftPickPage() {
 
       <DraftConfigPanel />
 
-      <div ref={exportRef} className="sm:p-4 rounded-xs">
+      <div
+        ref={exportRef}
+        className={`rounded-xs ${
+          draftStyle === "compact" ? "w-fit mx-auto px-4 py-4" : "sm:p-4"
+        }`}
+      >
         {/* Custom Title */}
         <div className="w-full mb-6 py-2 border-b border-white/10 flex justify-center group relative">
           <div className="relative inline-block w-full max-w-3xl">
@@ -106,13 +113,17 @@ export default function DraftPickPage() {
               className="bg-transparent text-center border-none outline-none w-full text-xl lg:text-2xl font-medium focus:text-blue-400 transition-colors pr-8"
               placeholder="Enter match title..."
             />
-            <Pencil className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 opacity-100 group-hover:opacity-100 transition-opacity pointer-events-none" />
+            <Pencil className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
           </div>
         </div>
 
-        <div className="space-y-12">
+        <div className={` ${draftStyle === "compact" ? "" : "space-y-12"}`}>
           {matches.map((match, index) => (
-            <DraftMatchBoard key={match.id} matchIndex={index} />
+            <DraftMatchBoard
+              key={match.id}
+              matchIndex={index}
+              isExporting={isExporting}
+            />
           ))}
         </div>
 

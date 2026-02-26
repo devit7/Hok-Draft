@@ -31,6 +31,7 @@ export interface DraftConfig {
   bestOf: number; // 1, 3, 5, 7
   banCount: number; // 3, 4, 5, 6
   showWinLose: boolean;
+  draftStyle?: "normal" | "compact";
 }
 
 interface DraftStoreState {
@@ -105,6 +106,7 @@ const useDraftStore = create<DraftStoreState>()(
         bestOf: 3,
         banCount: 4,
         showWinLose: false,
+        draftStyle: "normal",
       },
       matches: Array(3)
         .fill(null)
