@@ -25,6 +25,7 @@ export default function DraftMatchBoard({
     updateMatchResult,
   } = useDraftStore();
   const match = matches[matchIndex];
+  const bgStyle = config?.bgStyle || "default";
 
   const [isEditing, setIsEditing] = useState(false);
   const [tempName, setTempName] = useState("");
@@ -54,7 +55,7 @@ export default function DraftMatchBoard({
   // Standard (Default) View
   return (
     <div
-      className={`flex flex-col ${config?.draftStyle === "compact" ? "gap-2" : "gap-4"} p-2 relative`}
+      className={`flex flex-col ${config?.draftStyle === "compact" ? "gap-2" : "gap-4"} relative`}
     >
       {/* Header */}
       <div
@@ -66,7 +67,11 @@ export default function DraftMatchBoard({
               type="text"
               value={tempName}
               onChange={(e) => setTempName(e.target.value)}
-              className="px-2 py-1 bg-slate-800/50 border border-blue-500/30 rounded-xs text-white text-sm focus:outline-none focus:border-blue-400"
+              className={`px-2 py-1 rounded-xs text-sm focus:outline-none transition-colors ${
+                bgStyle === "white"
+                  ? "bg-white border border-blue-500 text-gray-800 focus:border-blue-600"
+                  : "bg-slate-800/50 border border-blue-500/30 text-white focus:border-blue-400"
+              }`}
               autoFocus
               onKeyDown={(e) => {
                 if (e.key === "Enter") handleSave();
@@ -87,22 +92,30 @@ export default function DraftMatchBoard({
             </button>
           </div>
         ) : (
-          <div
-            className={`flex items-center gap-2 group border-l-4 border-blue-500 pl-3`}
-          >
-            <h2
-              className={`font-medium uppercase ${config?.draftStyle === "compact" ? "text-[14px] sm:text-base tracking-widest text-[#D0D0E6] shrink-0" : "text-xl"}`}
-            >
-              {match.name || `MATCH ${matchIndex + 1}`}
-            </h2>
-            <button
-              onClick={handleEdit}
-              className={`text-gray-400 hover:text-white transition-opacity ${config?.draftStyle === "compact" ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`}
-              title="Edit match name"
-            >
-              <Edit2 size={16} />
-            </button>
-          </div>
+          <>
+            {config?.draftStyle !== "compact" && (
+              <div className="flex items-center gap-2 group border-l-4 border-blue-500 pl-3">
+                <h2
+                  className={`font-medium uppercase text-xl tracking-wide ${
+                    bgStyle === "white" ? "text-gray-700" : ""
+                  }`}
+                >
+                  {match.name || `MATCH ${matchIndex + 1}`}
+                </h2>
+                <button
+                  onClick={handleEdit}
+                  className={`transition-opacity opacity-0 group-hover:opacity-100 ${
+                    bgStyle === "white"
+                      ? "text-gray-400 hover:text-gray-800"
+                      : "text-gray-400 hover:text-white"
+                  }`}
+                  title="Edit match name"
+                >
+                  <Edit2 size={16} />
+                </button>
+              </div>
+            )}
+          </>
         )}
         {!isExporting && (
           <div
@@ -133,12 +146,18 @@ export default function DraftMatchBoard({
         {config.showWinLose && (
           <div
             onClick={handleWinLoseClick}
-            className={`w-6 sm:w-8 shrink-0 flex items-center justify-center rounded-xs cursor-pointer border hover:opacity-80 transition-opacity overflow-hidden ${
+            className={`w-6 sm:w-8 shrink-0 flex items-center justify-center rounded-xs cursor-pointer hover:opacity-80 transition-opacity overflow-hidden ${
               match.result === "win"
-                ? "bg-green-600/20 border-green-500/20 text-green-200"
+                ? bgStyle === "white"
+                  ? "bg-[#185A4E] text-white"
+                  : "bg-green-600/20 border border-green-500/20 text-green-200"
                 : match.result === "lose"
-                  ? "bg-red-600/20 border-red-500/20 text-red-200"
-                  : "bg-slate-800/50 border-white/10 text-gray-500"
+                  ? bgStyle === "white"
+                    ? "bg-[#9B2238] text-white"
+                    : "bg-red-600/20 border border-red-500/20 text-red-200"
+                  : bgStyle === "white"
+                    ? "bg-gray-100 border border-gray-200 text-gray-400"
+                    : "bg-slate-800/50 border border-white/10 text-gray-500"
             }`}
           >
             <span className="text-xs font-medium tracking-[0.2em] -rotate-90 whitespace-nowrap select-none">
@@ -146,7 +165,7 @@ export default function DraftMatchBoard({
                 ? "WIN"
                 : match.result === "lose"
                   ? "LOSE"
-                  : "SET RESULT"}
+                  : ""}
             </span>
           </div>
         )}
@@ -204,12 +223,18 @@ export default function DraftMatchBoard({
                 updateMatchResult(matchIndex, null);
               else updateMatchResult(matchIndex, "lose");
             }}
-            className={`w-6 sm:w-8 shrink-0 flex items-center justify-center rounded-xs cursor-pointer border hover:opacity-80 transition-opacity overflow-hidden ${
+            className={`w-6 sm:w-8 shrink-0 flex items-center justify-center rounded-xs cursor-pointer hover:opacity-80 transition-opacity overflow-hidden ${
               match.result === "lose"
-                ? "bg-green-600/20 border-green-500/20 text-green-400"
+                ? bgStyle === "white"
+                  ? "bg-[#185A4E] text-white"
+                  : "bg-green-600/20 border border-green-500/20 text-green-400"
                 : match.result === "win"
-                  ? "bg-red-600/20 border-red-500/20 text-red-400"
-                  : "bg-slate-800/50 border-white/10 text-gray-500"
+                  ? bgStyle === "white"
+                    ? "bg-[#9B2238] text-white"
+                    : "bg-red-600/20 border border-red-500/20 text-red-400"
+                  : bgStyle === "white"
+                    ? "bg-gray-100 border border-gray-200 text-gray-400"
+                    : "bg-slate-800/50 border border-white/10 text-gray-500"
             }`}
           >
             <span className="text-xs font-medium tracking-[0.2em] -rotate-90 whitespace-nowrap select-none">
@@ -217,7 +242,7 @@ export default function DraftMatchBoard({
                 ? "WIN"
                 : match.result === "win"
                   ? "LOSE"
-                  : "SET RESULT"}
+                  : ""}
             </span>
           </div>
         )}

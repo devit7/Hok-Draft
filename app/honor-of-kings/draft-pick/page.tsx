@@ -17,6 +17,7 @@ export default function DraftPickPage() {
   const [customTitle, setCustomTitle] = useState("Draft Pick Simulation");
 
   const draftStyle = config?.draftStyle || "normal";
+  const bgStyle = config?.bgStyle || "default";
 
   const handleExport = async () => {
     if (!exportRef.current || isExporting) return;
@@ -29,7 +30,7 @@ export default function DraftPickPage() {
       const totalNodes = exportRef.current.querySelectorAll("*").length;
 
       const dataUrl = await domToPng(exportRef.current, {
-        backgroundColor: "#181b44",
+        backgroundColor: bgStyle === "white" ? "#ffffff" : "#181b44",
         scale: 2,
         onCloneNode: () => {
           nodeCount++;
@@ -101,16 +102,24 @@ export default function DraftPickPage() {
         ref={exportRef}
         className={`rounded-xs ${
           draftStyle === "compact" ? "w-fit mx-auto px-4 py-4" : "sm:p-4"
-        }`}
+        } ${bgStyle === "white" ? "bg-white text-gray-800" : "bg-transparent text-white"}`}
       >
         {/* Custom Title */}
-        <div className="w-full mb-6 py-2 border-b border-white/10 flex justify-center group relative">
+        <div
+          className={`w-full mb-6 py-2 border-b flex justify-center group relative ${
+            bgStyle === "white" ? "border-gray-200" : "border-white/10"
+          }`}
+        >
           <div className="relative inline-block w-full max-w-3xl">
             <input
               type="text"
               value={customTitle}
               onChange={(e) => setCustomTitle(e.target.value)}
-              className="bg-transparent text-center border-none outline-none w-full text-xl lg:text-2xl font-medium focus:text-blue-400 transition-colors pr-8"
+              className={`bg-transparent text-center border-none outline-none w-full text-xl lg:text-2xl font-medium transition-colors pr-8 ${
+                bgStyle === "white"
+                  ? "text-gray-800 focus:text-blue-600"
+                  : "text-white focus:text-blue-400"
+              }`}
               placeholder="Enter match title..."
             />
             <Pencil className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
@@ -128,8 +137,12 @@ export default function DraftPickPage() {
         </div>
 
         {/* Watermark */}
-        <div className="flex justify-center items-center pt-8 pb-2 opacity-50">
-          <span className="text-xs text-white">
+        <div
+          className={`flex justify-center items-center pt-8 pb-2 opacity-50 ${
+            bgStyle === "white" ? "text-gray-500" : "text-white"
+          }`}
+        >
+          <span className="text-xs">
             Made by hok-draft.web.id | Copyright © {new Date().getFullYear()} .
             All rights reserved.
           </span>

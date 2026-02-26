@@ -21,6 +21,7 @@ export default function HeroSlot({
 }: HeroSlotProps) {
   const { openHeroSelection, selectHero, config } = useDraftStore();
   const draftStyle = config?.draftStyle || "normal";
+  const bgStyle = config?.bgStyle || "default";
 
   const handleClick = () => {
     openHeroSelection(matchIndex, team, type, index);
@@ -52,8 +53,14 @@ export default function HeroSlot({
       <div
         onClick={handleClick}
         className={`relative ${containerClass} border ${
-          hero ? "border-transparent" : "border-dashed border-gray-600"
-        } flex items-center justify-center cursor-pointer hover:bg-white/5 transition-colors group bg-d-primary-surface overflow-hidden`}
+          hero
+            ? "border-transparent"
+            : bgStyle === "white"
+              ? "border-dashed border-gray-300"
+              : "border-dashed border-gray-600"
+        } flex items-center justify-center cursor-pointer hover:opacity-80 transition-colors group ${
+          bgStyle === "white" ? "bg-gray-50" : "bg-d-primary-surface"
+        } overflow-hidden`}
       >
         {hero ? (
           <>
@@ -65,7 +72,7 @@ export default function HeroSlot({
                   : hero.heroImage
               }
               alt={hero.heroName}
-              className={`absolute inset-0 w-full h-full object-cover ${isBan ? "grayscale" : "transition-transform duration-1000 group-hover:scale-110 opacity-80 group-hover:opacity-100"}`}
+              className={`absolute inset-0 w-full h-full object-cover ${isBan ? "grayscale" : "transition-transform duration-1000 group-hover:scale-110 "}`}
             />
 
             {/* Gradient overlay for Picks (like HeroCardBase) */}
@@ -83,11 +90,18 @@ export default function HeroSlot({
             </div>
           </>
         ) : (
-          <Plus className="text-gray-500" size={isBan ? 16 : 24} />
+          <Plus
+            className={bgStyle === "white" ? "text-gray-400" : "text-gray-500"}
+            size={isBan ? 16 : 24}
+          />
         )}
       </div>
-      {!isBan && (
-        <span className="text-[10px] md:text-[11px] text-gray-400 max-w-[4rem] truncate text-center font-medium mt-0.5">
+      {!isBan && draftStyle !== "compact" && (
+        <span
+          className={`text-[10px] md:text-[11px] max-w-[4rem] truncate text-center font-medium mt-0.5 ${
+            bgStyle === "white" ? "text-gray-600" : "text-gray-400"
+          }`}
+        >
           {type === "pick" ? `Pick ${index + 1}` : `Ban ${index + 1}`}
         </span>
       )}

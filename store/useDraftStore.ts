@@ -32,6 +32,7 @@ export interface DraftConfig {
   banCount: number; // 3, 4, 5, 6
   showWinLose: boolean;
   draftStyle?: "normal" | "compact";
+  bgStyle?: "default" | "white";
 }
 
 interface DraftStoreState {
@@ -107,6 +108,7 @@ const useDraftStore = create<DraftStoreState>()(
         banCount: 4,
         showWinLose: false,
         draftStyle: "normal",
+        bgStyle: "default",
       },
       matches: Array(3)
         .fill(null)
