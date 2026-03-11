@@ -1291,7 +1291,7 @@ export const HERO_LIST_ENRICHED = [
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/ocoIb1PU.jpg",
       heroIcon:
-        "/asset/hero-icon/103-Gao-Changgong-Icon.png",
+        "/asset/hero-icon/Lanling.jpg",
       heroBody: "103-Gao-Changgong.jpg",
     },
     heroExperience: "Intermediate",
@@ -2531,7 +2531,7 @@ export const HERO_LIST_ENRICHED = [
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/HPC78m98.jpg",
       heroIcon:
         "/asset/hero-icon/103-Gao-Changgong-Icon.png",
-      heroBody: "103-Gao-Changgong.jpg",
+      heroBody: "Gao.jpg",
     },
     heroExperience: "Easy",
     role: [
