@@ -1,8 +1,9 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { Download, Pencil } from "lucide-react";
+import { Download, Pencil, Image as ImageIcon, FileText } from "lucide-react";
 import { domToPng } from "modern-screenshot";
+import { jsPDF } from "jspdf";
 import DraftConfigPanel from "@/components/draft-pick/DraftConfigPanel";
 import DraftMatchBoard from "@/components/draft-pick/DraftMatchBoard";
 import HeroSelectionDrawer from "@/components/draft-pick/HeroSelectionDrawer";
@@ -13,16 +14,18 @@ export default function DraftPickPage() {
   const exportRef = useRef<HTMLDivElement>(null);
 
   const [isExporting, setIsExporting] = useState(false);
+  const [exportType, setExportType] = useState<"png" | "pdf" | null>(null);
   const [exportProgress, setExportProgress] = useState(0);
   const [customTitle, setCustomTitle] = useState("Draft Pick Simulation");
 
   const draftStyle = config?.draftStyle || "normal";
   const bgStyle = config?.bgStyle || "default";
 
-  const handleExport = async () => {
+  const handleExport = async (type: "png" | "pdf") => {
     if (!exportRef.current || isExporting) return;
 
     setIsExporting(true);
+    setExportType(type);
     setExportProgress(0);
 
     try {
@@ -42,22 +45,39 @@ export default function DraftPickPage() {
 
       setExportProgress(95);
 
-      const link = document.createElement("a");
       const safeTitle = customTitle
         ? customTitle.replace(/[^a-z0-9]/gi, "-").toLowerCase()
         : "draft-pick";
-      link.download = `${safeTitle}.png`;
-      link.href = dataUrl;
-      link.click();
+
+      if (type === "png") {
+        const link = document.createElement("a");
+        link.download = `${safeTitle}.png`;
+        link.href = dataUrl;
+        link.click();
+      } else if (type === "pdf") {
+        const imgWidth = exportRef.current.offsetWidth;
+        const imgHeight = exportRef.current.offsetHeight;
+        
+        const pdf = new jsPDF({
+          orientation: imgWidth > imgHeight ? "landscape" : "portrait",
+          unit: "px",
+          format: [imgWidth, imgHeight],
+        });
+
+        pdf.addImage(dataUrl, "PNG", 0, 0, imgWidth, imgHeight);
+        pdf.save(`${safeTitle}.pdf`);
+      }
 
       setExportProgress(100);
       setTimeout(() => {
         setIsExporting(false);
+        setExportType(null);
         setExportProgress(0);
       }, 1000);
     } catch (err) {
       console.error("Export failed:", err);
       setIsExporting(false);
+      setExportType(null);
       setExportProgress(0);
     }
   };
@@ -72,23 +92,45 @@ export default function DraftPickPage() {
           </span>
         </div>
         <div className="flex flex-col gap-2 min-w-[140px] sm:min-w-[200px]">
-          <button
-            onClick={handleExport}
-            disabled={isExporting}
-            className={`px-4 py-2 flex items-center justify-center gap-2 rounded-xs transition-colors text-sm font-medium ${
-              isExporting
-                ? "bg-blue-600/50 text-blue-200 cursor-wait"
-                : "bg-blue-600 hover:bg-blue-700 text-white"
-            }`}
-          >
-            <Download size={16} />
-            {isExporting ? `${exportProgress}%` : "Export Image"}
-          </button>
+          <div className="flex gap-2">
+            <button
+              onClick={() => handleExport("png")}
+              disabled={isExporting}
+              className={`flex-1 py-2 flex items-center justify-center gap-1.5 rounded-xs transition-colors text-sm font-medium ${
+                isExporting && exportType === "png"
+                  ? "bg-blue-600/50 text-blue-200 cursor-wait"
+                  : isExporting
+                    ? "bg-gray-600/50 text-gray-400 cursor-not-allowed"
+                    : "bg-blue-600 hover:bg-blue-700 text-white"
+              }`}
+            >
+              <ImageIcon size={16} />
+              {isExporting && exportType === "png" ? `${exportProgress}%` : "PNG"}
+            </button>
+            <button
+              onClick={() => handleExport("pdf")}
+              disabled={isExporting}
+              className={`flex-1 py-2 flex items-center justify-center gap-1.5 rounded-xs transition-colors text-sm font-medium ${
+                isExporting && exportType === "pdf"
+                  ? "bg-red-600/50 text-red-200 cursor-wait"
+                  : isExporting
+                    ? "bg-gray-600/50 text-gray-400 cursor-not-allowed"
+                    : "bg-red-600 hover:bg-red-700 text-white"
+              }`}
+            >
+              <FileText size={16} />
+              {isExporting && exportType === "pdf" ? `${exportProgress}%` : "PDF"}
+            </button>
+          </div>
 
           {isExporting && (
             <div className="w-full bg-gray-800 rounded-full h-1.5 overflow-hidden">
               <div
-                className="h-full bg-linear-to-r from-blue-500 to-blue-400 transition-all duration-300 ease-out"
+                className={`h-full transition-all duration-300 ease-out ${
+                  exportType === "pdf"
+                    ? "bg-linear-to-r from-red-500 to-red-400"
+                    : "bg-linear-to-r from-blue-500 to-blue-400"
+                }`}
                 style={{ width: `${exportProgress}%` }}
               />
             </div>
