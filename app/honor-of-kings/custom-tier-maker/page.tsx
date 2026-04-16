@@ -30,7 +30,7 @@ import type {
 import { HERO_LIST_ENRICHED } from "@/static-database/main/hero-list-enriched";
 import { HERO_ROLE } from "@/static-database/hero";
 import { domToPng } from "modern-screenshot";
-import { RotateCcw, Download, Plus, Search, FileCode } from "lucide-react";
+import { RotateCcw, Download, Plus, Search, FileCode, Upload } from "lucide-react";
 import Image from "next/image";
 
 // Default tier zones
@@ -108,8 +108,9 @@ function Page() {
     }),
   );
 
-  // Export ref
+  // Refs
   const exportRef = useRef<HTMLDivElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Current columns
   const columns = buildColumns(columnMode, selectedRoleId, customColumns);
@@ -378,6 +379,8 @@ function Page() {
     const exportObj = {
       title: customTitle,
       columnMode,
+      selectedRoleId,
+      customColumns,
       tiers: tierData,
     };
 
@@ -389,6 +392,81 @@ function Page() {
     link.href = URL.createObjectURL(blob);
     link.click();
     URL.revokeObjectURL(link.href);
+  };
+
+  // --- Import Data ---
+  const handleImportClick = () => {
+    fileInputRef.current?.click();
+  };
+
+  const handleFileImport = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    try {
+      const content = await file.text();
+      // Since it's saved as a TS file with JSON embedded ("export const TIER_LIST_DATA = {...} as const;"),
+      // we can extract the JSON part between the first '{' and the last '}'.
+      const start = content.indexOf("{");
+      const end = content.lastIndexOf("}");
+
+      if (start === -1 || end === -1) {
+        alert("Invalid file format: could not find JSON data.");
+        return;
+      }
+
+      const jsonStr = content.substring(start, end + 1);
+      const data = JSON.parse(jsonStr);
+
+      if (!data.tiers) {
+        alert("Invalid file format: missing tiers data.");
+        return;
+      }
+
+      // Reconstruct UI state variables
+      setCustomTitle(data.title || "Custom Tier List");
+      if (data.columnMode) setColumnMode(data.columnMode);
+      if (data.selectedRoleId !== undefined) setSelectedRoleId(data.selectedRoleId);
+      if (data.customColumns) setCustomColumns(data.customColumns);
+
+      // Reconstruct tiers with new unique IDs
+      const newTierZones = data.tiers.map((tier: any, index: number) => ({
+        id: `tier-${Date.now()}-${index}`,
+        label: tier.label,
+        color: tier.color,
+      }));
+      setTierZones(newTierZones);
+
+      // Reconstruct items, starting with default pool items
+      const newItems: TierItemType[] = [...initialItems];
+
+      // Add placed heroes back
+      data.tiers.forEach((tier: any, index: number) => {
+        const zoneId = newTierZones[index].id;
+        tier.heroes.forEach((hero: any) => {
+          newItems.push({
+            id: crypto.randomUUID(),
+            heroId: hero.heroId,
+            heroName: hero.heroName,
+            heroImage: hero.heroImage,
+            heroExperience: hero.heroExperience,
+            heroRoles: hero.heroRoles,
+            tierId: zoneId,
+            columnId: hero.columnId,
+          });
+        });
+      });
+
+      setItems(newItems);
+    } catch (err) {
+      console.error("Failed to import data:", err);
+      alert("Failed to parse file. Please ensure it's a valid generated export file.");
+    } finally {
+      // Always reset file input value
+      if (fileInputRef.current) {
+        fileInputRef.current.value = "";
+      }
+    }
   };
 
   // --- Reset ---
@@ -428,6 +506,13 @@ function Page() {
   return (
     <>
       <div className="mx-auto p-0 md:p-8">
+        <input
+          type="file"
+          accept=".ts,.json"
+          ref={fileInputRef}
+          className="hidden"
+          onChange={handleFileImport}
+        />
         <div className="mb-6">
           <div className="text-2xl font-medium">Custom Tier List</div>
           <span className="text-sm">
@@ -461,6 +546,13 @@ function Page() {
               >
                 <Download size={16} />
                 {isExporting ? `Exporting ${exportProgress}%` : "Export Image"}
+              </div>
+              <div
+                className="px-4 py-2 flex items-center gap-2 text-center bg-purple-500/50 rounded-xs text-purple-100 cursor-pointer hover:bg-purple-500/70 transition-colors duration-200 text-sm font-medium"
+                onClick={handleImportClick}
+              >
+                <Upload size={16} />
+                Import Data
               </div>
               <div
                 className="px-4 py-2 flex items-center gap-2 text-center bg-purple-500/50 rounded-xs text-purple-100 cursor-pointer hover:bg-purple-500/70 transition-colors duration-200 text-sm font-medium"
