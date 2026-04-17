@@ -165,7 +165,7 @@ export default function DraftMatchBoard({
                 ? "WIN"
                 : match.result === "lose"
                   ? "LOSE"
-                  : ""}
+                  : "CLICK THIS WIN/LOSE"}
             </span>
           </div>
         )}
@@ -242,7 +242,7 @@ export default function DraftMatchBoard({
                 ? "WIN"
                 : match.result === "win"
                   ? "LOSE"
-                  : ""}
+                  : "CLICK THIS WIN/LOSE"}
             </span>
           </div>
         )}
