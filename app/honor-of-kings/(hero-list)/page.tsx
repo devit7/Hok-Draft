@@ -23,6 +23,7 @@ export default function HeroListPage() {
   const [selectedExperience, setSelectedExperience] = useState<string | null>(
     null,
   );
+  const [sortSelected, setSortSelected] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
 
   const filteredHeroes = HERO_LIST_ENRICHED.filter((hero) => {
@@ -37,6 +38,14 @@ export default function HeroListPage() {
       hero.heroName.toLowerCase().includes(searchQuery.toLowerCase());
 
     return matchesRole && matchesExperience && matchesSearch;
+  }).sort((a, b) => {
+    if (sortSelected === "Nama A-Z") {
+      return a.heroName.localeCompare(b.heroName);
+    }
+    if (sortSelected === "Nama Z-A") {
+      return b.heroName.localeCompare(a.heroName);
+    }
+    return 0;
   });
 
   return (
@@ -56,8 +65,10 @@ export default function HeroListPage() {
         listExperience={HERO_EXPERIENCE}
         selectedRole={selectedRole}
         selectedExperience={selectedExperience}
+        sortSelected={sortSelected}
         onRoleSelect={(roleId) => setSelectedRole(roleId)}
         onExperienceSelect={(experience) => setSelectedExperience(experience)}
+        onSortSelect={(sort) => setSortSelected(sort ?? null)}
         onSearch={(query) => setSearchQuery(query)}
       />
 

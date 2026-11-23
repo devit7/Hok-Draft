@@ -5,17 +5,24 @@ import {
   InputGroupAddon,
   InputGroupInput,
 } from "@/components/ui/input-group";
-import { Search } from "lucide-react";
+import { Search, ArrowUpDown, ArrowDownAZ, ArrowUpZA } from "lucide-react";
 import { HeroRole } from "./types";
 import type { HeroExperience } from "@/static-database/hero";
+
+export const SORT_OPTIONS = [
+  { label: "Nama A-Z", value: "Nama A-Z", icon: ArrowDownAZ },
+  { label: "Nama Z-A", value: "Nama Z-A", icon: ArrowUpZA },
+];
 
 interface HeroFilterProps {
   listRole: HeroRole[];
   listExperience: HeroExperience[];
   selectedRole: number | null;
   selectedExperience: string | null;
+  sortSelected?: string | null;
   onRoleSelect?: (roleId: number | null) => void;
   onExperienceSelect?: (experience: string | null) => void;
+  onSortSelect?: (sort?: string | null) => void;
   onSearch?: (query: string) => void;
 }
 
@@ -24,8 +31,10 @@ export const HeroFilter = ({
   listExperience,
   selectedRole,
   selectedExperience,
+  sortSelected = null,
   onRoleSelect,
   onExperienceSelect,
+  onSortSelect,
   onSearch,
 }: HeroFilterProps) => {
   return (
@@ -75,33 +84,69 @@ export const HeroFilter = ({
         </InputGroup>
       </div>
 
-      {/* Experience Filter */}
-      <div className="flex border-y border-d-primary-surface w-full lg:w-fit items-center overflow-x-auto no-scrollbar">
-        <div
-          className={`h-10 border-x px-4 py-2 shrink-0 flex items-center border-d-primary-surface text-sm font-medium cursor-pointer transition-colors ${
-            selectedExperience === null
-              ? "bg-blue-600 text-white"
-              : "hover:bg-d-primary-surface"
-          }`}
-          onClick={() => onExperienceSelect?.(null)}
-        >
-          All Difficulty
-        </div>
-        {listExperience.map((exp) => (
+      {/* Experience & Sort Filters */}
+      <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4">
+        {/* Experience Filter */}
+        <div className="flex border-y border-d-primary-surface w-full sm:w-fit items-center overflow-x-auto no-scrollbar">
           <div
-            key={exp.experience}
-            className={`px-4 py-2 border-r shrink-0 border-d-primary-surface flex items-center gap-2 cursor-pointer transition-colors text-sm ${
-              selectedExperience === exp.experience
+            className={`h-10 border-x px-4 py-2 shrink-0 flex items-center border-d-primary-surface text-sm font-medium cursor-pointer transition-colors ${
+              selectedExperience === null
                 ? "bg-blue-600 text-white"
                 : "hover:bg-d-primary-surface"
             }`}
-            onClick={() => onExperienceSelect?.(exp.experience)}
+            onClick={() => onExperienceSelect?.(null)}
           >
-            <div className={`h-3 w-3 ${exp.color} rounded-sm`}></div>
-            <span>{exp.experience}</span>
+            All Difficulty
           </div>
-        ))}
+          {listExperience.map((exp) => (
+            <div
+              key={exp.experience}
+              className={`h-10 px-4 py-2 border-r shrink-0 border-d-primary-surface flex items-center gap-2 cursor-pointer transition-colors text-sm ${
+                selectedExperience === exp.experience
+                  ? "bg-blue-600 text-white"
+                  : "hover:bg-d-primary-surface"
+              }`}
+              onClick={() => onExperienceSelect?.(exp.experience)}
+            >
+              <div className={`h-3 w-3 ${exp.color} rounded-sm`}></div>
+              <span>{exp.experience}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* Sort Filter */}
+        <div className="flex border-y border-d-primary-surface w-full sm:w-fit items-center overflow-x-auto no-scrollbar">
+          <div
+            className={`h-10 border-x px-4 py-2 shrink-0 flex items-center gap-2 border-d-primary-surface text-sm font-medium cursor-pointer transition-colors ${
+              !sortSelected
+                ? "bg-blue-600 text-white"
+                : "hover:bg-d-primary-surface"
+            }`}
+            onClick={() => onSortSelect?.(null)}
+          >
+            <ArrowUpDown className="h-4 w-4" />
+            <span>Default</span>
+          </div>
+          {SORT_OPTIONS.map((opt) => {
+            const Icon = opt.icon;
+            return (
+              <div
+                key={opt.value}
+                className={`h-10 px-4 py-2 border-r shrink-0 border-d-primary-surface flex items-center gap-2 cursor-pointer transition-colors text-sm ${
+                  sortSelected === opt.value
+                    ? "bg-blue-600 text-white"
+                    : "hover:bg-d-primary-surface"
+                }`}
+                onClick={() => onSortSelect?.(opt.value)}
+              >
+                <Icon className="h-4 w-4" />
+                <span>{opt.label}</span>
+              </div>
+            );
+          })}
+        </div>
       </div>
+
     </div>
   );
 };

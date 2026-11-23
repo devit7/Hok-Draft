@@ -2,7 +2,9 @@
 // Generated: 2/12/2026, 8:10:24 PM
 // Total: 111 heroes (111 enriched)
 
-export const HERO_LIST_ENRICHED = [
+import type { Hero } from "@/components/hero-list";
+
+export const HERO_LIST_ENRICHED: Hero[] = [
   {
     heroId: 521,
     heroName: "Haya",
@@ -3161,5 +3163,199 @@ export const HERO_LIST_ENRICHED = [
       "Dive/Backline Access",
     ],
     powerSpike: ["Mid", "Late"],
+  },
+  {
+    heroId: 537,
+    heroName: "Devara",
+    heroCareer: "Fighter/Mage",
+    showRate: 0.0111,
+    banRate: 0.0026,
+    winRate: 0.49082127,
+    media: {
+      heroCover:
+        "https://camp.honorofkings.com/camp/admin/default/bAO1cYJ5.jpg",
+      heroIcon: "/asset/hero-icon/117-Devara-Icon.png",
+      heroBody: "117-Devara.jpg",
+    },
+    heroExperience: "Advanced",
+    role: [
+      {
+        id: 1,
+        role: "Class Lane",
+        icon: "/asset/role/class-lane.png",
+      },
+    ],
+    tags: ["Burst Damage"],
+    powerSpike: ["Late"],
+  },
+  {
+    heroId: 138,
+    heroName: "Wang Wei",
+    heroCareer: "Mage",
+    showRate: 0.0074,
+    banRate: 0.0066699996,
+    winRate: 0.51606005,
+    media: {
+      heroCover: "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/u24NcxID.jpg",
+      heroIcon: "/asset/hero-icon/118-Wang-Wei-Icon.png",
+      heroBody: "118-Wang-Wei.jpg",
+    },
+    heroExperience: "Easy",
+    role: [
+      {
+        id: 3,
+        role: "Mid Lane",
+        icon: "/asset/role/mid-lane.png",
+      },
+    ],
+    tags: ["Poke Damage", "Hard Crowd Control"],
+    powerSpike: ["Early", "Mid", "Late"],
+  },
+  {
+    heroId: 583,
+    heroName: "Flowborn (Assassin)",
+    heroCareer: "Assassin",
+    showRate: 0.0069,
+    banRate: 0.00214,
+    winRate: 0.51444244,
+    media: {
+      heroCover: "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/u24NcxID.jpg",
+      heroIcon: "/asset/hero-icon/119-Flowborn-Assassin-Icon.png",
+      heroBody: "119-Flowborn-Assassin.jpg",
+    },
+    heroExperience: "Easy",
+    role: [
+      {
+        id: 2,
+        role: "Jungle",
+        icon: "/asset/role/jungle.png",
+      },
+    ],
+    tags: ["Engage/Initiation", "One Shot Kill"],
+    powerSpike: ["Late"],
+  },
+  {
+    heroId: 631,
+    heroName: "Florentino",
+    heroCareer: "Fighter",
+    showRate: 0.0036,
+    banRate: 0.00569,
+    winRate: 0.5048308,
+    media: {
+      heroCover:
+        "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/VF7hX3Fj.jpg",
+      heroIcon: "/asset/hero-icon/120-Florentino-Icon.png",
+      heroBody: "120-Florentino.jpg",
+    },
+    heroExperience: "Advanced",
+    role: [
+      {
+        id: 1,
+        role: "Class Lane",
+        icon: "/asset/role/class-lane.png",
+      },
+      {
+        id: 2,
+        role: "Jungle",
+        icon: "/asset/role/jungle.png",
+      },
+    ],
+    tags: ["Sustain", "Mobility"],
+    powerSpike: ["Early", "Mid"],
+  },
+  {
+    heroId: 585,
+    heroName: "Flowborn (Roamer)",
+    heroCareer: "Support/Mage",
+    showRate: 0.0047,
+    banRate: 0.00289,
+    winRate: 0.5186154,
+    media: {
+      heroCover: "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/u24NcxID.jpg",
+      heroIcon: "/asset/hero-icon/121-Flowborn-Roamer-Icon.png",
+      heroBody: "121-Flowborn-Roamer.jpg",
+    },
+    heroExperience: "Easy",
+    role: [
+      {
+        id: 5,
+        role: "Roamer",
+        icon: "/asset/role/roamer.png",
+      },
+    ],
+    tags: ["Healing", "Shield/Barrier"],
+    powerSpike: ["Early", "Mid"],
+  },
+  {
+    heroId: 635,
+    heroName: "Lorion",
+    heroCareer: "Mage",
+    showRate: 0.0030999999,
+    banRate: 0.00063,
+    winRate: 0.5067318,
+    media: {
+      heroCover:
+        "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/u24NcxID.jpg",
+      heroIcon: "/asset/hero-icon/123-Lorion-Icon.png",
+      heroBody: "123-Lorion.jpg",
+    },
+    heroExperience: "Easy",
+    role: [
+      {
+        id: 3,
+        role: "Mid Lane",
+        icon: "/asset/role/mid-lane.png",
+      },
+    ],
+    tags: ["Poke Damage"],
+    powerSpike: ["Early"],
+  },
+  {
+    heroId: 640,
+    heroName: "Annette",
+    heroCareer: "Support/Mage",
+    showRate: 0.0030999999,
+    banRate: 0.00052,
+    winRate: 0.50494283,
+    media: {
+      heroCover:
+        "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/TqKWnzQm.jpg",
+      heroIcon: "/asset/hero-icon/124-Annette-Icon.png",
+      heroBody: "124-Annette.jpg",
+    },
+    heroExperience: "Easy",
+    role: [
+      {
+        id: 5,
+        role: "Roamer",
+        icon: "/asset/role/roamer.png",
+      },
+    ],
+    tags: ["Shield/Barrier", "Low Crowd Control"],
+    powerSpike: ["Early"],
+  },
+  {
+    heroId: 509,
+    heroName: "Dunshan",
+    heroCareer: "Support/Tank",
+    showRate: 0.0078000003,
+    banRate: 0.03876,
+    winRate: 0.46118307,
+    media: {
+      heroCover:
+        "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/es1jtJSX.jpg",
+      heroIcon: "/asset/hero-icon/116-Dunshan-Icon.png",
+      heroBody: "116-Dunshan.jpg",
+    },
+    heroExperience: "Advanced",
+    role: [
+      {
+        id: 5,
+        role: "Roamer",
+        icon: "/asset/role/roamer.png",
+      },
+    ],
+    tags: ["Hard Crowd Control", "Sustain", "Tanky/Durability"],
+    powerSpike: ["Mid"],
   },
 ];

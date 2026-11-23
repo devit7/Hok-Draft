@@ -27,11 +27,11 @@ import type {
   TierItem as TierItemType,
   TierZone as TierZoneType,
 } from "@/types/item.type";
-import { HERO_LIST_ENRICHED } from "@/static-database/main/hero-list-enriched";
 import { HERO_ROLE } from "@/static-database/hero";
 import { domToPng } from "modern-screenshot";
 import { RotateCcw, Download, Plus, Search, FileCode, Upload } from "lucide-react";
 import Image from "next/image";
+import { HERO_LIST_ENRICHED } from "@/static-database/main/hero-list-enriched";
 
 // Default tier zones
 const DEFAULT_TIER_ZONES: TierZoneType[] = [
@@ -118,13 +118,35 @@ function Page() {
   // --- Column mode handlers ---
   const handleModeChange = (mode: ColumnMode) => {
     setColumnMode(mode);
-    // Clear column assignments when mode changes
-    setItems((prev) =>
-      prev.map((item) => ({
-        ...item,
-        columnId: item.tierId ? columns[0]?.id : undefined,
-      })),
-    );
+
+    // Only remap if switching between custom mode and role-based modes
+    const isCurrentCustom = columnMode === "custom";
+    const isNextCustom = mode === "custom";
+
+    if (isCurrentCustom !== isNextCustom) {
+      const nextColumns = buildColumns(mode, selectedRoleId, customColumns);
+      const nextColIds = new Set(nextColumns.map((c) => c.id));
+
+      setItems((prev) =>
+        prev.map((item) => {
+          if (!item.tierId) return item;
+          // If the item's column already exists in the new mode, preserve it
+          if (item.columnId && nextColIds.has(item.columnId)) {
+            return item;
+          }
+          // Otherwise, fall back to default role or first column
+          const fallbackColId =
+            mode !== "custom" && item.heroRoles?.[0]?.id
+              ? `role-${item.heroRoles[0].id}`
+              : nextColumns[0]?.id;
+
+          return {
+            ...item,
+            columnId: fallbackColId,
+          };
+        }),
+      );
+    }
   };
 
   const handleAddCustomColumn = () => {
@@ -204,7 +226,7 @@ function Page() {
   };
 
   // Parse compound droppable ID: "tier-s__col-role-1" or "tier-s__col-custom-0"
-  const parseDropId = (overId: string) => {
+  const parseDropId = (overId: string, currentItem?: TierItemType) => {
     if (overId.includes("__col-")) {
       const [tierId, colPart] = overId.split("__col-");
       return { tierId, columnId: colPart };
@@ -213,7 +235,13 @@ function Page() {
       return { tierId: undefined, columnId: undefined };
     }
     if (tierZones.some((zone) => zone.id === overId)) {
-      return { tierId: overId, columnId: columns[0]?.id };
+      const existingCol = currentItem?.columnId;
+      const isValidCol =
+        existingCol && columns.some((c) => c.id === existingCol);
+      return {
+        tierId: overId,
+        columnId: isValidCol ? existingCol : columns[0]?.id,
+      };
     }
     return null;
   };
@@ -228,7 +256,7 @@ function Page() {
     const activeItemData = items.find((item) => item.id === activeId);
     if (!activeItemData) return;
 
-    const parsed = parseDropId(overId);
+    const parsed = parseDropId(overId, activeItemData);
 
     if (parsed) {
       setItems((prev) =>
@@ -537,11 +565,10 @@ function Page() {
           <div className="flex flex-col gap-2 shrink-0">
             <div className="flex gap-2 flex-wrap">
               <div
-                className={`px-4 py-2 flex items-center gap-2 text-center rounded-xs text-sm font-medium transition-colors duration-200 ${
-                  isExporting
+                className={`px-4 py-2 flex items-center gap-2 text-center rounded-xs text-sm font-medium transition-colors duration-200 ${isExporting
                     ? "bg-green-500/30 text-green-300 cursor-wait"
                     : "bg-green-500/50 text-green-100 cursor-pointer hover:bg-green-500/70"
-                }`}
+                  }`}
                 onClick={handleExport}
               >
                 <Download size={16} />
@@ -664,11 +691,10 @@ function Page() {
             <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-none mb-3">
               <button
                 onClick={() => setPoolRoleFilter(null)}
-                className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium whitespace-nowrap transition-colors cursor-pointer ${
-                  poolRoleFilter === null
+                className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium whitespace-nowrap transition-colors cursor-pointer ${poolRoleFilter === null
                     ? "bg-blue-600 text-white"
                     : "bg-white/5 text-gray-400 hover:bg-blue-600/50"
-                }`}
+                  }`}
               >
                 All
               </button>
@@ -680,11 +706,10 @@ function Page() {
                       poolRoleFilter === role.id ? null : role.id,
                     )
                   }
-                  className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium whitespace-nowrap flex items-center gap-1 transition-colors cursor-pointer ${
-                    poolRoleFilter === role.id
+                  className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium whitespace-nowrap flex items-center gap-1 transition-colors cursor-pointer ${poolRoleFilter === role.id
                       ? "bg-blue-600 text-white"
                       : "bg-white/5 text-gray-400 hover:bg-blue-600/50"
-                  }`}
+                    }`}
                 >
                   <Image
                     src={role.icon}

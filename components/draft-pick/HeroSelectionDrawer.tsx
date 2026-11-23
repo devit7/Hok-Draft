@@ -165,11 +165,10 @@ export default function HeroSelectionDrawer() {
           <div className="flex gap-2 mt-2 overflow-x-auto pb-2 scrollbar-none">
             <button
               onClick={() => setRoleFilter(null)}
-              className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium whitespace-nowrap transition-colors cursor-pointer ${
-                roleFilter === null
+              className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium whitespace-nowrap transition-colors cursor-pointer ${roleFilter === null
                   ? "bg-d-primary text-white"
                   : "bg-white/5 text-gray-400 hover:bg-d-primary"
-              }`}
+                }`}
             >
               All
             </button>
@@ -177,11 +176,10 @@ export default function HeroSelectionDrawer() {
               <button
                 key={role.id}
                 onClick={() => setRoleFilter(role.id)}
-                className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium whitespace-nowrap flex items-center gap-1 transition-colors cursor-pointer ${
-                  roleFilter === role.id
+                className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium whitespace-nowrap flex items-center gap-1 transition-colors cursor-pointer ${roleFilter === role.id
                     ? "bg-d-primary text-white"
                     : "bg-white/5 text-gray-400 hover:bg-d-primary"
-                }`}
+                  }`}
               >
                 <Image
                   src={role.icon}

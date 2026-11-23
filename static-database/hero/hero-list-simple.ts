@@ -2,11 +2,11 @@
 
 export const HERO_LIST = [
   {
-    showRate: 0.026300002,
+    showRate: 0.0243,
     heroCareer: "Mage",
-    banRate: 0.030480001,
+    banRate: 0.01826,
     heroName: "Daji",
-    winRate: 0.5122639,
+    winRate: 0.5033727,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/ZykGnmmQ.jpg",
@@ -16,11 +16,11 @@ export const HERO_LIST = [
     heroId: 109,
   },
   {
-    showRate: 0.0111,
+    showRate: 0.015700001,
     heroCareer: "Fighter",
-    banRate: 0.05934,
+    banRate: 0.03291,
     heroName: "Augran",
-    winRate: 0.48191336,
+    winRate: 0.48806483,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/YqcFJ41J.jpg",
@@ -30,11 +30,11 @@ export const HERO_LIST = [
     heroId: 517,
   },
   {
-    showRate: 0.0165,
+    showRate: 0.0174,
     heroCareer: "Mage",
-    banRate: 0.04287,
+    banRate: 0.01678,
     heroName: "Milady",
-    winRate: 0.49104297,
+    winRate: 0.4768209,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/IJ9g10Xb.jpg",
@@ -44,11 +44,11 @@ export const HERO_LIST = [
     heroId: 504,
   },
   {
-    showRate: 0.0215,
+    showRate: 0.0294,
     heroCareer: "Mage",
-    banRate: 0.02798,
+    banRate: 0.01123,
     heroName: "Angela",
-    winRate: 0.5156301,
+    winRate: 0.51379126,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/izLCVkoR.jpg",
@@ -58,11 +58,11 @@ export const HERO_LIST = [
     heroId: 142,
   },
   {
-    showRate: 0.0332,
+    showRate: 0.034599997,
     heroCareer: "Marksman",
-    banRate: 0.0027100001,
+    banRate: 0.00266,
     heroName: "Hou Yi",
-    winRate: 0.50314814,
+    winRate: 0.5192474,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/F6qt6L7k.jpg",
@@ -72,11 +72,11 @@ export const HERO_LIST = [
     heroId: 169,
   },
   {
-    showRate: 0.0164,
+    showRate: 0.0086,
     heroCareer: "Mage",
-    banRate: 0.03314,
+    banRate: 0.021850001,
     heroName: "Haya",
-    winRate: 0.48033288,
+    winRate: 0.47856408,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/sGIzRFXF.jpg",
@@ -86,11 +86,11 @@ export const HERO_LIST = [
     heroId: 521,
   },
   {
-    showRate: 0.021,
+    showRate: 0.0135,
     heroCareer: "Fighter",
-    banRate: 0.0236,
+    banRate: 0.00269,
     heroName: "Chicha",
-    winRate: 0.5133561,
+    winRate: 0.513029,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/sfz2ijEz.jpg",
@@ -100,11 +100,11 @@ export const HERO_LIST = [
     heroId: 172,
   },
   {
-    showRate: 0.012,
+    showRate: 0.015899999,
     heroCareer: "Marksman",
-    banRate: 0.03604,
+    banRate: 0.02104,
     heroName: "Ao'yin",
-    winRate: 0.47147176,
+    winRate: 0.49371478,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/UZ5YiCXf.jpg",
@@ -114,11 +114,11 @@ export const HERO_LIST = [
     heroId: 519,
   },
   {
-    showRate: 0.0087,
+    showRate: 0.0078000003,
     heroCareer: "Mage",
-    banRate: 0.03564,
+    banRate: 0.04004,
     heroName: "Liang",
-    winRate: 0.5024741,
+    winRate: 0.5003375,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/fdFhQKXR.jpg",
@@ -128,11 +128,11 @@ export const HERO_LIST = [
     heroId: 156,
   },
   {
-    showRate: 0.020399999,
+    showRate: 0.0162,
     heroCareer: "Fighter",
-    banRate: 0.0116,
+    banRate: 0.0194,
     heroName: "Li Xin",
-    winRate: 0.5362888,
+    winRate: 0.5213326,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/JTriceYO.jpg",
@@ -142,11 +142,11 @@ export const HERO_LIST = [
     heroId: 507,
   },
   {
-    showRate: 0.0232,
+    showRate: 0.018000001,
     heroCareer: "Marksman",
-    banRate: 0.00477,
+    banRate: 0.00272,
     heroName: "Marco Polo",
-    winRate: 0.51127636,
+    winRate: 0.5088461,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/QiHtTgGt.jpg",
@@ -156,11 +156,11 @@ export const HERO_LIST = [
     heroId: 132,
   },
   {
-    showRate: 0.020100001,
+    showRate: 0.0119,
     heroCareer: "Assassin",
-    banRate: 0.0037,
+    banRate: 0.00642,
     heroName: "Wukong",
-    winRate: 0.49304503,
+    winRate: 0.48043767,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/QIVMI1Pj.jpg",
@@ -170,11 +170,11 @@ export const HERO_LIST = [
     heroId: 167,
   },
   {
-    showRate: 0.020100001,
+    showRate: 0.017,
     heroCareer: "Mage",
-    banRate: 0.0015100001,
+    banRate: 0.00272,
     heroName: "Xiao Qiao",
-    winRate: 0.48795518,
+    winRate: 0.475909,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/zcwILxiZ.jpg",
@@ -184,11 +184,11 @@ export const HERO_LIST = [
     heroId: 106,
   },
   {
-    showRate: 0.0188,
+    showRate: 0.015700001,
     heroCareer: "Mage",
-    banRate: 0.0034400001,
+    banRate: 0.00664,
     heroName: "Wang Zhaojun",
-    winRate: 0.50840205,
+    winRate: 0.5043825,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/WLZjhplG.jpg",
@@ -198,11 +198,11 @@ export const HERO_LIST = [
     heroId: 152,
   },
   {
-    showRate: 0.0196,
+    showRate: 0.0194,
     heroCareer: "Marksman",
-    banRate: 0.00096000003,
+    banRate: 0.0016300001,
     heroName: "Lady Sun",
-    winRate: 0.48351115,
+    winRate: 0.49955,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Spp0Zwej.jpg",
@@ -212,11 +212,11 @@ export const HERO_LIST = [
     heroId: 111,
   },
   {
-    showRate: 0.0131,
+    showRate: 0.0122,
     heroCareer: "Support",
-    banRate: 0.01372,
+    banRate: 0.01988,
     heroName: "Cai Yan",
-    winRate: 0.5012374,
+    winRate: 0.5220542,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/OBQuO6qy.jpg",
@@ -226,11 +226,11 @@ export const HERO_LIST = [
     heroId: 184,
   },
   {
-    showRate: 0.012399999,
+    showRate: 0.0119,
     heroCareer: "Mage/Fighter",
-    banRate: 0.01347,
+    banRate: 0.011150001,
     heroName: "Mozi",
-    winRate: 0.49584177,
+    winRate: 0.49629053,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Zd3zwNba.jpg",
@@ -240,11 +240,11 @@ export const HERO_LIST = [
     heroId: 108,
   },
   {
-    showRate: 0.0084,
+    showRate: 0.0086,
     heroCareer: "Support/Tank",
-    banRate: 0.020890001,
+    banRate: 0.030199999,
     heroName: "Donghuang",
-    winRate: 0.48159584,
+    winRate: 0.48534104,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/lEyx6O3p.jpg",
@@ -254,11 +254,11 @@ export const HERO_LIST = [
     heroId: 187,
   },
   {
-    showRate: 0.0133,
+    showRate: 0.0108,
     heroCareer: "Support",
-    banRate: 0.01077,
+    banRate: 0.016339999,
     heroName: "Yaria",
-    winRate: 0.4731232,
+    winRate: 0.49741352,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/jCyFHGBK.jpg",
@@ -268,11 +268,11 @@ export const HERO_LIST = [
     heroId: 505,
   },
   {
-    showRate: 0.017,
+    showRate: 0.014599999,
     heroCareer: "Marksman",
-    banRate: 0.00189,
+    banRate: 0.0019400001,
     heroName: "Consort Yu",
-    winRate: 0.5192474,
+    winRate: 0.50917876,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/TqIPGNjr.jpg",
@@ -282,11 +282,11 @@ export const HERO_LIST = [
     heroId: 174,
   },
   {
-    showRate: 0.017,
+    showRate: 0.0138,
     heroCareer: "Marksman",
-    banRate: 0.00153,
+    banRate: 0.00234,
     heroName: "Luban No.7",
-    winRate: 0.5086242,
+    winRate: 0.45692328,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/W4zZnmCS.jpg",
@@ -296,11 +296,11 @@ export const HERO_LIST = [
     heroId: 112,
   },
   {
-    showRate: 0.0165,
+    showRate: 0.0147,
     heroCareer: "Marksman",
-    banRate: 0.00197,
+    banRate: 0.00113,
     heroName: "Erin",
-    winRate: 0.5156301,
+    winRate: 0.5014623,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/xt0c43KZ.jpg",
@@ -310,11 +310,11 @@ export const HERO_LIST = [
     heroId: 155,
   },
   {
-    showRate: 0.015000001,
+    showRate: 0.0132,
     heroCareer: "Marksman",
-    banRate: 0.00297,
+    banRate: 0.0033300002,
     heroName: "Garo",
-    winRate: 0.54492086,
+    winRate: 0.52559334,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Lfx9VhTp.jpg",
@@ -324,11 +324,11 @@ export const HERO_LIST = [
     heroId: 508,
   },
   {
-    showRate: 0.0141,
+    showRate: 0.0194,
     heroCareer: "Support",
-    banRate: 0.00321,
+    banRate: 0.008470001,
     heroName: "Dolia",
-    winRate: 0.45745417,
+    winRate: 0.47530538,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/8qorhn89.jpg",
@@ -338,11 +338,11 @@ export const HERO_LIST = [
     heroId: 159,
   },
   {
-    showRate: 0.0114,
+    showRate: 0.0109,
     heroCareer: "Support/Mage",
-    banRate: 0.00842,
+    banRate: 0.013420001,
     heroName: "Dyadia",
-    winRate: 0.47866744,
+    winRate: 0.50045,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/aduptfKy.jpg",
@@ -352,11 +352,11 @@ export const HERO_LIST = [
     heroId: 577,
   },
   {
-    showRate: 0.0106,
+    showRate: 0.0107,
     heroCareer: "Assassin/Fighter",
-    banRate: 0.00784,
+    banRate: 0.01286,
     heroName: "Lam",
-    winRate: 0.4927106,
+    winRate: 0.48404732,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/xLDNlCY8.jpg",
@@ -366,11 +366,11 @@ export const HERO_LIST = [
     heroId: 528,
   },
   {
-    showRate: 0.0131,
+    showRate: 0.0126,
     heroCareer: "Tank/Fighter",
-    banRate: 0.00207,
+    banRate: 0.0062700002,
     heroName: "Dun",
-    winRate: 0.5074009,
+    winRate: 0.5189318,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/FNYwEHVp.jpg",
@@ -380,11 +380,11 @@ export const HERO_LIST = [
     heroId: 126,
   },
   {
-    showRate: 0.0128999995,
+    showRate: 0.0155,
     heroCareer: "Mage",
-    banRate: 0.00254,
+    banRate: 0.0065200003,
     heroName: "Kongming",
-    winRate: 0.48075256,
+    winRate: 0.5087351,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/bMrvtoIE.jpg",
@@ -394,11 +394,11 @@ export const HERO_LIST = [
     heroId: 190,
   },
   {
-    showRate: 0.0134000005,
+    showRate: 0.011,
     heroCareer: "Fighter/Tank",
-    banRate: 0.00124,
+    banRate: 0.0012299999,
     heroName: "Kaizer",
-    winRate: 0.5131381,
+    winRate: 0.5068434,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/MUNGLxW8.jpg",
@@ -408,11 +408,11 @@ export const HERO_LIST = [
     heroId: 193,
   },
   {
-    showRate: 0.012800001,
+    showRate: 0.0089,
     heroCareer: "Mage",
-    banRate: 0.00085000007,
+    banRate: 0.00037,
     heroName: "Lady Zhen",
-    winRate: 0.52717054,
+    winRate: 0.5079574,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/M7R2duVl.jpg",
@@ -422,11 +422,11 @@ export const HERO_LIST = [
     heroId: 127,
   },
   {
-    showRate: 0.012399999,
+    showRate: 0.013699999,
     heroCareer: "Marksman",
-    banRate: 0.0011,
+    banRate: 0.00127,
     heroName: "Luara",
-    winRate: 0.5133561,
+    winRate: 0.5279489,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/I04GXrAz.jpg",
@@ -436,11 +436,11 @@ export const HERO_LIST = [
     heroId: 547,
   },
   {
-    showRate: 0.0111,
+    showRate: 0.0078000003,
     heroCareer: "Mage/Fighter",
-    banRate: 0.00332,
+    banRate: 0.00124,
     heroName: "Heino",
-    winRate: 0.48653504,
+    winRate: 0.4868619,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/mTftREQF.jpg",
@@ -450,11 +450,11 @@ export const HERO_LIST = [
     heroId: 563,
   },
   {
-    showRate: 0.012,
+    showRate: 0.0098,
     heroCareer: "Marksman",
-    banRate: 0.00093,
+    banRate: 0.00041,
     heroName: "Fang",
-    winRate: 0.5070664,
+    winRate: 0.4918202,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/SkVL7iz6.jpg",
@@ -464,11 +464,11 @@ export const HERO_LIST = [
     heroId: 173,
   },
   {
-    showRate: 0.0115,
+    showRate: 0.0108,
     heroCareer: "Fighter/Tank",
-    banRate: 0.00133,
+    banRate: 0.00273,
     heroName: "Lu Bu",
-    winRate: 0.49405006,
+    winRate: 0.4837254,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/WbDySARi.jpg",
@@ -478,11 +478,11 @@ export const HERO_LIST = [
     heroId: 123,
   },
   {
-    showRate: 0.0117,
+    showRate: 0.010100001,
     heroCareer: "Fighter/Tank",
-    banRate: 0.00086000003,
+    banRate: 0.00032,
     heroName: "Arthur",
-    winRate: 0.50314814,
+    winRate: 0.5040461,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/amfNYinj.jpg",
@@ -492,11 +492,11 @@ export const HERO_LIST = [
     heroId: 166,
   },
   {
-    showRate: 0.0109,
+    showRate: 0.0088,
     heroCareer: "Fighter/Assassin",
-    banRate: 0.00206,
+    banRate: 0.00309,
     heroName: "Musashi",
-    winRate: 0.50516677,
+    winRate: 0.49662727,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/vPYOOxP5.jpg",
@@ -506,11 +506,11 @@ export const HERO_LIST = [
     heroId: 130,
   },
   {
-    showRate: 0.0081,
+    showRate: 0.0074,
     heroCareer: "Mage/Fighter",
-    banRate: 0.0076300004,
+    banRate: 0.01145,
     heroName: "Mi Yue",
-    winRate: 0.49371478,
+    winRate: 0.49775067,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/pEygZQ9Z.jpg",
@@ -520,11 +520,11 @@ export const HERO_LIST = [
     heroId: 121,
   },
   {
-    showRate: 0.0063,
+    showRate: 0.0066,
     heroCareer: "Assassin",
-    banRate: 0.01095,
+    banRate: 0.0122,
     heroName: "Arke",
-    winRate: 0.52499515,
+    winRate: 0.53283465,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/hERiaWpd.jpg",
@@ -536,9 +536,9 @@ export const HERO_LIST = [
   {
     showRate: 0.0092,
     heroCareer: "Support/Mage",
-    banRate: 0.0049,
+    banRate: 0.00677,
     heroName: "Kui",
-    winRate: 0.50617355,
+    winRate: 0.4956175,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Vvtmn5Ne.jpg",
@@ -548,11 +548,11 @@ export const HERO_LIST = [
     heroId: 175,
   },
   {
-    showRate: 0.010100001,
+    showRate: 0.0081,
     heroCareer: "Fighter",
-    banRate: 0.0028000001,
+    banRate: 0.0023700001,
     heroName: "Dian Wei",
-    winRate: 0.52277136,
+    winRate: 0.4938265,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/7TA19KxF.jpg",
@@ -562,11 +562,11 @@ export const HERO_LIST = [
     heroId: 129,
   },
   {
-    showRate: 0.0112000005,
+    showRate: 0.007999999,
     heroCareer: "Marksman",
-    banRate: 0.00051000004,
+    banRate: 0.00037,
     heroName: "Flowborn (Marksman)",
-    winRate: 0.51734304,
+    winRate: 0.49304503,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/SEhYI41B.jpg",
@@ -576,11 +576,11 @@ export const HERO_LIST = [
     heroId: 584,
   },
   {
-    showRate: 0.0088,
+    showRate: 0.0095,
     heroCareer: "Support/Mage",
-    banRate: 0.00525,
+    banRate: 0.0074600005,
     heroName: "Da Qiao",
-    winRate: 0.4742081,
+    winRate: 0.50762355,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/0yjyCa1W.jpg",
@@ -590,11 +590,11 @@ export const HERO_LIST = [
     heroId: 191,
   },
   {
-    showRate: 0.005,
+    showRate: 0.007,
     heroCareer: "Assassin",
-    banRate: 0.01224,
+    banRate: 0.01578,
     heroName: "Gao Changgong",
-    winRate: 0.48708013,
+    winRate: 0.5025865,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/ocoIb1PU.jpg",
@@ -604,11 +604,11 @@ export const HERO_LIST = [
     heroId: 153,
   },
   {
-    showRate: 0.0068000006,
+    showRate: 0.0052,
     heroCareer: "Support/Tank",
-    banRate: 0.00798,
+    banRate: 0.0107,
     heroName: "Zhuangzi",
-    winRate: 0.49741352,
+    winRate: 0.4855576,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/uVQvGtpv.jpg",
@@ -618,11 +618,11 @@ export const HERO_LIST = [
     heroId: 113,
   },
   {
-    showRate: 0.0088,
+    showRate: 0.009099999,
     heroCareer: "Mage",
-    banRate: 0.00352,
+    banRate: 0.00646,
     heroName: "Nuwa",
-    winRate: 0.50516677,
+    winRate: 0.5385692,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/m2oCcjm4.jpg",
@@ -632,11 +632,11 @@ export const HERO_LIST = [
     heroId: 179,
   },
   {
-    showRate: 0.0098,
+    showRate: 0.0107,
     heroCareer: "Fighter/Tank",
-    banRate: 0.00088,
+    banRate: 0.00423,
     heroName: "Biron",
-    winRate: 0.4851248,
+    winRate: 0.4863174,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/6jvtUvQY.jpg",
@@ -646,11 +646,11 @@ export const HERO_LIST = [
     heroId: 503,
   },
   {
-    showRate: 0.0092,
+    showRate: 0.007999999,
     heroCareer: "Support/Tank",
-    banRate: 0.00181,
+    banRate: 0.00092,
     heroName: "Liu Shan",
-    winRate: 0.4934914,
+    winRate: 0.49595395,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/oMH9g4NU.jpg",
@@ -660,11 +660,11 @@ export const HERO_LIST = [
     heroId: 114,
   },
   {
-    showRate: 0.0075999997,
+    showRate: 0.0077,
     heroCareer: "Marksman",
-    banRate: 0.00496,
+    banRate: 0.00402,
     heroName: "Arli",
-    winRate: 0.4708009,
+    winRate: 0.46012318,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/ExRaPXMt.jpg",
@@ -674,11 +674,11 @@ export const HERO_LIST = [
     heroId: 199,
   },
   {
-    showRate: 0.0098,
+    showRate: 0.0083,
     heroCareer: "Marksman",
-    banRate: 0.00035000002,
+    banRate: 0.00029,
     heroName: "Alessio",
-    winRate: 0.51573765,
+    winRate: 0.5193525,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/sLENRyQJ.jpg",
@@ -688,11 +688,11 @@ export const HERO_LIST = [
     heroId: 545,
   },
   {
-    showRate: 0.0093,
+    showRate: 0.0099,
     heroCareer: "Tank",
-    banRate: 0.00098,
+    banRate: 0.00147,
     heroName: "Lian Po",
-    winRate: 0.51509124,
+    winRate: 0.5185098,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Ex2aJZvB.jpg",
@@ -702,11 +702,11 @@ export const HERO_LIST = [
     heroId: 105,
   },
   {
-    showRate: 0.0075999997,
+    showRate: 0.0037999998,
     heroCareer: "Mage",
-    banRate: 0.00429,
+    banRate: 0.0006,
     heroName: "Gan & Mo",
-    winRate: 0.5269748,
+    winRate: 0.4882842,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/BTzGuX2M.jpg",
@@ -716,11 +716,11 @@ export const HERO_LIST = [
     heroId: 182,
   },
   {
-    showRate: 0.0093,
+    showRate: 0.0135,
     heroCareer: "Fighter/Tank",
-    banRate: 0.00033,
+    banRate: 0.00084,
     heroName: "Sun Ce",
-    winRate: 0.5003375,
+    winRate: 0.5075122,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/uUnbXnK9.jpg",
@@ -730,11 +730,11 @@ export const HERO_LIST = [
     heroId: 510,
   },
   {
-    showRate: 0.0088,
+    showRate: 0.0067000003,
     heroCareer: "Mage",
-    banRate: 0.00115,
+    banRate: 0.00068,
     heroName: "Ziya",
-    winRate: 0.5043825,
+    winRate: 0.49673957,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Zv8Vx9x6.jpg",
@@ -744,11 +744,11 @@ export const HERO_LIST = [
     heroId: 148,
   },
   {
-    showRate: 0.0063,
+    showRate: 0.0047,
     heroCareer: "Fighter/Mage",
-    banRate: 0.00614,
+    banRate: 0.0011,
     heroName: "Luna",
-    winRate: 0.48653504,
+    winRate: 0.458457,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/peB9CpiC.jpg",
@@ -758,11 +758,11 @@ export const HERO_LIST = [
     heroId: 146,
   },
   {
-    showRate: 0.0088,
+    showRate: 0.0072999997,
     heroCareer: "Mage",
-    banRate: 0.0011400001,
+    banRate: 0.00072,
     heroName: "Diaochan",
-    winRate: 0.47061023,
+    winRate: 0.48054257,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/tiAH3o12.jpg",
@@ -772,11 +772,11 @@ export const HERO_LIST = [
     heroId: 141,
   },
   {
-    showRate: 0.0083,
+    showRate: 0.0099,
     heroCareer: "Marksman/Assassin",
-    banRate: 0.0009999999,
+    banRate: 0.00122,
     heroName: "Shouyue",
-    winRate: 0.49718884,
+    winRate: 0.50348496,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Cyg0kdSd.jpg",
@@ -786,11 +786,11 @@ export const HERO_LIST = [
     heroId: 196,
   },
   {
-    showRate: 0.0086,
+    showRate: 0.009000001,
     heroCareer: "Marksman",
-    banRate: 0.00023,
+    banRate: 0.00021,
     heroName: "Di Renjie",
-    winRate: 0.5177684,
+    winRate: 0.5257919,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/xIM3ebjC.jpg",
@@ -800,11 +800,11 @@ export const HERO_LIST = [
     heroId: 133,
   },
   {
-    showRate: 0.007999999,
+    showRate: 0.0050999997,
     heroCareer: "Fighter/Assassin",
-    banRate: 0.00133,
+    banRate: 0.0003,
     heroName: "Ying",
-    winRate: 0.5246947,
+    winRate: 0.51138633,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/6b0IrGYV.jpg",
@@ -814,11 +814,11 @@ export const HERO_LIST = [
     heroId: 538,
   },
   {
-    showRate: 0.007900001,
+    showRate: 0.009099999,
     heroCareer: "Marksman",
-    banRate: 0.00088999997,
+    banRate: 0.00086000003,
     heroName: "Chano",
-    winRate: 0.5014623,
+    winRate: 0.513029,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Ajn4d263.jpg",
@@ -827,11 +827,11 @@ export const HERO_LIST = [
     heroId: 177,
   },
   {
-    showRate: 0.007900001,
+    showRate: 0.0093,
     heroCareer: "Tank/Fighter",
-    banRate: 0.00040000002,
+    banRate: 0.00044,
     heroName: "Xiang Yu",
-    winRate: 0.499775,
+    winRate: 0.50606173,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/lu0CZbns.jpg",
@@ -841,11 +841,11 @@ export const HERO_LIST = [
     heroId: 135,
   },
   {
-    showRate: 0.0068000006,
+    showRate: 0.0061,
     heroCareer: "Mage",
-    banRate: 0.00264,
+    banRate: 0.0033399998,
     heroName: "Shi",
-    winRate: 0.488394,
+    winRate: 0.5088461,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Doxu6Oq3.jpg",
@@ -855,11 +855,11 @@ export const HERO_LIST = [
     heroId: 523,
   },
   {
-    showRate: 0.0072,
+    showRate: 0.0071,
     heroCareer: "Assassin/Mage",
-    banRate: 0.00166,
+    banRate: 0.0012,
     heroName: "Mai Shiranui",
-    winRate: 0.4831903,
+    winRate: 0.4882842,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/1gYFx4kN.jpg",
@@ -869,11 +869,11 @@ export const HERO_LIST = [
     heroId: 157,
   },
   {
-    showRate: 0.0072,
+    showRate: 0.007,
     heroCareer: "Support/Tank",
-    banRate: 0.00143,
+    banRate: 0.00304,
     heroName: "Zhang Fei",
-    winRate: 0.4956175,
+    winRate: 0.499325,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/jeOWLTy0.jpg",
@@ -883,11 +883,11 @@ export const HERO_LIST = [
     heroId: 171,
   },
   {
-    showRate: 0.0075999997,
+    showRate: 0.0061,
     heroCareer: "Mage",
-    banRate: 0.00047,
+    banRate: 0.0003,
     heroName: "Yixing",
-    winRate: 0.5202942,
+    winRate: 0.51498324,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/KSprHoFS.jpg",
@@ -897,11 +897,11 @@ export const HERO_LIST = [
     heroId: 197,
   },
   {
-    showRate: 0.0075999997,
+    showRate: 0.0074,
     heroCareer: "Fighter",
-    banRate: 0.00051000004,
+    banRate: 0.00062,
     heroName: "Charlotte",
-    winRate: 0.4825505,
+    winRate: 0.49416184,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/6oVEfw6S.jpg",
@@ -911,11 +911,11 @@ export const HERO_LIST = [
     heroId: 536,
   },
   {
-    showRate: 0.0074,
+    showRate: 0.0081,
     heroCareer: "Mage",
-    banRate: 0.00040000002,
+    banRate: 0.00038,
     heroName: "Garuda",
-    winRate: 0.5012374,
+    winRate: 0.51455075,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/default/2hPdkfbG.jpg",
@@ -924,11 +924,11 @@ export const HERO_LIST = [
     heroId: 110,
   },
   {
-    showRate: 0.0064999997,
+    showRate: 0.013600001,
     heroCareer: "Fighter",
-    banRate: 0.00091000006,
+    banRate: 0.0017899999,
     heroName: "Umbrosa",
-    winRate: 0.50382173,
+    winRate: 0.51259214,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/WZl2T51I.jpg",
@@ -938,11 +938,11 @@ export const HERO_LIST = [
     heroId: 558,
   },
   {
-    showRate: 0.006,
+    showRate: 0.0037,
     heroCareer: "Fighter",
-    banRate: 0.0016300001,
+    banRate: 0.00037,
     heroName: "Fuzi",
-    winRate: 0.53906345,
+    winRate: 0.5117158,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/4jij0DvI.jpg",
@@ -952,11 +952,11 @@ export const HERO_LIST = [
     heroId: 139,
   },
   {
-    showRate: 0.0064999997,
+    showRate: 0.0052,
     heroCareer: "Tank/Fighter",
-    banRate: 0.00072,
+    banRate: 0.00036,
     heroName: "Flowborn (Tank)",
-    winRate: 0.4900466,
+    winRate: 0.49572963,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/IhExpUrR.jpg",
@@ -966,11 +966,11 @@ export const HERO_LIST = [
     heroId: 581,
   },
   {
-    showRate: 0.0058,
+    showRate: 0.0063,
     heroCareer: "Assassin",
-    banRate: 0.0015499999,
+    banRate: 0.00168,
     heroName: "Li Bai",
-    winRate: 0.5181925,
+    winRate: 0.5348943,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/gi5uliqF.jpg",
@@ -980,11 +980,11 @@ export const HERO_LIST = [
     heroId: 131,
   },
   {
-    showRate: 0.006,
+    showRate: 0.0030999999,
     heroCareer: "Support/Tank",
-    banRate: 0.00085000007,
+    banRate: 0.00013999999,
     heroName: "Lapulapu",
-    winRate: 0.55431783,
+    winRate: 0.5457772,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/default/9bajUtDY.jpg",
@@ -993,11 +993,11 @@ export const HERO_LIST = [
     heroId: 168,
   },
   {
-    showRate: 0.006,
+    showRate: 0.0075999997,
     heroCareer: "Assassin",
-    banRate: 0.00075,
+    banRate: 0.0030200002,
     heroName: "Nakoruru",
-    winRate: 0.514334,
+    winRate: 0.513029,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/XVz3ScF3.jpg",
@@ -1007,11 +1007,11 @@ export const HERO_LIST = [
     heroId: 162,
   },
   {
-    showRate: 0.0053,
+    showRate: 0.0037,
     heroCareer: "Assassin",
-    banRate: 0.00193,
+    banRate: 0.00032,
     heroName: "Han Xin",
-    winRate: 0.53507036,
+    winRate: 0.4676215,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/LisGz9JI.jpg",
@@ -1021,11 +1021,11 @@ export const HERO_LIST = [
     heroId: 150,
   },
   {
-    showRate: 0.0058,
+    showRate: 0.0037,
     heroCareer: "Mage",
-    banRate: 0.00055999996,
+    banRate: 0.00037,
     heroName: "Flowborn (Mage)",
-    winRate: 0.5141172,
+    winRate: 0.4946093,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/cv4BFURQ.jpg",
@@ -1035,11 +1035,11 @@ export const HERO_LIST = [
     heroId: 582,
   },
   {
-    showRate: 0.0057,
+    showRate: 0.0037,
     heroCareer: "Fighter/Tank",
-    banRate: 0.00054000004,
+    banRate: 0.00018,
     heroName: "Wuyan",
-    winRate: 0.5151991,
+    winRate: 0.5185098,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/ByB0avrN.jpg",
@@ -1049,11 +1049,11 @@ export const HERO_LIST = [
     heroId: 117,
   },
   {
-    showRate: 0.0055,
+    showRate: 0.0057,
     heroCareer: "Mage",
-    banRate: 0.00093,
+    banRate: 0.00135,
     heroName: "Dr Bian",
-    winRate: 0.49304503,
+    winRate: 0.52091825,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/IzGNO4gH.jpg",
@@ -1063,11 +1063,11 @@ export const HERO_LIST = [
     heroId: 119,
   },
   {
-    showRate: 0.0054,
+    showRate: 0.0071,
     heroCareer: "Fighter/Assassin",
-    banRate: 0.00048000002,
+    banRate: 0.00043000001,
     heroName: "Yao",
-    winRate: 0.5180866,
+    winRate: 0.5175559,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/9FEMfGL6.jpg",
@@ -1077,11 +1077,11 @@ export const HERO_LIST = [
     heroId: 522,
   },
   {
-    showRate: 0.0054,
+    showRate: 0.0053,
     heroCareer: "Tank",
-    banRate: 0.00037,
+    banRate: 0.00071,
     heroName: "Ata",
-    winRate: 0.5308054,
+    winRate: 0.54123,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/VLdAOWEU.jpg",
@@ -1091,11 +1091,11 @@ export const HERO_LIST = [
     heroId: 556,
   },
   {
-    showRate: 0.0054,
+    showRate: 0.0042,
     heroCareer: "Support/Mage",
-    banRate: 0.00035000002,
+    banRate: 0.00018,
     heroName: "Sakeer",
-    winRate: 0.5292945,
+    winRate: 0.53219515,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/X6bMcS9I.jpg",
@@ -1105,11 +1105,11 @@ export const HERO_LIST = [
     heroId: 534,
   },
   {
-    showRate: 0.0053,
+    showRate: 0.0054,
     heroCareer: "Mage",
-    banRate: 0.0003,
+    banRate: 0.00029,
     heroName: "Yuhuan",
-    winRate: 0.49048898,
+    winRate: 0.52236205,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/LF6Nz3Dc.jpg",
@@ -1119,11 +1119,11 @@ export const HERO_LIST = [
     heroId: 176,
   },
   {
-    showRate: 0.0052,
+    showRate: 0.0048,
     heroCareer: "Marksman",
-    banRate: 0.00035000002,
+    banRate: 0.00046,
     heroName: "Agudo",
-    winRate: 0.518721,
+    winRate: 0.5300536,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/sLRXwXQN.jpg",
@@ -1133,11 +1133,11 @@ export const HERO_LIST = [
     heroId: 533,
   },
   {
-    showRate: 0.0050999997,
+    showRate: 0.0047,
     heroCareer: "Mage",
-    banRate: 0.00035000002,
+    banRate: 0.00015,
     heroName: "Zhou Yu",
-    winRate: 0.5072894,
+    winRate: 0.5131381,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/6qGtxWOJ.jpg",
@@ -1147,11 +1147,11 @@ export const HERO_LIST = [
     heroId: 124,
   },
   {
-    showRate: 0.0050999997,
+    showRate: 0.0042,
     heroCareer: "Support",
-    banRate: 0.00036,
+    banRate: 0.00024999998,
     heroName: "Ming",
-    winRate: 0.50191206,
+    winRate: 0.50134987,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/8kII7n12.jpg",
@@ -1161,11 +1161,11 @@ export const HERO_LIST = [
     heroId: 501,
   },
   {
-    showRate: 0.005,
+    showRate: 0.009000001,
     heroCareer: "Fighter/Assassin",
-    banRate: 0.00016,
+    banRate: 0.00047,
     heroName: "Zilong",
-    winRate: 0.51702327,
+    winRate: 0.5185098,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/xUSaF8jZ.jpg",
@@ -1175,11 +1175,11 @@ export const HERO_LIST = [
     heroId: 107,
   },
   {
-    showRate: 0.0047,
+    showRate: 0.0049,
     heroCareer: "Assassin",
-    banRate: 0.00061,
+    banRate: 0.00299,
     heroName: "Feyd",
-    winRate: 0.50179964,
+    winRate: 0.52958,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/CBT9NFLe.jpg",
@@ -1189,11 +1189,11 @@ export const HERO_LIST = [
     heroId: 542,
   },
   {
-    showRate: 0.0047,
+    showRate: 0.0045000003,
     heroCareer: "Fighter",
-    banRate: 0.00055999996,
+    banRate: 0.00067,
     heroName: "Butterfly",
-    winRate: 0.51670283,
+    winRate: 0.49662727,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/yiAUErJL.jpg",
@@ -1203,11 +1203,11 @@ export const HERO_LIST = [
     heroId: 646,
   },
   {
-    showRate: 0.0046,
+    showRate: 0.0037999998,
     heroCareer: "Mage",
-    banRate: 0.00077,
+    banRate: 0.00037,
     heroName: "Gao",
-    winRate: 0.49775067,
+    winRate: 0.51204485,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/HPC78m98.jpg",
@@ -1217,11 +1217,11 @@ export const HERO_LIST = [
     heroId: 115,
   },
   {
-    showRate: 0.0046,
+    showRate: 0.0026,
     heroCareer: "Fighter",
-    banRate: 0.00051000004,
+    banRate: 0.00026,
     heroName: "Liu Bei",
-    winRate: 0.5451367,
+    winRate: 0.4976383,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Uvn9VDp3.jpg",
@@ -1231,11 +1231,11 @@ export const HERO_LIST = [
     heroId: 170,
   },
   {
-    showRate: 0.0041,
+    showRate: 0.0027,
     heroCareer: "Assassin",
-    banRate: 0.00143,
+    banRate: 0.00049,
     heroName: "Pei",
-    winRate: 0.52638525,
+    winRate: 0.4901571,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/3q1zTt6E.jpg",
@@ -1245,11 +1245,11 @@ export const HERO_LIST = [
     heroId: 502,
   },
   {
-    showRate: 0.0047,
+    showRate: 0.0032000002,
     heroCareer: "Marksman",
-    banRate: 0.00013,
+    banRate: 0.000100000005,
     heroName: "Meng Ya",
-    winRate: 0.53620255,
+    winRate: 0.5035972,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/8pdEvIFf.jpg",
@@ -1259,11 +1259,11 @@ export const HERO_LIST = [
     heroId: 524,
   },
   {
-    showRate: 0.0046,
+    showRate: 0.0041,
     heroCareer: "Marksman",
-    banRate: 0.00020000001,
+    banRate: 0.00027000002,
     heroName: "Huang Zhong",
-    winRate: 0.51379126,
+    winRate: 0.49898756,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/P3i4l8r8.jpg",
@@ -1273,11 +1273,11 @@ export const HERO_LIST = [
     heroId: 192,
   },
   {
-    showRate: 0.0045000003,
+    showRate: 0.0049,
     heroCareer: "Assassin/Fighter",
-    banRate: 0.00027999998,
+    banRate: 0.00029,
     heroName: "Ukyo Tachibana",
-    winRate: 0.5140086,
+    winRate: 0.5231791,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/2mct7rWz.jpg",
@@ -1287,11 +1287,11 @@ export const HERO_LIST = [
     heroId: 163,
   },
   {
-    showRate: 0.0043,
+    showRate: 0.0037999998,
     heroCareer: "Tank",
-    banRate: 0.0006,
+    banRate: 0.00039,
     heroName: "Bai Qi",
-    winRate: 0.5159527,
+    winRate: 0.5269748,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/aknBlGMI.jpg",
@@ -1301,11 +1301,11 @@ export const HERO_LIST = [
     heroId: 120,
   },
   {
-    showRate: 0.0044,
+    showRate: 0.0045000003,
     heroCareer: "Fighter/Assassin",
-    banRate: 0.00040000002,
+    banRate: 0.00027000002,
     heroName: "Mulan",
-    winRate: 0.50928956,
+    winRate: 0.5042704,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/mKedCKPI.jpg",
@@ -1315,11 +1315,11 @@ export const HERO_LIST = [
     heroId: 154,
   },
   {
-    showRate: 0.0041,
+    showRate: 0.003,
     heroCareer: "Fighter",
-    banRate: 0.0006,
+    banRate: 0.00029,
     heroName: "Mayene",
-    winRate: 0.47410896,
+    winRate: 0.46734744,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/bh6aZMH5.jpg",
@@ -1329,11 +1329,11 @@ export const HERO_LIST = [
     heroId: 564,
   },
   {
-    showRate: 0.0041,
+    showRate: 0.0029,
     heroCareer: "Fighter",
-    banRate: 0.00039,
+    banRate: 0.00016,
     heroName: "Yang Jian",
-    winRate: 0.5141172,
+    winRate: 0.5070664,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/LiaY1Ak1.jpg",
@@ -1343,11 +1343,11 @@ export const HERO_LIST = [
     heroId: 178,
   },
   {
-    showRate: 0.0036,
+    showRate: 0.0061999997,
     heroCareer: "Fighter",
-    banRate: 0.00099,
+    banRate: 0.0018200001,
     heroName: "Guan Yu",
-    winRate: 0.472148,
+    winRate: 0.45884854,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/tSx2ERbX.jpg",
@@ -1357,11 +1357,11 @@ export const HERO_LIST = [
     heroId: 140,
   },
   {
-    showRate: 0.0039000001,
+    showRate: 0.0046,
     heroCareer: "Fighter",
-    banRate: 0.00021,
+    banRate: 0.00032,
     heroName: "Allain",
-    winRate: 0.48043767,
+    winRate: 0.5050548,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/RML4OrEQ.jpg",
@@ -1371,11 +1371,11 @@ export const HERO_LIST = [
     heroId: 514,
   },
   {
-    showRate: 0.0037,
+    showRate: 0.0032000002,
     heroCareer: "Support/Mage",
-    banRate: 0.00027000002,
+    banRate: 0.00022,
     heroName: "Sun Bin",
-    winRate: 0.4901571,
+    winRate: 0.50011253,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/vguCwOnf.jpg",
@@ -1385,11 +1385,11 @@ export const HERO_LIST = [
     heroId: 118,
   },
   {
-    showRate: 0.0030999999,
+    showRate: 0.0045000003,
     heroCareer: "Fighter",
-    banRate: 0.00048000002,
+    banRate: 0.00035000002,
     heroName: "Fatih",
-    winRate: 0.48971522,
+    winRate: 0.5307118,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/default/j14kiNfY.jpg",
@@ -1398,11 +1398,11 @@ export const HERO_LIST = [
     heroId: 128,
   },
   {
-    showRate: 0.0032000002,
+    showRate: 0.0033,
     heroCareer: "Mage/Assassin",
-    banRate: 0.00032,
+    banRate: 0.00035000002,
     heroName: "Shangguan",
-    winRate: 0.47205105,
+    winRate: 0.4760099,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/vW5q3aT6.jpg",
@@ -1412,11 +1412,11 @@ export const HERO_LIST = [
     heroId: 513,
   },
   {
-    showRate: 0.003,
+    showRate: 0.0019999999,
     heroCareer: "Assassin",
-    banRate: 0.00016,
+    banRate: 0.000100000005,
     heroName: "Cirrus",
-    winRate: 0.51966715,
+    winRate: 0.5058382,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/6EEUjz9u.jpg",
@@ -1426,11 +1426,11 @@ export const HERO_LIST = [
     heroId: 506,
   },
   {
-    showRate: 0.0023,
+    showRate: 0.0018999999,
     heroCareer: "Support",
-    banRate: 0.00153,
+    banRate: 0.00203,
     heroName: "Guiguzi",
-    winRate: 0.5181925,
+    winRate: 0.4842623,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/aQiegaok.jpg",
@@ -1440,11 +1440,11 @@ export const HERO_LIST = [
     heroId: 189,
   },
   {
-    showRate: 0.0028000001,
+    showRate: 0.0023,
     heroCareer: "Fighter/Tank",
-    banRate: 0.00022,
+    banRate: 0.000120000004,
     heroName: "Dharma",
-    winRate: 0.52958,
+    winRate: 0.5264838,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/UCNANDbr.jpg",
@@ -1454,11 +1454,11 @@ export const HERO_LIST = [
     heroId: 134,
   },
   {
-    showRate: 0.0027,
+    showRate: 0.0042,
     heroCareer: "Fighter",
-    banRate: 0.00018,
+    banRate: 0.0006,
     heroName: "Nezha",
-    winRate: 0.49831277,
+    winRate: 0.5022493,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/NP5clJQ1.jpg",
@@ -1468,11 +1468,11 @@ export const HERO_LIST = [
     heroId: 180,
   },
   {
-    showRate: 0.0024,
+    showRate: 0.0037999998,
     heroCareer: "Assassin",
-    banRate: 0.00073,
+    banRate: 0.0013,
     heroName: "Jing",
-    winRate: 0.45130628,
+    winRate: 0.44616833,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/oCCtEU9x.jpg",
@@ -1482,11 +1482,11 @@ export const HERO_LIST = [
     heroId: 531,
   },
   {
-    showRate: 0.0025,
+    showRate: 0.0028000001,
     heroCareer: "Tank/Mage",
-    banRate: 0.00021,
+    banRate: 0.00022,
     heroName: "Liu Bang",
-    winRate: 0.48022813,
+    winRate: 0.5075122,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/PsRv1GG0.jpg",
@@ -1496,11 +1496,11 @@ export const HERO_LIST = [
     heroId: 149,
   },
   {
-    showRate: 0.0024,
+    showRate: 0.0074,
     heroCareer: "Assassin/Mage",
-    banRate: 0.00035000002,
+    banRate: 0.00274,
     heroName: "Sima Yi",
-    winRate: 0.4634533,
+    winRate: 0.54322726,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/jmBX2Gi8.jpg",
@@ -1510,11 +1510,11 @@ export const HERO_LIST = [
     heroId: 137,
   },
   {
-    showRate: 0.0022,
+    showRate: 0.0019999999,
     heroCareer: "Fighter/Mage",
-    banRate: 0.00019,
+    banRate: 0.00015,
     heroName: "Menki",
-    winRate: 0.51723653,
+    winRate: 0.5336482,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/w1wO6DKd.jpg",
@@ -1524,11 +1524,11 @@ export const HERO_LIST = [
     heroId: 198,
   },
   {
-    showRate: 0.0021,
+    showRate: 0.0039000001,
     heroCareer: "Assassin",
-    banRate: 0.00027000002,
+    banRate: 0.0037300002,
     heroName: "Xuance",
-    winRate: 0.53237844,
+    winRate: 0.53043044,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/mD5CDPk0.jpg",
@@ -1538,11 +1538,11 @@ export const HERO_LIST = [
     heroId: 195,
   },
   {
-    showRate: 0.00080000004,
+    showRate: 0.0006,
     heroCareer: "Fighter/Assassin",
-    banRate: 5.0000002e-5,
+    banRate: 6.0000002e-05,
     heroName: "Athena",
-    winRate: 0.53748274,
+    winRate: 0.5244938,
     media: {
       heroCover:
         "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/BTfAVTQF.jpg",
@@ -1550,6 +1550,123 @@ export const HERO_LIST = [
         "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/BEh6QC3Q.png",
     },
     heroId: 183,
+  },
+  {
+    heroId: 509,
+    heroName: "Dunshan",
+    heroCareer: "Support/Tank",
+    showRate: 0.0078000003,
+    banRate: 0.03876,
+    winRate: 0.46118307,
+    media: {
+      heroCover: "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/es1jtJSX.jpg",
+      heroIcon: "/asset/hero-icon/116-Dunshan-Icon.png",
+      heroBody: "116-Dunshan.jpg",
+    },
+  },
+  {
+    heroId: 537,
+    heroName: "Devara",
+    heroCareer: "Fighter/Mage",
+    showRate: 0.0111,
+    banRate: 0.0026,
+    winRate: 0.49082127,
+    media: {
+      heroCover: "https://camp.honorofkings.com/camp/admin/default/bAO1cYJ5.jpg",
+      heroIcon: "/asset/hero-icon/117-Devara-Icon.png",
+      heroBody: "117-Devara.jpg",
+    },
+  },
+  {
+    heroId: 138,
+    heroName: "Wang Wei",
+    heroCareer: "Mage",
+    showRate: 0.0074,
+    banRate: 0.0066699996,
+    winRate: 0.51606005,
+    media: {
+      heroCover: "",
+      heroIcon: "/asset/hero-icon/118-Wang-Wei-Icon.png",
+      heroBody: "118-Wang-Wei.jpg",
+    },
+  },
+  {
+    heroId: 583,
+    heroName: "Flowborn (Assassin)",
+    heroCareer: "Assassin",
+    showRate: 0.0069,
+    banRate: 0.00214,
+    winRate: 0.51444244,
+    media: {
+      heroCover: "",
+      heroIcon: "/asset/hero-icon/119-Flowborn-Assassin-Icon.png",
+      heroBody: "119-Flowborn-Assassin.jpg",
+    },
+  },
+  {
+    heroId: 631,
+    heroName: "Florentino",
+    heroCareer: "Fighter",
+    showRate: 0.0036,
+    banRate: 0.00569,
+    winRate: 0.5048308,
+    media: {
+      heroCover: "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/VF7hX3Fj.jpg",
+      heroIcon: "/asset/hero-icon/120-Florentino-Icon.png",
+      heroBody: "120-Florentino.jpg",
+    },
+  },
+  {
+    heroId: 585,
+    heroName: "Flowborn (Roamer)",
+    heroCareer: "Support/Mage",
+    showRate: 0.0047,
+    banRate: 0.00289,
+    winRate: 0.5186154,
+    media: {
+      heroCover: "",
+      heroIcon: "/asset/hero-icon/121-Flowborn-Roamer-Icon.png",
+      heroBody: "121-Flowborn-Roamer.jpg",
+    },
+  },
+  {
+    heroId: 125,
+    heroName: "Yango",
+    heroCareer: "Assassin",
+    showRate: 0.0036,
+    banRate: 0.00052999996,
+    winRate: 0.47460568,
+    media: {
+      heroCover: "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/Tbfq2NY0.jpg",
+      heroIcon: "/asset/hero-icon/122-Yango-Icon.png",
+      heroBody: "122-Yango.jpg",
+    },
+  },
+  {
+    heroId: 635,
+    heroName: "Lorion",
+    heroCareer: "Mage",
+    showRate: 0.0030999999,
+    banRate: 0.00063,
+    winRate: 0.5067318,
+    media: {
+      heroCover: "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/u24NcxID.jpg",
+      heroIcon: "/asset/hero-icon/123-Lorion-Icon.png",
+      heroBody: "123-Lorion.jpg",
+    },
+  },
+  {
+    heroId: 640,
+    heroName: "Annette",
+    heroCareer: "Support/Mage",
+    showRate: 0.0030999999,
+    banRate: 0.00052,
+    winRate: 0.50494283,
+    media: {
+      heroCover: "https://camp.honorofkings.com/camp/admin/hero/skin/cover_1250-326/TqKWnzQm.jpg",
+      heroIcon: "/asset/hero-icon/124-Annette-Icon.png",
+      heroBody: "124-Annette.jpg",
+    },
   },
 ];
 export default HERO_LIST;

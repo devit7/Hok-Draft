@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center h-10 ">
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 text-gray-300 hover:text-white"
+          className="md:hidden p-2 text-gray-300 hover:text-white "
           onClick={toggleMenu}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}

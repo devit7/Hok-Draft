@@ -4,8 +4,8 @@ import urllib.request
 import urllib.error
 import time
 
-ts_file = r"d:\Project\Hok-Draft\hok-draft\static-database\main\hero-list-enriched.ts"
-out_dir = r"d:\Project\Hok-Draft\hok-draft\public\asset\hero-icon"
+ts_file = r"C:\Users\Administrator\Documents\Project\Hok-Draft\static-database\main\hero-list-enriched.ts"
+out_dir = r"C:\Users\Administrator\Pictures\TestDownloadGambar"
 
 if not os.path.exists(out_dir):
     os.makedirs(out_dir)

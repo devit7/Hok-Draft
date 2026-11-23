@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "static-database/main/hero-list-enriched.ts"  ],
   "exclude": ["node_modules"]
 }

@@ -1,0 +1,1995 @@
+{
+  "STORAGE_KEY": "hero-generator-data",
+  "ORDER_STORAGE_KEY": "hero-generator-order",
+  "enrichments": {
+    "521": {
+      "experienceId": 2,
+      "tagIds": [
+        13,
+        24,
+        3,
+        2
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        2
+      ]
+    },
+    "172": {
+      "experienceId": 2,
+      "tagIds": [
+        11,
+        24,
+        14
+      ],
+      "roleIds": [
+        1,
+        2,
+        4
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "517": {
+      "experienceId": 1,
+      "tagIds": [
+        18,
+        25,
+        24,
+        6
+      ],
+      "roleIds": [
+        2,
+        1
+      ],
+      "powerSpikeIds": [
+        2
+      ]
+    },
+    "519": {
+      "experienceId": 2,
+      "tagIds": [
+        1,
+        3,
+        15,
+        14
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "577": {
+      "experienceId": 2,
+      "tagIds": [
+        4,
+        6,
+        15,
+        11
+      ],
+      "roleIds": [
+        5
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "504": {
+      "experienceId": 1,
+      "tagIds": [
+        29,
+        13,
+        31,
+        10
+      ],
+      "roleIds": [
+        3,
+        5
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "142": {
+      "experienceId": 1,
+      "tagIds": [
+        1,
+        27,
+        30
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "169": {
+      "experienceId": 1,
+      "tagIds": [
+        28
+      ],
+      "roleIds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "powerSpikeIds": [
+        3,
+        1,
+        2
+      ]
+    },
+    "168": {
+      "experienceId": 1,
+      "tagIds": [
+        5,
+        6,
+        7,
+        9
+      ],
+      "roleIds": [
+        5
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "197": {
+      "experienceId": 1,
+      "tagIds": [
+        2,
+        3,
+        6,
+        11,
+        13
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        2,
+        1
+      ]
+    },
+    "128": {
+      "experienceId": 1,
+      "tagIds": [
+        2,
+        1,
+        5,
+        6,
+        20,
+        11
+      ],
+      "roleIds": [
+        1,
+        2
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "109": {
+      "experienceId": 1,
+      "tagIds": [
+        29,
+        1,
+        30,
+        4
+      ],
+      "roleIds": [
+        3,
+        5
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "156": {
+      "experienceId": 1,
+      "tagIds": [
+        29,
+        4,
+        11
+      ],
+      "roleIds": [
+        5,
+        3
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "507": {
+      "experienceId": 1,
+      "tagIds": [
+        31,
+        13,
+        10,
+        6
+      ],
+      "roleIds": [
+        1
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "132": {
+      "experienceId": 1,
+      "tagIds": [
+        14,
+        6
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        2
+      ]
+    },
+    "167": {
+      "experienceId": 1,
+      "tagIds": [
+        1,
+        6,
+        9,
+        21
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        2,
+        1
+      ]
+    },
+    "106": {
+      "experienceId": 1,
+      "tagIds": [
+        1,
+        13,
+        3,
+        11
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "152": {
+      "experienceId": 1,
+      "tagIds": [
+        4,
+        27,
+        22,
+        11
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "111": {
+      "experienceId": 1,
+      "tagIds": [
+        1,
+        6,
+        13
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        2,
+        3,
+        1
+      ]
+    },
+    "184": {
+      "experienceId": 1,
+      "tagIds": [
+        15,
+        3
+      ],
+      "roleIds": [
+        5
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "108": {
+      "experienceId": 1,
+      "tagIds": [
+        4,
+        2,
+        29
+      ],
+      "roleIds": [
+        5,
+        3
+      ],
+      "powerSpikeIds": [
+        2,
+        1,
+        3
+      ]
+    },
+    "187": {
+      "experienceId": 1,
+      "tagIds": [
+        4,
+        29
+      ],
+      "roleIds": [
+        5,
+        1
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "505": {
+      "experienceId": 1,
+      "tagIds": [
+        3,
+        16
+      ],
+      "roleIds": [
+        5
+      ],
+      "powerSpikeIds": [
+        1,
+        3,
+        2
+      ]
+    },
+    "174": {
+      "experienceId": 1,
+      "tagIds": [
+        2,
+        3
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "112": {
+      "experienceId": 1,
+      "tagIds": [
+        1,
+        13,
+        19,
+        14
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "155": {
+      "experienceId": 1,
+      "tagIds": [
+        2,
+        11
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        3
+      ]
+    },
+    "508": {
+      "experienceId": 1,
+      "tagIds": [
+        2,
+        14,
+        11
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        3
+      ]
+    },
+    "159": {
+      "experienceId": 1,
+      "tagIds": [
+        15,
+        17,
+        6
+      ],
+      "roleIds": [
+        5
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "528": {
+      "experienceId": 2,
+      "tagIds": [
+        11,
+        13,
+        6
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        2
+      ]
+    },
+    "126": {
+      "experienceId": 1,
+      "tagIds": [
+        5,
+        7,
+        9,
+        11,
+        3
+      ],
+      "roleIds": [
+        1,
+        2
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "190": {
+      "experienceId": 1,
+      "tagIds": [
+        1,
+        11,
+        30,
+        24,
+        6
+      ],
+      "roleIds": [
+        2,
+        3
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "193": {
+      "experienceId": 1,
+      "tagIds": [
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "roleIds": [
+        2,
+        1
+      ],
+      "powerSpikeIds": [
+        3
+      ]
+    },
+    "127": {
+      "experienceId": 1,
+      "tagIds": [
+        11,
+        22,
+        3
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        3,
+        2
+      ]
+    },
+    "547": {
+      "experienceId": 1,
+      "tagIds": [
+        2,
+        6
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "563": {
+      "experienceId": 1,
+      "tagIds": [
+        1,
+        2,
+        14,
+        13
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "173": {
+      "experienceId": 1,
+      "tagIds": [
+        2,
+        6,
+        11,
+        13
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "123": {
+      "experienceId": 1,
+      "tagIds": [
+        1,
+        3,
+        11,
+        21,
+        9
+      ],
+      "roleIds": [
+        1
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "166": {
+      "experienceId": 1,
+      "tagIds": [
+        3,
+        5,
+        6,
+        7,
+        9
+      ],
+      "roleIds": [
+        1
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "130": {
+      "experienceId": 2,
+      "tagIds": [
+        6,
+        9,
+        16,
+        23,
+        21
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "121": {
+      "experienceId": 1,
+      "tagIds": [
+        2,
+        6,
+        10,
+        12
+      ],
+      "roleIds": [
+        1
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "116": {
+      "experienceId": 1,
+      "tagIds": [
+        26,
+        19,
+        21,
+        1
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "584": {
+      "experienceId": 1,
+      "tagIds": [
+        2,
+        11,
+        22
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "175": {
+      "experienceId": 2,
+      "tagIds": [
+        4,
+        9,
+        29
+      ],
+      "roleIds": [
+        5
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "129": {
+      "experienceId": 1,
+      "tagIds": [
+        6,
+        1,
+        21
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "191": {
+      "experienceId": 1,
+      "tagIds": [
+        10,
+        11,
+        12,
+        6
+      ],
+      "roleIds": [
+        5,
+        3
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "153": {
+      "experienceId": 2,
+      "tagIds": [
+        1,
+        26,
+        21,
+        19,
+        6
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        2,
+        1
+      ]
+    },
+    "113": {
+      "experienceId": 1,
+      "tagIds": [
+        17,
+        6,
+        11,
+        22,
+        19
+      ],
+      "roleIds": [
+        5,
+        2
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "179": {
+      "experienceId": 3,
+      "tagIds": [
+        1,
+        6,
+        4,
+        11,
+        19,
+        21,
+        30
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "503": {
+      "experienceId": 1,
+      "tagIds": [
+        3,
+        6,
+        9,
+        7,
+        16,
+        11
+      ],
+      "roleIds": [
+        1
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "114": {
+      "experienceId": 1,
+      "tagIds": [
+        4,
+        31,
+        29,
+        10
+      ],
+      "roleIds": [
+        5
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "199": {
+      "experienceId": 3,
+      "tagIds": [
+        2,
+        14,
+        11,
+        13,
+        20,
+        6
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "545": {
+      "experienceId": 1,
+      "tagIds": [
+        2,
+        14,
+        6
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "105": {
+      "experienceId": 1,
+      "tagIds": [
+        4,
+        6,
+        5,
+        7,
+        9,
+        11
+      ],
+      "roleIds": [
+        5
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "182": {
+      "experienceId": 3,
+      "tagIds": [
+        1,
+        3,
+        14,
+        30
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "510": {
+      "experienceId": 2,
+      "tagIds": [
+        4,
+        6,
+        10,
+        11,
+        21
+      ],
+      "roleIds": [
+        1
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "148": {
+      "experienceId": 1,
+      "tagIds": [
+        3,
+        13,
+        19,
+        22,
+        17
+      ],
+      "roleIds": [
+        3,
+        5
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "146": {
+      "experienceId": 2,
+      "tagIds": [
+        1,
+        3,
+        6,
+        9,
+        21
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        3
+      ]
+    },
+    "141": {
+      "experienceId": 1,
+      "tagIds": [
+        1,
+        13,
+        5,
+        22
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "196": {
+      "experienceId": 2,
+      "tagIds": [
+        29,
+        26,
+        23,
+        2
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "133": {
+      "experienceId": 1,
+      "tagIds": [
+        2,
+        5,
+        11,
+        13,
+        14
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "538": {
+      "experienceId": 2,
+      "tagIds": [
+        2,
+        6,
+        9,
+        24
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        2
+      ]
+    },
+    "177": {
+      "experienceId": 1,
+      "tagIds": [
+        2,
+        6,
+        11
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "135": {
+      "experienceId": 1,
+      "tagIds": [
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "roleIds": [
+        1
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "523": {
+      "experienceId": 3,
+      "tagIds": [
+        4,
+        13,
+        22
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        2,
+        1,
+        3
+      ]
+    },
+    "157": {
+      "experienceId": 2,
+      "tagIds": [
+        1,
+        2,
+        4,
+        6,
+        9
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "171": {
+      "experienceId": 1,
+      "tagIds": [
+        4,
+        7,
+        6,
+        11,
+        16
+      ],
+      "roleIds": [
+        5
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "536": {
+      "experienceId": 2,
+      "tagIds": [
+        5,
+        6,
+        9,
+        11,
+        21
+      ],
+      "roleIds": [
+        1
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "110": {
+      "experienceId": 1,
+      "tagIds": [
+        13,
+        2,
+        22,
+        11
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "558": {
+      "experienceId": 1,
+      "tagIds": [
+        21,
+        11,
+        12,
+        9,
+        6,
+        5
+      ],
+      "roleIds": [
+        1,
+        2
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "139": {
+      "experienceId": 1,
+      "tagIds": [
+        31,
+        10,
+        29,
+        27,
+        5,
+        6
+      ],
+      "roleIds": [
+        1
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "581": {
+      "experienceId": 1,
+      "tagIds": [
+        5,
+        6,
+        7,
+        9,
+        11,
+        4
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "131": {
+      "experienceId": 2,
+      "tagIds": [
+        1,
+        6,
+        3,
+        20,
+        25
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "162": {
+      "experienceId": 1,
+      "tagIds": [
+        1,
+        6
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "150": {
+      "experienceId": 2,
+      "tagIds": [
+        25,
+        21,
+        10,
+        6
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "582": {
+      "experienceId": 1,
+      "tagIds": [
+        2,
+        1,
+        3,
+        13
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        2
+      ]
+    },
+    "522": {
+      "experienceId": 2,
+      "tagIds": [
+        1,
+        6,
+        20,
+        21
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "117": {
+      "experienceId": 1,
+      "tagIds": [
+        4,
+        6,
+        5,
+        9,
+        22
+      ],
+      "roleIds": [
+        1
+      ],
+      "powerSpikeIds": [
+        2,
+        1
+      ]
+    },
+    "119": {
+      "experienceId": 1,
+      "tagIds": [
+        17,
+        2,
+        15,
+        13
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "556": {
+      "experienceId": 1,
+      "tagIds": [
+        5,
+        6,
+        7,
+        9
+      ],
+      "roleIds": [
+        2,
+        1
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "534": {
+      "experienceId": 1,
+      "tagIds": [
+        6,
+        15,
+        2,
+        3
+      ],
+      "roleIds": [
+        5
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "176": {
+      "experienceId": 1,
+      "tagIds": [
+        2,
+        3,
+        5,
+        9,
+        15
+      ],
+      "roleIds": [
+        3,
+        2
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "533": {
+      "experienceId": 1,
+      "tagIds": [
+        25,
+        14,
+        2,
+        3,
+        11
+      ],
+      "roleIds": [
+        2,
+        4
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "124": {
+      "experienceId": 1,
+      "tagIds": [
+        17,
+        31,
+        29,
+        13,
+        3
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        2,
+        1
+      ]
+    },
+    "501": {
+      "experienceId": 1,
+      "tagIds": [
+        17,
+        15
+      ],
+      "roleIds": [
+        5
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "107": {
+      "experienceId": 1,
+      "tagIds": [
+        3,
+        20,
+        21,
+        11
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "542": {
+      "experienceId": 2,
+      "tagIds": [
+        1,
+        6,
+        14,
+        25,
+        24
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        3,
+        2
+      ]
+    },
+    "646": {
+      "experienceId": 1,
+      "tagIds": [
+        1,
+        6,
+        5
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "115": {
+      "experienceId": 1,
+      "tagIds": [
+        1,
+        2,
+        6,
+        11
+      ],
+      "roleIds": [
+        3,
+        2
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "170": {
+      "experienceId": 1,
+      "tagIds": [
+        1,
+        2
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        2,
+        1
+      ]
+    },
+    "502": {
+      "experienceId": 2,
+      "tagIds": [
+        2,
+        6,
+        11,
+        10,
+        25
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "524": {
+      "experienceId": 1,
+      "tagIds": [
+        1,
+        14
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "192": {
+      "experienceId": 1,
+      "tagIds": [
+        2,
+        19,
+        22
+      ],
+      "roleIds": [
+        4
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "163": {
+      "experienceId": 2,
+      "tagIds": [
+        15,
+        3,
+        6,
+        21
+      ],
+      "roleIds": [
+        2,
+        1
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "120": {
+      "experienceId": 1,
+      "tagIds": [
+        5,
+        3,
+        7,
+        9,
+        13,
+        21
+      ],
+      "roleIds": [
+        1,
+        2
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "154": {
+      "experienceId": 3,
+      "tagIds": [
+        4,
+        6,
+        21,
+        11
+      ],
+      "roleIds": [
+        1
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "564": {
+      "experienceId": 2,
+      "tagIds": [
+        6,
+        21,
+        4,
+        20
+      ],
+      "roleIds": [
+        1
+      ],
+      "powerSpikeIds": [
+        2,
+        3,
+        1
+      ]
+    },
+    "178": {
+      "experienceId": 1,
+      "tagIds": [
+        3,
+        6,
+        25,
+        21,
+        20,
+        11
+      ],
+      "roleIds": [
+        2,
+        1
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "140": {
+      "experienceId": 3,
+      "tagIds": [
+        6,
+        5,
+        9,
+        11,
+        4,
+        15
+      ],
+      "roleIds": [
+        1,
+        5
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "514": {
+      "experienceId": 1,
+      "tagIds": [
+        3,
+        5,
+        6,
+        9,
+        21
+      ],
+      "roleIds": [
+        1
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "118": {
+      "experienceId": 3,
+      "tagIds": [
+        29
+      ],
+      "roleIds": [
+        5
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "513": {
+      "experienceId": 3,
+      "tagIds": [
+        1,
+        21
+      ],
+      "roleIds": [
+        3
+      ],
+      "powerSpikeIds": [
+        2,
+        3,
+        1
+      ]
+    },
+    "506": {
+      "experienceId": 1,
+      "tagIds": [
+        6,
+        10
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "189": {
+      "experienceId": 1,
+      "tagIds": [
+        3,
+        6,
+        17
+      ],
+      "roleIds": [
+        5
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "531": {
+      "experienceId": 3,
+      "tagIds": [
+        6,
+        21,
+        25,
+        27,
+        11,
+        1
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        3,
+        2
+      ]
+    },
+    "134": {
+      "experienceId": 2,
+      "tagIds": [
+        5,
+        6,
+        9,
+        11,
+        4,
+        21
+      ],
+      "roleIds": [
+        1
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "180": {
+      "experienceId": 1,
+      "tagIds": [
+        11,
+        17,
+        6,
+        9
+      ],
+      "roleIds": [
+        2,
+        1
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "149": {
+      "experienceId": 1,
+      "tagIds": [
+        6,
+        7,
+        9,
+        10,
+        16,
+        21
+      ],
+      "roleIds": [
+        5,
+        1
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "137": {
+      "experienceId": 1,
+      "tagIds": [
+        1,
+        6,
+        21,
+        11
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "198": {
+      "experienceId": 1,
+      "tagIds": [
+        5,
+        6,
+        11,
+        7,
+        16
+      ],
+      "roleIds": [
+        2,
+        1
+      ],
+      "powerSpikeIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "195": {
+      "experienceId": 2,
+      "tagIds": [
+        6,
+        2,
+        3
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "183": {
+      "experienceId": 1,
+      "tagIds": [
+        19,
+        18,
+        10,
+        6,
+        7,
+        5,
+        3
+      ],
+      "roleIds": [
+        2
+      ],
+      "powerSpikeIds": [
+        1,
+        2
+      ]
+    },
+    "125": {
+      "experienceId": 3,
+      "tagIds": [
+        6,
+        21
+      ],
+      "roleIds": [
+        1,
+        2
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    },
+    "12": {
+      "experienceId": 3,
+      "tagIds": [
+        6,
+        21
+      ],
+      "roleIds": [
+        1,
+        2
+      ],
+      "powerSpikeIds": [
+        2,
+        3
+      ]
+    }
+  },
+  "heroOrder": [
+    521,
+    172,
+    517,
+    519,
+    577,
+    504,
+    142,
+    169,
+    168,
+    197,
+    128,
+    109,
+    156,
+    507,
+    132,
+    167,
+    106,
+    152,
+    111,
+    184,
+    108,
+    187,
+    505,
+    174,
+    112,
+    155,
+    508,
+    159,
+    528,
+    126,
+    190,
+    193,
+    127,
+    547,
+    563,
+    173,
+    123,
+    166,
+    130,
+    121,
+    116,
+    584,
+    175,
+    129,
+    191,
+    153,
+    113,
+    179,
+    503,
+    114,
+    199,
+    545,
+    105,
+    182,
+    510,
+    148,
+    146,
+    141,
+    196,
+    133,
+    538,
+    177,
+    135,
+    523,
+    157,
+    171,
+    536,
+    110,
+    558,
+    139,
+    581,
+    131,
+    162,
+    150,
+    582,
+    522,
+    117,
+    119,
+    556,
+    534,
+    176,
+    533,
+    124,
+    501,
+    107,
+    542,
+    646,
+    115,
+    170,
+    502,
+    524,
+    192,
+    163,
+    120,
+    154,
+    564,
+    178,
+    140,
+    514,
+    118,
+    513,
+    506,
+    189,
+    531,
+    134,
+    180,
+    149,
+    137,
+    198,
+    195,
+    183,
+    125,
+    12
+  ]
+}
