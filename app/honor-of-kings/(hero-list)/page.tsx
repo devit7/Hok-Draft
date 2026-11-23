@@ -55,7 +55,7 @@ export default function HeroListPage() {
         <span className="text-sm">List of Heroes from Honor Of Kings.</span>
         <p className="text-gray-400">
           Last Update:{" "}
-          <span className="font-medium text-blue-400">February 2026</span>
+          <span className="font-medium text-blue-400">November 2026</span>
         </p>
       </div>
 
